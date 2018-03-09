@@ -16,5 +16,5 @@
           Note that the RPC is from a regtest node (for completeness), so it includes some additional calls that a regular node doesn't have.
           </p>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-lg-3 col-xl-2">
 

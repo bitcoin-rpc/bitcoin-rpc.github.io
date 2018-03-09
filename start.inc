@@ -32,6 +32,6 @@
     <main role="main" class="container-fluid" style="margin-top: 1pc;">
 
       <div class="row">
-        <div class="col-8">
+        <div class="col-8 col-lg-9 col-xl-10">
           <h1>XXX - Bitcoin RPC</h1>
           <pre>
