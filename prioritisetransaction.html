@@ -8,7 +8,6 @@
 
     <title>prioritisetransaction - Bitcoin Core RPC Docs</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="./bootstrap.min.css" rel="stylesheet">
   </head>
   <style>
@@ -34,8 +33,8 @@
       <div class="row">
         <div class="col-8 col-lg-9 col-xl-10">
           <h1>prioritisetransaction - Bitcoin RPC</h1>
-          <pre>
-prioritisetransaction &lt;txid&gt; &lt;dummy value&gt; &lt;fee delta&gt;
+          
+            <pre>prioritisetransaction &lt;txid&gt; &lt;dummy value&gt; &lt;fee delta&gt;
 Accepts the transaction into mined blocks at a higher (or lower) priority
 
 Arguments:
@@ -53,8 +52,9 @@ Examples:
 &gt; bitcoin-cli prioritisetransaction &#34;txid&#34; 0.0 10000
 &gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;prioritisetransaction&#34;, &#34;params&#34;: [&#34;txid&#34;, 0.0, 10000] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
-          </pre>
-          <hr>
+</pre>
+            <hr>
+          
           <p>
           This is a website, created out of frustration with uncomplete and outdated Bitcoin Core RPC documentation online.
           </p>
@@ -72,181 +72,413 @@ Examples:
           </p>
         </div>
         <div class="col-4 col-lg-3 col-xl-2">
-
-
-<div class="card">
-  <div class="card-header">
-    Blockchain
-  </div>
-  <div class="card-body">
-    <a href="getbestblockhash.html">getbestblockhash</a><br>
-    <a href="getblock.html">getblock</a><br>
-    <a href="getblockchaininfo.html">getblockchaininfo</a><br>
-    <a href="getblockcount.html">getblockcount</a><br>
-    <a href="getblockhash.html">getblockhash</a><br>
-    <a href="getblockheader.html">getblockheader</a><br>
-    <a href="getchaintips.html">getchaintips</a><br>
-    <a href="getchaintxstats.html">getchaintxstats</a><br>
-    <a href="getdifficulty.html">getdifficulty</a><br>
-    <a href="getmempoolancestors.html">getmempoolancestors</a><br>
-    <a href="getmempooldescendants.html">getmempooldescendants</a><br>
-    <a href="getmempoolentry.html">getmempoolentry</a><br>
-    <a href="getmempoolinfo.html">getmempoolinfo</a><br>
-    <a href="getrawmempool.html">getrawmempool</a><br>
-    <a href="gettxout.html">gettxout</a><br>
-    <a href="gettxoutproof.html">gettxoutproof</a><br>
-    <a href="gettxoutsetinfo.html">gettxoutsetinfo</a><br>
-    <a href="preciousblock.html">preciousblock</a><br>
-    <a href="pruneblockchain.html">pruneblockchain</a><br>
-    <a href="savemempool.html">savemempool</a><br>
-    <a href="verifychain.html">verifychain</a><br>
-    <a href="verifytxoutproof.html">verifytxoutproof</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Control
-  </div>
-  <div class="card-body">
-    <a href="getmemoryinfo.html">getmemoryinfo</a><br>
-    <a href="help.html">help</a><br>
-    <a href="logging.html">logging</a><br>
-    <a href="stop.html">stop</a><br>
-    <a href="uptime.html">uptime</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Generating
-  </div>
-  <div class="card-body">
-    <a href="generate.html">generate</a><br>
-    <a href="generatetoaddress.html">generatetoaddress</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Mining
-  </div>
-  <div class="card-body">
-    <a href="getblocktemplate.html">getblocktemplate</a><br>
-    <a href="getmininginfo.html">getmininginfo</a><br>
-    <a href="getnetworkhashps.html">getnetworkhashps</a><br>
-    <a href="prioritisetransaction.html">prioritisetransaction</a><br>
-    <a href="submitblock.html">submitblock</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Network
-  </div>
-  <div class="card-body">
-    <a href="addnode.html">addnode</a><br>
-    <a href="clearbanned.html">clearbanned</a><br>
-    <a href="disconnectnode.html">disconnectnode</a><br>
-    <a href="getaddednodeinfo.html">getaddednodeinfo</a><br>
-    <a href="getconnectioncount.html">getconnectioncount</a><br>
-    <a href="getnettotals.html">getnettotals</a><br>
-    <a href="getnetworkinfo.html">getnetworkinfo</a><br>
-    <a href="getpeerinfo.html">getpeerinfo</a><br>
-    <a href="listbanned.html">listbanned</a><br>
-    <a href="ping.html">ping</a><br>
-    <a href="setban.html">setban</a><br>
-    <a href="setnetworkactive.html">setnetworkactive</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Rawtransactions
-  </div>
-  <div class="card-body">
-    <a href="combinerawtransaction.html">combinerawtransaction</a><br>
-    <a href="createrawtransaction.html">createrawtransaction</a><br>
-    <a href="decoderawtransaction.html">decoderawtransaction</a><br>
-    <a href="decodescript.html">decodescript</a><br>
-    <a href="fundrawtransaction.html">fundrawtransaction</a><br>
-    <a href="getrawtransaction.html">getrawtransaction</a><br>
-    <a href="sendrawtransaction.html">sendrawtransaction</a><br>
-    <a href="signrawtransaction.html">signrawtransaction</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Util
-  </div>
-  <div class="card-body">
-    <a href="createmultisig.html">createmultisig</a><br>
-    <a href="estimatefee.html">estimatefee</a><br>
-    <a href="estimatesmartfee.html">estimatesmartfee</a><br>
-    <a href="signmessagewithprivkey.html">signmessagewithprivkey</a><br>
-    <a href="validateaddress.html">validateaddress</a><br>
-    <a href="verifymessage.html">verifymessage</a><br>
-  </div>
-</div>
-<br>
-<div class="card">
-  <div class="card-header">
-    Wallet
-  </div>
-  <div class="card-body">
-    <a href="abandontransaction.html">abandontransaction</a><br>
-    <a href="abortrescan.html">abortrescan</a><br>
-    <a href="addmultisigaddress.html">addmultisigaddress</a><br>
-    <a href="backupwallet.html">backupwallet</a><br>
-    <a href="bumpfee.html">bumpfee</a><br>
-    <a href="dumpprivkey.html">dumpprivkey</a><br>
-    <a href="dumpwallet.html">dumpwallet</a><br>
-    <a href="encryptwallet.html">encryptwallet</a><br>
-    <a href="getaccount.html">getaccount</a><br>
-    <a href="getaccountaddress.html">getaccountaddress</a><br>
-    <a href="getaddressesbyaccount.html">getaddressesbyaccount</a><br>
-    <a href="getbalance.html">getbalance</a><br>
-    <a href="getnewaddress.html">getnewaddress</a><br>
-    <a href="getrawchangeaddress.html">getrawchangeaddress</a><br>
-    <a href="getreceivedbyaccount.html">getreceivedbyaccount</a><br>
-    <a href="getreceivedbyaddress.html">getreceivedbyaddress</a><br>
-    <a href="gettransaction.html">gettransaction</a><br>
-    <a href="getunconfirmedbalance.html">getunconfirmedbalance</a><br>
-    <a href="getwalletinfo.html">getwalletinfo</a><br>
-    <a href="importaddress.html">importaddress</a><br>
-    <a href="importmulti.html">importmulti</a><br>
-    <a href="importprivkey.html">importprivkey</a><br>
-    <a href="importprunedfunds.html">importprunedfunds</a><br>
-    <a href="importpubkey.html">importpubkey</a><br>
-    <a href="importwallet.html">importwallet</a><br>
-    <a href="keypoolrefill.html">keypoolrefill</a><br>
-    <a href="listaccounts.html">listaccounts</a><br>
-    <a href="listaddressgroupings.html">listaddressgroupings</a><br>
-    <a href="listlockunspent.html">listlockunspent</a><br>
-    <a href="listreceivedbyaccount.html">listreceivedbyaccount</a><br>
-    <a href="listreceivedbyaddress.html">listreceivedbyaddress</a><br>
-    <a href="listsinceblock.html">listsinceblock</a><br>
-    <a href="listtransactions.html">listtransactions</a><br>
-    <a href="listunspent.html">listunspent</a><br>
-    <a href="listwallets.html">listwallets</a><br>
-    <a href="lockunspent.html">lockunspent</a><br>
-    <a href="move.html">move</a><br>
-    <a href="removeprunedfunds.html">removeprunedfunds</a><br>
-    <a href="rescanblockchain.html">rescanblockchain</a><br>
-    <a href="sendfrom.html">sendfrom</a><br>
-    <a href="sendmany.html">sendmany</a><br>
-    <a href="sendtoaddress.html">sendtoaddress</a><br>
-    <a href="setaccount.html">setaccount</a><br>
-    <a href="settxfee.html">settxfee</a><br>
-    <a href="signmessage.html">signmessage</a><br>
-    <a href="walletlock.html">walletlock</a><br>
-    <a href="walletpassphrase.html">walletpassphrase</a><br>
-    <a href="walletpassphrasechange.html">walletpassphrasechange</a><br>
-  </div>
-</div>
-<br>        </div>
+          
+            <div class="card">
+              <div class="card-header">
+                Blockchain
+              </div>
+              <div class="card-body">
+                
+                  <a href="getbestblockhash.html">getbestblockhash</a>
+                  <br>
+                
+                  <a href="getblock.html">getblock</a>
+                  <br>
+                
+                  <a href="getblockchaininfo.html">getblockchaininfo</a>
+                  <br>
+                
+                  <a href="getblockcount.html">getblockcount</a>
+                  <br>
+                
+                  <a href="getblockhash.html">getblockhash</a>
+                  <br>
+                
+                  <a href="getblockheader.html">getblockheader</a>
+                  <br>
+                
+                  <a href="getchaintips.html">getchaintips</a>
+                  <br>
+                
+                  <a href="getchaintxstats.html">getchaintxstats</a>
+                  <br>
+                
+                  <a href="getdifficulty.html">getdifficulty</a>
+                  <br>
+                
+                  <a href="getmempoolancestors.html">getmempoolancestors</a>
+                  <br>
+                
+                  <a href="getmempooldescendants.html">getmempooldescendants</a>
+                  <br>
+                
+                  <a href="getmempoolentry.html">getmempoolentry</a>
+                  <br>
+                
+                  <a href="getmempoolinfo.html">getmempoolinfo</a>
+                  <br>
+                
+                  <a href="getrawmempool.html">getrawmempool</a>
+                  <br>
+                
+                  <a href="gettxout.html">gettxout</a>
+                  <br>
+                
+                  <a href="gettxoutproof.html">gettxoutproof</a>
+                  <br>
+                
+                  <a href="gettxoutsetinfo.html">gettxoutsetinfo</a>
+                  <br>
+                
+                  <a href="preciousblock.html">preciousblock</a>
+                  <br>
+                
+                  <a href="pruneblockchain.html">pruneblockchain</a>
+                  <br>
+                
+                  <a href="savemempool.html">savemempool</a>
+                  <br>
+                
+                  <a href="verifychain.html">verifychain</a>
+                  <br>
+                
+                  <a href="verifytxoutproof.html">verifytxoutproof</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Control
+              </div>
+              <div class="card-body">
+                
+                  <a href="getmemoryinfo.html">getmemoryinfo</a>
+                  <br>
+                
+                  <a href="help.html">help</a>
+                  <br>
+                
+                  <a href="logging.html">logging</a>
+                  <br>
+                
+                  <a href="stop.html">stop</a>
+                  <br>
+                
+                  <a href="uptime.html">uptime</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Generating
+              </div>
+              <div class="card-body">
+                
+                  <a href="generate.html">generate</a>
+                  <br>
+                
+                  <a href="generatetoaddress.html">generatetoaddress</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Mining
+              </div>
+              <div class="card-body">
+                
+                  <a href="getblocktemplate.html">getblocktemplate</a>
+                  <br>
+                
+                  <a href="getmininginfo.html">getmininginfo</a>
+                  <br>
+                
+                  <a href="getnetworkhashps.html">getnetworkhashps</a>
+                  <br>
+                
+                  <a href="prioritisetransaction.html">prioritisetransaction</a>
+                  <br>
+                
+                  <a href="submitblock.html">submitblock</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Network
+              </div>
+              <div class="card-body">
+                
+                  <a href="addnode.html">addnode</a>
+                  <br>
+                
+                  <a href="clearbanned.html">clearbanned</a>
+                  <br>
+                
+                  <a href="disconnectnode.html">disconnectnode</a>
+                  <br>
+                
+                  <a href="getaddednodeinfo.html">getaddednodeinfo</a>
+                  <br>
+                
+                  <a href="getconnectioncount.html">getconnectioncount</a>
+                  <br>
+                
+                  <a href="getnettotals.html">getnettotals</a>
+                  <br>
+                
+                  <a href="getnetworkinfo.html">getnetworkinfo</a>
+                  <br>
+                
+                  <a href="getpeerinfo.html">getpeerinfo</a>
+                  <br>
+                
+                  <a href="listbanned.html">listbanned</a>
+                  <br>
+                
+                  <a href="ping.html">ping</a>
+                  <br>
+                
+                  <a href="setban.html">setban</a>
+                  <br>
+                
+                  <a href="setnetworkactive.html">setnetworkactive</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Rawtransactions
+              </div>
+              <div class="card-body">
+                
+                  <a href="combinerawtransaction.html">combinerawtransaction</a>
+                  <br>
+                
+                  <a href="createrawtransaction.html">createrawtransaction</a>
+                  <br>
+                
+                  <a href="decoderawtransaction.html">decoderawtransaction</a>
+                  <br>
+                
+                  <a href="decodescript.html">decodescript</a>
+                  <br>
+                
+                  <a href="fundrawtransaction.html">fundrawtransaction</a>
+                  <br>
+                
+                  <a href="getrawtransaction.html">getrawtransaction</a>
+                  <br>
+                
+                  <a href="sendrawtransaction.html">sendrawtransaction</a>
+                  <br>
+                
+                  <a href="signrawtransaction.html">signrawtransaction</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Util
+              </div>
+              <div class="card-body">
+                
+                  <a href="createmultisig.html">createmultisig</a>
+                  <br>
+                
+                  <a href="estimatefee.html">estimatefee</a>
+                  <br>
+                
+                  <a href="estimatesmartfee.html">estimatesmartfee</a>
+                  <br>
+                
+                  <a href="signmessagewithprivkey.html">signmessagewithprivkey</a>
+                  <br>
+                
+                  <a href="validateaddress.html">validateaddress</a>
+                  <br>
+                
+                  <a href="verifymessage.html">verifymessage</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+            <div class="card">
+              <div class="card-header">
+                Wallet
+              </div>
+              <div class="card-body">
+                
+                  <a href="abandontransaction.html">abandontransaction</a>
+                  <br>
+                
+                  <a href="abortrescan.html">abortrescan</a>
+                  <br>
+                
+                  <a href="addmultisigaddress.html">addmultisigaddress</a>
+                  <br>
+                
+                  <a href="backupwallet.html">backupwallet</a>
+                  <br>
+                
+                  <a href="bumpfee.html">bumpfee</a>
+                  <br>
+                
+                  <a href="dumpprivkey.html">dumpprivkey</a>
+                  <br>
+                
+                  <a href="dumpwallet.html">dumpwallet</a>
+                  <br>
+                
+                  <a href="encryptwallet.html">encryptwallet</a>
+                  <br>
+                
+                  <a href="getaccount.html">getaccount</a>
+                  <br>
+                
+                  <a href="getaccountaddress.html">getaccountaddress</a>
+                  <br>
+                
+                  <a href="getaddressesbyaccount.html">getaddressesbyaccount</a>
+                  <br>
+                
+                  <a href="getbalance.html">getbalance</a>
+                  <br>
+                
+                  <a href="getnewaddress.html">getnewaddress</a>
+                  <br>
+                
+                  <a href="getrawchangeaddress.html">getrawchangeaddress</a>
+                  <br>
+                
+                  <a href="getreceivedbyaccount.html">getreceivedbyaccount</a>
+                  <br>
+                
+                  <a href="getreceivedbyaddress.html">getreceivedbyaddress</a>
+                  <br>
+                
+                  <a href="gettransaction.html">gettransaction</a>
+                  <br>
+                
+                  <a href="getunconfirmedbalance.html">getunconfirmedbalance</a>
+                  <br>
+                
+                  <a href="getwalletinfo.html">getwalletinfo</a>
+                  <br>
+                
+                  <a href="importaddress.html">importaddress</a>
+                  <br>
+                
+                  <a href="importmulti.html">importmulti</a>
+                  <br>
+                
+                  <a href="importprivkey.html">importprivkey</a>
+                  <br>
+                
+                  <a href="importprunedfunds.html">importprunedfunds</a>
+                  <br>
+                
+                  <a href="importpubkey.html">importpubkey</a>
+                  <br>
+                
+                  <a href="importwallet.html">importwallet</a>
+                  <br>
+                
+                  <a href="keypoolrefill.html">keypoolrefill</a>
+                  <br>
+                
+                  <a href="listaccounts.html">listaccounts</a>
+                  <br>
+                
+                  <a href="listaddressgroupings.html">listaddressgroupings</a>
+                  <br>
+                
+                  <a href="listlockunspent.html">listlockunspent</a>
+                  <br>
+                
+                  <a href="listreceivedbyaccount.html">listreceivedbyaccount</a>
+                  <br>
+                
+                  <a href="listreceivedbyaddress.html">listreceivedbyaddress</a>
+                  <br>
+                
+                  <a href="listsinceblock.html">listsinceblock</a>
+                  <br>
+                
+                  <a href="listtransactions.html">listtransactions</a>
+                  <br>
+                
+                  <a href="listunspent.html">listunspent</a>
+                  <br>
+                
+                  <a href="listwallets.html">listwallets</a>
+                  <br>
+                
+                  <a href="lockunspent.html">lockunspent</a>
+                  <br>
+                
+                  <a href="move.html">move</a>
+                  <br>
+                
+                  <a href="removeprunedfunds.html">removeprunedfunds</a>
+                  <br>
+                
+                  <a href="rescanblockchain.html">rescanblockchain</a>
+                  <br>
+                
+                  <a href="sendfrom.html">sendfrom</a>
+                  <br>
+                
+                  <a href="sendmany.html">sendmany</a>
+                  <br>
+                
+                  <a href="sendtoaddress.html">sendtoaddress</a>
+                  <br>
+                
+                  <a href="setaccount.html">setaccount</a>
+                  <br>
+                
+                  <a href="settxfee.html">settxfee</a>
+                  <br>
+                
+                  <a href="signmessage.html">signmessage</a>
+                  <br>
+                
+                  <a href="walletlock.html">walletlock</a>
+                  <br>
+                
+                  <a href="walletpassphrase.html">walletpassphrase</a>
+                  <br>
+                
+                  <a href="walletpassphrasechange.html">walletpassphrasechange</a>
+                  <br>
+                
+              </div>
+            </div>
+            <br>
+          
+        </div>  
       </div>
-    </main> <!-- /container -->
+    </main> 
   </body>
-</html>
+</html>		
