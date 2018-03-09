@@ -84,7 +84,7 @@ func main() {
 	}
 	check(ioutil.WriteFile("tmp-menu.inc", []byte(menuStr), 0644))
 
-	runBash("cat start.inc index.inc mid.inc tmp.inc end.inc | sed 's/XXX/Main page/' > index.html")
+	runBash("cat start.inc index.inc mid.inc tmp-menu.inc end.inc | sed 's/XXX/Main page/' > index.html")
 
 	for _, group := range groups {
 		for _, command := range group.commands {
