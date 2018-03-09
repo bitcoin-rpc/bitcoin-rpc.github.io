@@ -35,29 +35,29 @@
         <div class="col-8">
           <h1>decodescript - Bitcoin RPC</h1>
           <pre>
-decodescript "hexstring"
+decodescript &#34;hexstring&#34;
 
 Decode a hex-encoded script.
 
 Arguments:
-1. "hexstring"     (string) the hex encoded script
+1. &#34;hexstring&#34;     (string) the hex encoded script
 
 Result:
 {
-  "asm":"asm",   (string) Script public key
-  "hex":"hex",   (string) hex encoded public key
-  "type":"type", (string) The output type
-  "reqSigs": n,    (numeric) The required signatures
-  "addresses": [   (json array of string)
-     "address"     (string) bitcoin address
+  &#34;asm&#34;:&#34;asm&#34;,   (string) Script public key
+  &#34;hex&#34;:&#34;hex&#34;,   (string) hex encoded public key
+  &#34;type&#34;:&#34;type&#34;, (string) The output type
+  &#34;reqSigs&#34;: n,    (numeric) The required signatures
+  &#34;addresses&#34;: [   (json array of string)
+     &#34;address&#34;     (string) bitcoin address
      ,...
   ],
-  "p2sh","address" (string) address of P2SH script wrapping this redeem script (not returned if the script is already a P2SH).
+  &#34;p2sh&#34;,&#34;address&#34; (string) address of P2SH script wrapping this redeem script (not returned if the script is already a P2SH).
 }
 
 Examples:
-> bitcoin-cli decodescript "hexstring"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decodescript", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli decodescript &#34;hexstring&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;decodescript&#34;, &#34;params&#34;: [&#34;hexstring&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

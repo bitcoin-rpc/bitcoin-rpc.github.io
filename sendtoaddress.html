@@ -35,35 +35,35 @@
         <div class="col-8">
           <h1>sendtoaddress - Bitcoin RPC</h1>
           <pre>
-sendtoaddress "address" amount ( "comment" "comment_to" subtractfeefromamount replaceable conf_target "estimate_mode")
+sendtoaddress &#34;address&#34; amount ( &#34;comment&#34; &#34;comment_to&#34; subtractfeefromamount replaceable conf_target &#34;estimate_mode&#34;)
 
 Send an amount to a given address.
 
 Arguments:
-1. "address"            (string, required) The bitcoin address to send to.
-2. "amount"             (numeric or string, required) The amount in BTC to send. eg 0.1
-3. "comment"            (string, optional) A comment used to store what the transaction is for. 
+1. &#34;address&#34;            (string, required) The bitcoin address to send to.
+2. &#34;amount&#34;             (numeric or string, required) The amount in BTC to send. eg 0.1
+3. &#34;comment&#34;            (string, optional) A comment used to store what the transaction is for. 
                              This is not part of the transaction, just kept in your wallet.
-4. "comment_to"         (string, optional) A comment to store the name of the person or organization 
-                             to which you're sending the transaction. This is not part of the 
+4. &#34;comment_to&#34;         (string, optional) A comment to store the name of the person or organization 
+                             to which you&#39;re sending the transaction. This is not part of the 
                              transaction, just kept in your wallet.
 5. subtractfeefromamount  (boolean, optional, default=false) The fee will be deducted from the amount being sent.
                              The recipient will receive less bitcoins than you enter in the amount field.
 6. replaceable            (boolean, optional) Allow this transaction to be replaced by a transaction with higher fees via BIP 125
 7. conf_target            (numeric, optional) Confirmation target (in blocks)
-8. "estimate_mode"      (string, optional, default=UNSET) The fee estimate mode, must be one of:
-       "UNSET"
-       "ECONOMICAL"
-       "CONSERVATIVE"
+8. &#34;estimate_mode&#34;      (string, optional, default=UNSET) The fee estimate mode, must be one of:
+       &#34;UNSET&#34;
+       &#34;ECONOMICAL&#34;
+       &#34;CONSERVATIVE&#34;
 
 Result:
-"txid"                  (string) The transaction id.
+&#34;txid&#34;                  (string) The transaction id.
 
 Examples:
-> bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1
-> bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1 "donation" "seans outpost"
-> bitcoin-cli sendtoaddress "1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd" 0.1 "" "" true
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendtoaddress", "params": ["1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd", 0.1, "donation", "seans outpost"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli sendtoaddress &#34;1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd&#34; 0.1
+&gt; bitcoin-cli sendtoaddress &#34;1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd&#34; 0.1 &#34;donation&#34; &#34;seans outpost&#34;
+&gt; bitcoin-cli sendtoaddress &#34;1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd&#34; 0.1 &#34;&#34; &#34;&#34; true
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;sendtoaddress&#34;, &#34;params&#34;: [&#34;1M72Sfpbz1BPpXFHz9m3CdqATR44Jvaydd&#34;, 0.1, &#34;donation&#34;, &#34;seans outpost&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

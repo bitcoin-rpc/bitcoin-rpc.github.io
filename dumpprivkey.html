@@ -35,21 +35,21 @@
         <div class="col-8">
           <h1>dumpprivkey - Bitcoin RPC</h1>
           <pre>
-dumpprivkey "address"
+dumpprivkey &#34;address&#34;
 
-Reveals the private key corresponding to 'address'.
+Reveals the private key corresponding to &#39;address&#39;.
 Then the importprivkey can be used with this output
 
 Arguments:
-1. "address"   (string, required) The bitcoin address for the private key
+1. &#34;address&#34;   (string, required) The bitcoin address for the private key
 
 Result:
-"key"                (string) The private key
+&#34;key&#34;                (string) The private key
 
 Examples:
-> bitcoin-cli dumpprivkey "myaddress"
-> bitcoin-cli importprivkey "mykey"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "dumpprivkey", "params": ["myaddress"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli dumpprivkey &#34;myaddress&#34;
+&gt; bitcoin-cli importprivkey &#34;mykey&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;dumpprivkey&#34;, &#34;params&#34;: [&#34;myaddress&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

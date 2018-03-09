@@ -35,12 +35,12 @@
         <div class="col-8">
           <h1>getreceivedbyaccount - Bitcoin RPC</h1>
           <pre>
-getreceivedbyaccount "account" ( minconf )
+getreceivedbyaccount &#34;account&#34; ( minconf )
 
-DEPRECATED. Returns the total amount received by addresses with <account> in transactions with at least [minconf] confirmations.
+DEPRECATED. Returns the total amount received by addresses with &lt;account&gt; in transactions with at least [minconf] confirmations.
 
 Arguments:
-1. "account"      (string, required) The selected account, may be the default account using "".
+1. &#34;account&#34;      (string, required) The selected account, may be the default account using &#34;&#34;.
 2. minconf          (numeric, optional, default=1) Only include transactions confirmed at least this many times.
 
 Result:
@@ -49,16 +49,16 @@ amount              (numeric) The total amount in BTC received for this account.
 Examples:
 
 Amount received by the default account with at least 1 confirmation
-> bitcoin-cli getreceivedbyaccount ""
+&gt; bitcoin-cli getreceivedbyaccount &#34;&#34;
 
 Amount received at the tabby account including unconfirmed amounts with zero confirmations
-> bitcoin-cli getreceivedbyaccount "tabby" 0
+&gt; bitcoin-cli getreceivedbyaccount &#34;tabby&#34; 0
 
 The amount with at least 6 confirmations
-> bitcoin-cli getreceivedbyaccount "tabby" 6
+&gt; bitcoin-cli getreceivedbyaccount &#34;tabby&#34; 6
 
 As a json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getreceivedbyaccount", "params": ["tabby", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getreceivedbyaccount&#34;, &#34;params&#34;: [&#34;tabby&#34;, 6] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

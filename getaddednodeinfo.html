@@ -35,23 +35,23 @@
         <div class="col-8">
           <h1>getaddednodeinfo - Bitcoin RPC</h1>
           <pre>
-getaddednodeinfo ( "node" )
+getaddednodeinfo ( &#34;node&#34; )
 
 Returns information about the given added node, or all added nodes
 (note that onetry addnodes are not listed here)
 
 Arguments:
-1. "node"   (string, optional) If provided, return information about this specific node, otherwise all nodes are returned.
+1. &#34;node&#34;   (string, optional) If provided, return information about this specific node, otherwise all nodes are returned.
 
 Result:
 [
   {
-    "addednode" : "192.168.0.201",   (string) The node IP address or name (as provided to addnode)
-    "connected" : true|false,          (boolean) If connected
-    "addresses" : [                    (list of objects) Only when connected = true
+    &#34;addednode&#34; : &#34;192.168.0.201&#34;,   (string) The node IP address or name (as provided to addnode)
+    &#34;connected&#34; : true|false,          (boolean) If connected
+    &#34;addresses&#34; : [                    (list of objects) Only when connected = true
        {
-         "address" : "192.168.0.201:8333",  (string) The bitcoin server IP and port we're connected to
-         "connected" : "outbound"           (string) connection, inbound or outbound
+         &#34;address&#34; : &#34;192.168.0.201:8333&#34;,  (string) The bitcoin server IP and port we&#39;re connected to
+         &#34;connected&#34; : &#34;outbound&#34;           (string) connection, inbound or outbound
        }
      ]
   }
@@ -59,8 +59,8 @@ Result:
 ]
 
 Examples:
-> bitcoin-cli getaddednodeinfo "192.168.0.201"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaddednodeinfo", "params": ["192.168.0.201"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getaddednodeinfo &#34;192.168.0.201&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getaddednodeinfo&#34;, &#34;params&#34;: [&#34;192.168.0.201&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

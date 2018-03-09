@@ -35,23 +35,23 @@
         <div class="col-8">
           <h1>importwallet - Bitcoin RPC</h1>
           <pre>
-importwallet "filename"
+importwallet &#34;filename&#34;
 
 Imports keys from a wallet dump file (see dumpwallet). Requires a new wallet backup to include imported keys.
 
 Arguments:
-1. "filename"    (string, required) The wallet file
+1. &#34;filename&#34;    (string, required) The wallet file
 
 Examples:
 
 Dump the wallet
-> bitcoin-cli dumpwallet "test"
+&gt; bitcoin-cli dumpwallet &#34;test&#34;
 
 Import the wallet
-> bitcoin-cli importwallet "test"
+&gt; bitcoin-cli importwallet &#34;test&#34;
 
 Import using the json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importwallet", "params": ["test"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;importwallet&#34;, &#34;params&#34;: [&#34;test&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

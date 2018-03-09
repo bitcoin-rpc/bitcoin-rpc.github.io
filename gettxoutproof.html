@@ -35,9 +35,9 @@
         <div class="col-8">
           <h1>gettxoutproof - Bitcoin RPC</h1>
           <pre>
-gettxoutproof ["txid",...] ( blockhash )
+gettxoutproof [&#34;txid&#34;,...] ( blockhash )
 
-Returns a hex-encoded proof that "txid" was included in a block.
+Returns a hex-encoded proof that &#34;txid&#34; was included in a block.
 
 NOTE: By default this function only works sometimes. This is when there is an
 unspent output in the utxo for this transaction. To make it always work,
@@ -45,15 +45,15 @@ you need to maintain a transaction index, using the -txindex command line option
 specify the block in which the transaction is included manually (by blockhash).
 
 Arguments:
-1. "txids"       (string) A json array of txids to filter
+1. &#34;txids&#34;       (string) A json array of txids to filter
     [
-      "txid"     (string) A transaction hash
+      &#34;txid&#34;     (string) A transaction hash
       ,...
     ]
-2. "blockhash"   (string, optional) If specified, looks for txid in the block with this hash
+2. &#34;blockhash&#34;   (string, optional) If specified, looks for txid in the block with this hash
 
 Result:
-"data"           (string) A string that is a serialized, hex-encoded data for the proof.
+&#34;data&#34;           (string) A string that is a serialized, hex-encoded data for the proof.
 
           </pre>
           <hr>

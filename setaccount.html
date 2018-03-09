@@ -35,17 +35,17 @@
         <div class="col-8">
           <h1>setaccount - Bitcoin RPC</h1>
           <pre>
-setaccount "address" "account"
+setaccount &#34;address&#34; &#34;account&#34;
 
 DEPRECATED. Sets the account associated with the given address.
 
 Arguments:
-1. "address"         (string, required) The bitcoin address to be associated with an account.
-2. "account"         (string, required) The account to assign the address to.
+1. &#34;address&#34;         (string, required) The bitcoin address to be associated with an account.
+2. &#34;account&#34;         (string, required) The account to assign the address to.
 
 Examples:
-> bitcoin-cli setaccount "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "tabby"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "setaccount", "params": ["1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX", "tabby"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli setaccount &#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34; &#34;tabby&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;setaccount&#34;, &#34;params&#34;: [&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34;, &#34;tabby&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -40,23 +40,23 @@ Returns an object containing various wallet state info.
 
 Result:
 {
-  "walletname": xxxxx,             (string) the wallet name
-  "walletversion": xxxxx,          (numeric) the wallet version
-  "balance": xxxxxxx,              (numeric) the total confirmed balance of the wallet in BTC
-  "unconfirmed_balance": xxx,      (numeric) the total unconfirmed balance of the wallet in BTC
-  "immature_balance": xxxxxx,      (numeric) the total immature balance of the wallet in BTC
-  "txcount": xxxxxxx,              (numeric) the total number of transactions in the wallet
-  "keypoololdest": xxxxxx,         (numeric) the timestamp (seconds since Unix epoch) of the oldest pre-generated key in the key pool
-  "keypoolsize": xxxx,             (numeric) how many new keys are pre-generated (only counts external keys)
-  "keypoolsize_hd_internal": xxxx, (numeric) how many new keys are pre-generated for internal use (used for change outputs, only appears if the wallet is using this feature, otherwise external keys are used)
-  "unlocked_until": ttt,           (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked
-  "paytxfee": x.xxxx,              (numeric) the transaction fee configuration, set in BTC/kB
-  "hdmasterkeyid": "<hash160>"     (string, optional) the Hash160 of the HD master pubkey (only present when HD is enabled)
+  &#34;walletname&#34;: xxxxx,             (string) the wallet name
+  &#34;walletversion&#34;: xxxxx,          (numeric) the wallet version
+  &#34;balance&#34;: xxxxxxx,              (numeric) the total confirmed balance of the wallet in BTC
+  &#34;unconfirmed_balance&#34;: xxx,      (numeric) the total unconfirmed balance of the wallet in BTC
+  &#34;immature_balance&#34;: xxxxxx,      (numeric) the total immature balance of the wallet in BTC
+  &#34;txcount&#34;: xxxxxxx,              (numeric) the total number of transactions in the wallet
+  &#34;keypoololdest&#34;: xxxxxx,         (numeric) the timestamp (seconds since Unix epoch) of the oldest pre-generated key in the key pool
+  &#34;keypoolsize&#34;: xxxx,             (numeric) how many new keys are pre-generated (only counts external keys)
+  &#34;keypoolsize_hd_internal&#34;: xxxx, (numeric) how many new keys are pre-generated for internal use (used for change outputs, only appears if the wallet is using this feature, otherwise external keys are used)
+  &#34;unlocked_until&#34;: ttt,           (numeric) the timestamp in seconds since epoch (midnight Jan 1 1970 GMT) that the wallet is unlocked for transfers, or 0 if the wallet is locked
+  &#34;paytxfee&#34;: x.xxxx,              (numeric) the transaction fee configuration, set in BTC/kB
+  &#34;hdmasterkeyid&#34;: &#34;&lt;hash160&gt;&#34;     (string, optional) the Hash160 of the HD master pubkey (only present when HD is enabled)
 }
 
 Examples:
-> bitcoin-cli getwalletinfo 
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getwalletinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getwalletinfo 
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getwalletinfo&#34;, &#34;params&#34;: [] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -40,39 +40,39 @@ getmempooldescendants txid (verbose)
 If txid is in the mempool, returns all in-mempool descendants.
 
 Arguments:
-1. "txid"                 (string, required) The transaction id (must be in mempool)
+1. &#34;txid&#34;                 (string, required) The transaction id (must be in mempool)
 2. verbose                  (boolean, optional, default=false) True for a json object, false for array of transaction ids
 
 Result (for verbose=false):
 [                       (json array of strings)
-  "transactionid"           (string) The transaction id of an in-mempool descendant transaction
+  &#34;transactionid&#34;           (string) The transaction id of an in-mempool descendant transaction
   ,...
 ]
 
 Result (for verbose=true):
 {                           (json object)
-  "transactionid" : {       (json object)
-    "size" : n,             (numeric) virtual transaction size as defined in BIP 141. This is different from actual serialized size for witness transactions as witness data is discounted.
-    "fee" : n,              (numeric) transaction fee in BTC
-    "modifiedfee" : n,      (numeric) transaction fee with fee deltas used for mining priority
-    "time" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT
-    "height" : n,           (numeric) block height when transaction entered pool
-    "descendantcount" : n,  (numeric) number of in-mempool descendant transactions (including this one)
-    "descendantsize" : n,   (numeric) virtual transaction size of in-mempool descendants (including this one)
-    "descendantfees" : n,   (numeric) modified fees (see above) of in-mempool descendants (including this one)
-    "ancestorcount" : n,    (numeric) number of in-mempool ancestor transactions (including this one)
-    "ancestorsize" : n,     (numeric) virtual transaction size of in-mempool ancestors (including this one)
-    "ancestorfees" : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one)
-    "wtxid" : hash,         (string) hash of serialized transaction, including witness data
-    "depends" : [           (array) unconfirmed transactions used as inputs for this transaction
-        "transactionid",    (string) parent transaction id
+  &#34;transactionid&#34; : {       (json object)
+    &#34;size&#34; : n,             (numeric) virtual transaction size as defined in BIP 141. This is different from actual serialized size for witness transactions as witness data is discounted.
+    &#34;fee&#34; : n,              (numeric) transaction fee in BTC
+    &#34;modifiedfee&#34; : n,      (numeric) transaction fee with fee deltas used for mining priority
+    &#34;time&#34; : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT
+    &#34;height&#34; : n,           (numeric) block height when transaction entered pool
+    &#34;descendantcount&#34; : n,  (numeric) number of in-mempool descendant transactions (including this one)
+    &#34;descendantsize&#34; : n,   (numeric) virtual transaction size of in-mempool descendants (including this one)
+    &#34;descendantfees&#34; : n,   (numeric) modified fees (see above) of in-mempool descendants (including this one)
+    &#34;ancestorcount&#34; : n,    (numeric) number of in-mempool ancestor transactions (including this one)
+    &#34;ancestorsize&#34; : n,     (numeric) virtual transaction size of in-mempool ancestors (including this one)
+    &#34;ancestorfees&#34; : n,     (numeric) modified fees (see above) of in-mempool ancestors (including this one)
+    &#34;wtxid&#34; : hash,         (string) hash of serialized transaction, including witness data
+    &#34;depends&#34; : [           (array) unconfirmed transactions used as inputs for this transaction
+        &#34;transactionid&#34;,    (string) parent transaction id
        ... ]
   }, ...
 }
 
 Examples:
-> bitcoin-cli getmempooldescendants "mytxid"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmempooldescendants", "params": ["mytxid"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getmempooldescendants &#34;mytxid&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getmempooldescendants&#34;, &#34;params&#34;: [&#34;mytxid&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

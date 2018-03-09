@@ -42,23 +42,23 @@ and current time.
 
 Result:
 {
-  "totalbytesrecv": n,   (numeric) Total bytes received
-  "totalbytessent": n,   (numeric) Total bytes sent
-  "timemillis": t,       (numeric) Current UNIX time in milliseconds
-  "uploadtarget":
+  &#34;totalbytesrecv&#34;: n,   (numeric) Total bytes received
+  &#34;totalbytessent&#34;: n,   (numeric) Total bytes sent
+  &#34;timemillis&#34;: t,       (numeric) Current UNIX time in milliseconds
+  &#34;uploadtarget&#34;:
   {
-    "timeframe": n,                         (numeric) Length of the measuring timeframe in seconds
-    "target": n,                            (numeric) Target in bytes
-    "target_reached": true|false,           (boolean) True if target is reached
-    "serve_historical_blocks": true|false,  (boolean) True if serving historical blocks
-    "bytes_left_in_cycle": t,               (numeric) Bytes left in current time cycle
-    "time_left_in_cycle": t                 (numeric) Seconds left in current time cycle
+    &#34;timeframe&#34;: n,                         (numeric) Length of the measuring timeframe in seconds
+    &#34;target&#34;: n,                            (numeric) Target in bytes
+    &#34;target_reached&#34;: true|false,           (boolean) True if target is reached
+    &#34;serve_historical_blocks&#34;: true|false,  (boolean) True if serving historical blocks
+    &#34;bytes_left_in_cycle&#34;: t,               (numeric) Bytes left in current time cycle
+    &#34;time_left_in_cycle&#34;: t                 (numeric) Seconds left in current time cycle
   }
 }
 
 Examples:
-> bitcoin-cli getnettotals 
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnettotals", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getnettotals 
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getnettotals&#34;, &#34;params&#34;: [] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

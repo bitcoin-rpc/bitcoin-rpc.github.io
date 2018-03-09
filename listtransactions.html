@@ -35,68 +35,68 @@
         <div class="col-8">
           <h1>listtransactions - Bitcoin RPC</h1>
           <pre>
-listtransactions ( "account" count skip include_watchonly)
+listtransactions ( &#34;account&#34; count skip include_watchonly)
 
-Returns up to 'count' most recent transactions skipping the first 'from' transactions for account 'account'.
+Returns up to &#39;count&#39; most recent transactions skipping the first &#39;from&#39; transactions for account &#39;account&#39;.
 
 Arguments:
-1. "account"    (string, optional) DEPRECATED. The account name. Should be "*".
+1. &#34;account&#34;    (string, optional) DEPRECATED. The account name. Should be &#34;*&#34;.
 2. count          (numeric, optional, default=10) The number of transactions to return
 3. skip           (numeric, optional, default=0) The number of transactions to skip
-4. include_watchonly (bool, optional, default=false) Include transactions to watch-only addresses (see 'importaddress')
+4. include_watchonly (bool, optional, default=false) Include transactions to watch-only addresses (see &#39;importaddress&#39;)
 
 Result:
 [
   {
-    "account":"accountname",       (string) DEPRECATED. The account name associated with the transaction. 
-                                                It will be "" for the default account.
-    "address":"address",    (string) The bitcoin address of the transaction. Not present for 
+    &#34;account&#34;:&#34;accountname&#34;,       (string) DEPRECATED. The account name associated with the transaction. 
+                                                It will be &#34;&#34; for the default account.
+    &#34;address&#34;:&#34;address&#34;,    (string) The bitcoin address of the transaction. Not present for 
                                                 move transactions (category = move).
-    "category":"send|receive|move", (string) The transaction category. 'move' is a local (off blockchain)
+    &#34;category&#34;:&#34;send|receive|move&#34;, (string) The transaction category. &#39;move&#39; is a local (off blockchain)
                                                 transaction between accounts, and not associated with an address,
-                                                transaction id or block. 'send' and 'receive' transactions are 
+                                                transaction id or block. &#39;send&#39; and &#39;receive&#39; transactions are 
                                                 associated with an address, transaction id and block details
-    "amount": x.xxx,          (numeric) The amount in BTC. This is negative for the 'send' category, and for the
-                                         'move' category for moves outbound. It is positive for the 'receive' category,
-                                         and for the 'move' category for inbound funds.
-    "label": "label",       (string) A comment for the address/transaction, if any
-    "vout": n,                (numeric) the vout value
-    "fee": x.xxx,             (numeric) The amount of the fee in BTC. This is negative and only available for the 
-                                         'send' category of transactions.
-    "confirmations": n,       (numeric) The number of confirmations for the transaction. Available for 'send' and 
-                                         'receive' category of transactions. Negative confirmations indicate the
+    &#34;amount&#34;: x.xxx,          (numeric) The amount in BTC. This is negative for the &#39;send&#39; category, and for the
+                                         &#39;move&#39; category for moves outbound. It is positive for the &#39;receive&#39; category,
+                                         and for the &#39;move&#39; category for inbound funds.
+    &#34;label&#34;: &#34;label&#34;,       (string) A comment for the address/transaction, if any
+    &#34;vout&#34;: n,                (numeric) the vout value
+    &#34;fee&#34;: x.xxx,             (numeric) The amount of the fee in BTC. This is negative and only available for the 
+                                         &#39;send&#39; category of transactions.
+    &#34;confirmations&#34;: n,       (numeric) The number of confirmations for the transaction. Available for &#39;send&#39; and 
+                                         &#39;receive&#39; category of transactions. Negative confirmations indicate the
                                          transaction conflicts with the block chain
-    "trusted": xxx,           (bool) Whether we consider the outputs of this unconfirmed transaction safe to spend.
-    "blockhash": "hashvalue", (string) The block hash containing the transaction. Available for 'send' and 'receive'
+    &#34;trusted&#34;: xxx,           (bool) Whether we consider the outputs of this unconfirmed transaction safe to spend.
+    &#34;blockhash&#34;: &#34;hashvalue&#34;, (string) The block hash containing the transaction. Available for &#39;send&#39; and &#39;receive&#39;
                                           category of transactions.
-    "blockindex": n,          (numeric) The index of the transaction in the block that includes it. Available for 'send' and 'receive'
+    &#34;blockindex&#34;: n,          (numeric) The index of the transaction in the block that includes it. Available for &#39;send&#39; and &#39;receive&#39;
                                           category of transactions.
-    "blocktime": xxx,         (numeric) The block time in seconds since epoch (1 Jan 1970 GMT).
-    "txid": "transactionid", (string) The transaction id. Available for 'send' and 'receive' category of transactions.
-    "time": xxx,              (numeric) The transaction time in seconds since epoch (midnight Jan 1 1970 GMT).
-    "timereceived": xxx,      (numeric) The time received in seconds since epoch (midnight Jan 1 1970 GMT). Available 
-                                          for 'send' and 'receive' category of transactions.
-    "comment": "...",       (string) If a comment is associated with the transaction.
-    "otheraccount": "accountname",  (string) DEPRECATED. For the 'move' category of transactions, the account the funds came 
+    &#34;blocktime&#34;: xxx,         (numeric) The block time in seconds since epoch (1 Jan 1970 GMT).
+    &#34;txid&#34;: &#34;transactionid&#34;, (string) The transaction id. Available for &#39;send&#39; and &#39;receive&#39; category of transactions.
+    &#34;time&#34;: xxx,              (numeric) The transaction time in seconds since epoch (midnight Jan 1 1970 GMT).
+    &#34;timereceived&#34;: xxx,      (numeric) The time received in seconds since epoch (midnight Jan 1 1970 GMT). Available 
+                                          for &#39;send&#39; and &#39;receive&#39; category of transactions.
+    &#34;comment&#34;: &#34;...&#34;,       (string) If a comment is associated with the transaction.
+    &#34;otheraccount&#34;: &#34;accountname&#34;,  (string) DEPRECATED. For the &#39;move&#39; category of transactions, the account the funds came 
                                           from (for receiving funds, positive amounts), or went to (for sending funds,
                                           negative amounts).
-    "bip125-replaceable": "yes|no|unknown",  (string) Whether this transaction could be replaced due to BIP125 (replace-by-fee);
+    &#34;bip125-replaceable&#34;: &#34;yes|no|unknown&#34;,  (string) Whether this transaction could be replaced due to BIP125 (replace-by-fee);
                                                      may be unknown for unconfirmed transactions not in the mempool
-    "abandoned": xxx          (bool) 'true' if the transaction has been abandoned (inputs are respendable). Only available for the 
-                                         'send' category of transactions.
+    &#34;abandoned&#34;: xxx          (bool) &#39;true&#39; if the transaction has been abandoned (inputs are respendable). Only available for the 
+                                         &#39;send&#39; category of transactions.
   }
 ]
 
 Examples:
 
 List the most recent 10 transactions in the systems
-> bitcoin-cli listtransactions 
+&gt; bitcoin-cli listtransactions 
 
 List transactions 100 to 120
-> bitcoin-cli listtransactions "*" 20 100
+&gt; bitcoin-cli listtransactions &#34;*&#34; 20 100
 
 As a json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listtransactions", "params": ["*", 20, 100] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;listtransactions&#34;, &#34;params&#34;: [&#34;*&#34;, 20, 100] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -35,28 +35,28 @@
         <div class="col-8">
           <h1>createrawtransaction - Bitcoin RPC</h1>
           <pre>
-createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,"data":"hex",...} ( locktime ) ( replaceable )
+createrawtransaction [{&#34;txid&#34;:&#34;id&#34;,&#34;vout&#34;:n},...] {&#34;address&#34;:amount,&#34;data&#34;:&#34;hex&#34;,...} ( locktime ) ( replaceable )
 
 Create a transaction spending the given inputs and creating new outputs.
 Outputs can be addresses or data.
 Returns hex-encoded raw transaction.
-Note that the transaction's inputs are not signed, and
+Note that the transaction&#39;s inputs are not signed, and
 it is not stored in the wallet or transmitted to the network.
 
 Arguments:
-1. "inputs"                (array, required) A json array of json objects
+1. &#34;inputs&#34;                (array, required) A json array of json objects
      [
        {
-         "txid":"id",    (string, required) The transaction id
-         "vout":n,         (numeric, required) The output number
-         "sequence":n      (numeric, optional) The sequence number
+         &#34;txid&#34;:&#34;id&#34;,    (string, required) The transaction id
+         &#34;vout&#34;:n,         (numeric, required) The output number
+         &#34;sequence&#34;:n      (numeric, optional) The sequence number
        } 
        ,...
      ]
-2. "outputs"               (object, required) a json object with outputs
+2. &#34;outputs&#34;               (object, required) a json object with outputs
     {
-      "address": x.xxx,    (numeric or string, required) The key is the bitcoin address, the numeric value (can be string) is the BTC amount
-      "data": "hex"      (string, required) The key is "data", the value is hex encoded data
+      &#34;address&#34;: x.xxx,    (numeric or string, required) The key is the bitcoin address, the numeric value (can be string) is the BTC amount
+      &#34;data&#34;: &#34;hex&#34;      (string, required) The key is &#34;data&#34;, the value is hex encoded data
       ,...
     }
 3. locktime                  (numeric, optional, default=0) Raw locktime. Non-0 value also locktime-activates inputs
@@ -64,13 +64,13 @@ Arguments:
                              Allows this transaction to be replaced by a transaction with higher fees. If provided, it is an error if explicit sequence numbers are incompatible.
 
 Result:
-"transaction"              (string) hex string of the transaction
+&#34;transaction&#34;              (string) hex string of the transaction
 
 Examples:
-> bitcoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "{\"address\":0.01}"
-> bitcoin-cli createrawtransaction "[{\"txid\":\"myid\",\"vout\":0}]" "{\"data\":\"00010203\"}"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "{\"address\":0.01}"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "createrawtransaction", "params": ["[{\"txid\":\"myid\",\"vout\":0}]", "{\"data\":\"00010203\"}"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli createrawtransaction &#34;[{\&#34;txid\&#34;:\&#34;myid\&#34;,\&#34;vout\&#34;:0}]&#34; &#34;{\&#34;address\&#34;:0.01}&#34;
+&gt; bitcoin-cli createrawtransaction &#34;[{\&#34;txid\&#34;:\&#34;myid\&#34;,\&#34;vout\&#34;:0}]&#34; &#34;{\&#34;data\&#34;:\&#34;00010203\&#34;}&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;createrawtransaction&#34;, &#34;params&#34;: [&#34;[{\&#34;txid\&#34;:\&#34;myid\&#34;,\&#34;vout\&#34;:0}]&#34;, &#34;{\&#34;address\&#34;:0.01}&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;createrawtransaction&#34;, &#34;params&#34;: [&#34;[{\&#34;txid\&#34;:\&#34;myid\&#34;,\&#34;vout\&#34;:0}]&#34;, &#34;{\&#34;data\&#34;:\&#34;00010203\&#34;}&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

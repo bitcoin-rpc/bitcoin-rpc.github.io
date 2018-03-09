@@ -41,25 +41,25 @@ DEPRECATED. List balances by account.
 
 Arguments:
 1. minconf           (numeric, optional, default=1) The minimum number of confirmations before payments are included.
-2. include_empty     (bool, optional, default=false) Whether to include accounts that haven't received any payments.
-3. include_watchonly (bool, optional, default=false) Whether to include watch-only addresses (see 'importaddress').
+2. include_empty     (bool, optional, default=false) Whether to include accounts that haven&#39;t received any payments.
+3. include_watchonly (bool, optional, default=false) Whether to include watch-only addresses (see &#39;importaddress&#39;).
 
 Result:
 [
   {
-    "involvesWatchonly" : true,   (bool) Only returned if imported addresses were involved in transaction
-    "account" : "accountname",  (string) The account name of the receiving account
-    "amount" : x.xxx,             (numeric) The total amount received by addresses with this account
-    "confirmations" : n,          (numeric) The number of confirmations of the most recent transaction included
-    "label" : "label"           (string) A comment for the address/transaction, if any
+    &#34;involvesWatchonly&#34; : true,   (bool) Only returned if imported addresses were involved in transaction
+    &#34;account&#34; : &#34;accountname&#34;,  (string) The account name of the receiving account
+    &#34;amount&#34; : x.xxx,             (numeric) The total amount received by addresses with this account
+    &#34;confirmations&#34; : n,          (numeric) The number of confirmations of the most recent transaction included
+    &#34;label&#34; : &#34;label&#34;           (string) A comment for the address/transaction, if any
   }
   ,...
 ]
 
 Examples:
-> bitcoin-cli listreceivedbyaccount 
-> bitcoin-cli listreceivedbyaccount 6 true
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listreceivedbyaccount", "params": [6, true, true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli listreceivedbyaccount 
+&gt; bitcoin-cli listreceivedbyaccount 6 true
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;listreceivedbyaccount&#34;, &#34;params&#34;: [6, true, true] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

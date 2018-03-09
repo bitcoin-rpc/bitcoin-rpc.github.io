@@ -35,16 +35,16 @@
         <div class="col-8">
           <h1>backupwallet - Bitcoin RPC</h1>
           <pre>
-backupwallet "destination"
+backupwallet &#34;destination&#34;
 
 Safely copies current wallet file to destination, which can be a directory or a path with filename.
 
 Arguments:
-1. "destination"   (string) The destination directory or file
+1. &#34;destination&#34;   (string) The destination directory or file
 
 Examples:
-> bitcoin-cli backupwallet "backup.dat"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "backupwallet", "params": ["backup.dat"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli backupwallet &#34;backup.dat&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;backupwallet&#34;, &#34;params&#34;: [&#34;backup.dat&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

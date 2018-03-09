@@ -35,12 +35,12 @@
         <div class="col-8">
           <h1>getreceivedbyaddress - Bitcoin RPC</h1>
           <pre>
-getreceivedbyaddress "address" ( minconf )
+getreceivedbyaddress &#34;address&#34; ( minconf )
 
 Returns the total amount received by the given address in transactions with at least minconf confirmations.
 
 Arguments:
-1. "address"         (string, required) The bitcoin address for transactions.
+1. &#34;address&#34;         (string, required) The bitcoin address for transactions.
 2. minconf             (numeric, optional, default=1) Only include transactions confirmed at least this many times.
 
 Result:
@@ -49,16 +49,16 @@ amount   (numeric) The total amount in BTC received at this address.
 Examples:
 
 The amount from transactions with at least 1 confirmation
-> bitcoin-cli getreceivedbyaddress "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX"
+&gt; bitcoin-cli getreceivedbyaddress &#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34;
 
 The amount including unconfirmed transactions, zero confirmations
-> bitcoin-cli getreceivedbyaddress "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" 0
+&gt; bitcoin-cli getreceivedbyaddress &#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34; 0
 
 The amount with at least 6 confirmations
-> bitcoin-cli getreceivedbyaddress "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" 6
+&gt; bitcoin-cli getreceivedbyaddress &#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34; 6
 
 As a json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getreceivedbyaddress", "params": ["1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX", 6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getreceivedbyaddress&#34;, &#34;params&#34;: [&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34;, 6] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

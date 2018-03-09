@@ -35,51 +35,51 @@
         <div class="col-8">
           <h1>sendmany - Bitcoin RPC</h1>
           <pre>
-sendmany "fromaccount" {"address":amount,...} ( minconf "comment" ["address",...] replaceable conf_target "estimate_mode")
+sendmany &#34;fromaccount&#34; {&#34;address&#34;:amount,...} ( minconf &#34;comment&#34; [&#34;address&#34;,...] replaceable conf_target &#34;estimate_mode&#34;)
 
 Send multiple times. Amounts are double-precision floating point numbers.
 
 Arguments:
-1. "fromaccount"         (string, required) DEPRECATED. The account to send the funds from. Should be "" for the default account
-2. "amounts"             (string, required) A json object with addresses and amounts
+1. &#34;fromaccount&#34;         (string, required) DEPRECATED. The account to send the funds from. Should be &#34;&#34; for the default account
+2. &#34;amounts&#34;             (string, required) A json object with addresses and amounts
     {
-      "address":amount   (numeric or string) The bitcoin address is the key, the numeric amount (can be string) in BTC is the value
+      &#34;address&#34;:amount   (numeric or string) The bitcoin address is the key, the numeric amount (can be string) in BTC is the value
       ,...
     }
 3. minconf                 (numeric, optional, default=1) Only use the balance confirmed at least this many times.
-4. "comment"             (string, optional) A comment
+4. &#34;comment&#34;             (string, optional) A comment
 5. subtractfeefrom         (array, optional) A json array with addresses.
                            The fee will be equally deducted from the amount of each selected address.
                            Those recipients will receive less bitcoins than you enter in their corresponding amount field.
                            If no addresses are specified here, the sender pays the fee.
     [
-      "address"          (string) Subtract fee from this address
+      &#34;address&#34;          (string) Subtract fee from this address
       ,...
     ]
 6. replaceable            (boolean, optional) Allow this transaction to be replaced by a transaction with higher fees via BIP 125
 7. conf_target            (numeric, optional) Confirmation target (in blocks)
-8. "estimate_mode"      (string, optional, default=UNSET) The fee estimate mode, must be one of:
-       "UNSET"
-       "ECONOMICAL"
-       "CONSERVATIVE"
+8. &#34;estimate_mode&#34;      (string, optional, default=UNSET) The fee estimate mode, must be one of:
+       &#34;UNSET&#34;
+       &#34;ECONOMICAL&#34;
+       &#34;CONSERVATIVE&#34;
 
 Result:
-"txid"                   (string) The transaction id for the send. Only 1 transaction is created regardless of 
+&#34;txid&#34;                   (string) The transaction id for the send. Only 1 transaction is created regardless of 
                                     the number of addresses.
 
 Examples:
 
 Send two amounts to two different addresses:
-> bitcoin-cli sendmany "" "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}"
+&gt; bitcoin-cli sendmany &#34;&#34; &#34;{\&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\&#34;:0.01,\&#34;1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\&#34;:0.02}&#34;
 
 Send two amounts to two different addresses setting the confirmation and comment:
-> bitcoin-cli sendmany "" "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}" 6 "testing"
+&gt; bitcoin-cli sendmany &#34;&#34; &#34;{\&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\&#34;:0.01,\&#34;1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\&#34;:0.02}&#34; 6 &#34;testing&#34;
 
 Send two amounts to two different addresses, subtract fee from amount:
-> bitcoin-cli sendmany "" "{\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\":0.01,\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\":0.02}" 1 "" "[\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\",\"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\"]"
+&gt; bitcoin-cli sendmany &#34;&#34; &#34;{\&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\&#34;:0.01,\&#34;1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\&#34;:0.02}&#34; 1 &#34;&#34; &#34;[\&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\&#34;,\&#34;1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz\&#34;]&#34;
 
 As a json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "sendmany", "params": ["", {"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX":0.01,"1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz":0.02}, 6, "testing"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;sendmany&#34;, &#34;params&#34;: [&#34;&#34;, {&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34;:0.01,&#34;1353tsE8YMTA4EuV7dgUXGjNFf9KpVvKHz&#34;:0.02}, 6, &#34;testing&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

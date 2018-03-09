@@ -35,13 +35,13 @@
         <div class="col-8">
           <h1>walletpassphrase - Bitcoin RPC</h1>
           <pre>
-walletpassphrase "passphrase" timeout
+walletpassphrase &#34;passphrase&#34; timeout
 
-Stores the wallet decryption key in memory for 'timeout' seconds.
+Stores the wallet decryption key in memory for &#39;timeout&#39; seconds.
 This is needed prior to performing transactions related to private keys such as sending bitcoins
 
 Arguments:
-1. "passphrase"     (string, required) The wallet passphrase
+1. &#34;passphrase&#34;     (string, required) The wallet passphrase
 2. timeout            (numeric, required) The time to keep the decryption key in seconds. Limited to at most 1073741824 (2^30) seconds.
                                           Any value greater than 1073741824 seconds will be set to 1073741824 seconds.
 
@@ -52,13 +52,13 @@ time that overrides the old one.
 Examples:
 
 Unlock the wallet for 60 seconds
-> bitcoin-cli walletpassphrase "my pass phrase" 60
+&gt; bitcoin-cli walletpassphrase &#34;my pass phrase&#34; 60
 
 Lock the wallet again (before 60 seconds)
-> bitcoin-cli walletlock 
+&gt; bitcoin-cli walletlock 
 
 As json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "walletpassphrase", "params": ["my pass phrase", 60] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;walletpassphrase&#34;, &#34;params&#34;: [&#34;my pass phrase&#34;, 60] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

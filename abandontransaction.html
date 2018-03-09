@@ -35,22 +35,22 @@
         <div class="col-8">
           <h1>abandontransaction - Bitcoin RPC</h1>
           <pre>
-abandontransaction "txid"
+abandontransaction &#34;txid&#34;
 
-Mark in-wallet transaction <txid> as abandoned
+Mark in-wallet transaction &lt;txid&gt; as abandoned
 This will mark this transaction and all its in-wallet descendants as abandoned which will allow
-for their inputs to be respent.  It can be used to replace "stuck" or evicted transactions.
+for their inputs to be respent.  It can be used to replace &#34;stuck&#34; or evicted transactions.
 It only works on transactions which are not included in a block and are not currently in the mempool.
 It has no effect on transactions which are already conflicted or abandoned.
 
 Arguments:
-1. "txid"    (string, required) The transaction id
+1. &#34;txid&#34;    (string, required) The transaction id
 
 Result:
 
 Examples:
-> bitcoin-cli abandontransaction "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "abandontransaction", "params": ["1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli abandontransaction &#34;1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;abandontransaction&#34;, &#34;params&#34;: [&#34;1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -35,7 +35,7 @@
         <div class="col-8">
           <h1>preciousblock - Bitcoin RPC</h1>
           <pre>
-preciousblock "blockhash"
+preciousblock &#34;blockhash&#34;
 
 Treats a block as if it were received before others with the same work.
 
@@ -44,13 +44,13 @@ A later preciousblock call can override the effect of an earlier one.
 The effects of preciousblock are not retained across restarts.
 
 Arguments:
-1. "blockhash"   (string, required) the hash of the block to mark as precious
+1. &#34;blockhash&#34;   (string, required) the hash of the block to mark as precious
 
 Result:
 
 Examples:
-> bitcoin-cli preciousblock "blockhash"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "preciousblock", "params": ["blockhash"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli preciousblock &#34;blockhash&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;preciousblock&#34;, &#34;params&#34;: [&#34;blockhash&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

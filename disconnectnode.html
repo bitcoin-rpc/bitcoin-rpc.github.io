@@ -35,23 +35,23 @@
         <div class="col-8">
           <h1>disconnectnode - Bitcoin RPC</h1>
           <pre>
-disconnectnode "[address]" [nodeid]
+disconnectnode &#34;[address]&#34; [nodeid]
 
 Immediately disconnects from the specified peer node.
 
-Strictly one out of 'address' and 'nodeid' can be provided to identify the node.
+Strictly one out of &#39;address&#39; and &#39;nodeid&#39; can be provided to identify the node.
 
-To disconnect by nodeid, either set 'address' to the empty string, or call using the named 'nodeid' argument only.
+To disconnect by nodeid, either set &#39;address&#39; to the empty string, or call using the named &#39;nodeid&#39; argument only.
 
 Arguments:
-1. "address"     (string, optional) The IP address/port of the node
-2. "nodeid"      (number, optional) The node ID (see getpeerinfo for node IDs)
+1. &#34;address&#34;     (string, optional) The IP address/port of the node
+2. &#34;nodeid&#34;      (number, optional) The node ID (see getpeerinfo for node IDs)
 
 Examples:
-> bitcoin-cli disconnectnode "192.168.0.6:8333"
-> bitcoin-cli disconnectnode "" 1
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "disconnectnode", "params": ["192.168.0.6:8333"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "disconnectnode", "params": ["", 1] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli disconnectnode &#34;192.168.0.6:8333&#34;
+&gt; bitcoin-cli disconnectnode &#34;&#34; 1
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;disconnectnode&#34;, &#34;params&#34;: [&#34;192.168.0.6:8333&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;disconnectnode&#34;, &#34;params&#34;: [&#34;&#34;, 1] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

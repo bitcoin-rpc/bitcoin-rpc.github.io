@@ -40,40 +40,40 @@ Returns an object containing various state info regarding P2P networking.
 
 Result:
 {
-  "version": xxxxx,                      (numeric) the server version
-  "subversion": "/Satoshi:x.x.x/",     (string) the server subversion string
-  "protocolversion": xxxxx,              (numeric) the protocol version
-  "localservices": "xxxxxxxxxxxxxxxx", (string) the services we offer to the network
-  "localrelay": true|false,              (bool) true if transaction relay is requested from peers
-  "timeoffset": xxxxx,                   (numeric) the time offset
-  "connections": xxxxx,                  (numeric) the number of connections
-  "networkactive": true|false,           (bool) whether p2p networking is enabled
-  "networks": [                          (array) information per network
+  &#34;version&#34;: xxxxx,                      (numeric) the server version
+  &#34;subversion&#34;: &#34;/Satoshi:x.x.x/&#34;,     (string) the server subversion string
+  &#34;protocolversion&#34;: xxxxx,              (numeric) the protocol version
+  &#34;localservices&#34;: &#34;xxxxxxxxxxxxxxxx&#34;, (string) the services we offer to the network
+  &#34;localrelay&#34;: true|false,              (bool) true if transaction relay is requested from peers
+  &#34;timeoffset&#34;: xxxxx,                   (numeric) the time offset
+  &#34;connections&#34;: xxxxx,                  (numeric) the number of connections
+  &#34;networkactive&#34;: true|false,           (bool) whether p2p networking is enabled
+  &#34;networks&#34;: [                          (array) information per network
   {
-    "name": "xxx",                     (string) network (ipv4, ipv6 or onion)
-    "limited": true|false,               (boolean) is the network limited using -onlynet?
-    "reachable": true|false,             (boolean) is the network reachable?
-    "proxy": "host:port"               (string) the proxy that is used for this network, or empty if none
-    "proxy_randomize_credentials": true|false,  (string) Whether randomized credentials are used
+    &#34;name&#34;: &#34;xxx&#34;,                     (string) network (ipv4, ipv6 or onion)
+    &#34;limited&#34;: true|false,               (boolean) is the network limited using -onlynet?
+    &#34;reachable&#34;: true|false,             (boolean) is the network reachable?
+    &#34;proxy&#34;: &#34;host:port&#34;               (string) the proxy that is used for this network, or empty if none
+    &#34;proxy_randomize_credentials&#34;: true|false,  (string) Whether randomized credentials are used
   }
   ,...
   ],
-  "relayfee": x.xxxxxxxx,                (numeric) minimum relay fee for transactions in BTC/kB
-  "incrementalfee": x.xxxxxxxx,          (numeric) minimum fee increment for mempool limiting or BIP 125 replacement in BTC/kB
-  "localaddresses": [                    (array) list of local addresses
+  &#34;relayfee&#34;: x.xxxxxxxx,                (numeric) minimum relay fee for transactions in BTC/kB
+  &#34;incrementalfee&#34;: x.xxxxxxxx,          (numeric) minimum fee increment for mempool limiting or BIP 125 replacement in BTC/kB
+  &#34;localaddresses&#34;: [                    (array) list of local addresses
   {
-    "address": "xxxx",                 (string) network address
-    "port": xxx,                         (numeric) network port
-    "score": xxx                         (numeric) relative score
+    &#34;address&#34;: &#34;xxxx&#34;,                 (string) network address
+    &#34;port&#34;: xxx,                         (numeric) network port
+    &#34;score&#34;: xxx                         (numeric) relative score
   }
   ,...
   ]
-  "warnings": "..."                    (string) any network and blockchain warnings
+  &#34;warnings&#34;: &#34;...&#34;                    (string) any network and blockchain warnings
 }
 
 Examples:
-> bitcoin-cli getnetworkinfo 
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnetworkinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getnetworkinfo 
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getnetworkinfo&#34;, &#34;params&#34;: [] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

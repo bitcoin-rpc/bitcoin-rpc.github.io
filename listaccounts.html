@@ -41,27 +41,27 @@ DEPRECATED. Returns Object that has account names as keys, account balances as v
 
 Arguments:
 1. minconf             (numeric, optional, default=1) Only include transactions with at least this many confirmations
-2. include_watchonly   (bool, optional, default=false) Include balances in watch-only addresses (see 'importaddress')
+2. include_watchonly   (bool, optional, default=false) Include balances in watch-only addresses (see &#39;importaddress&#39;)
 
 Result:
 {                      (json object where keys are account names, and values are numeric balances
-  "account": x.xxx,  (numeric) The property name is the account name, and the value is the total balance for the account.
+  &#34;account&#34;: x.xxx,  (numeric) The property name is the account name, and the value is the total balance for the account.
   ...
 }
 
 Examples:
 
 List account balances where there at least 1 confirmation
-> bitcoin-cli listaccounts 
+&gt; bitcoin-cli listaccounts 
 
 List account balances including zero confirmation transactions
-> bitcoin-cli listaccounts 0
+&gt; bitcoin-cli listaccounts 0
 
 List account balances for 6 or more confirmations
-> bitcoin-cli listaccounts 6
+&gt; bitcoin-cli listaccounts 6
 
 As json rpc call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listaccounts", "params": [6] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;listaccounts&#34;, &#34;params&#34;: [6] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

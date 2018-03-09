@@ -35,39 +35,39 @@
         <div class="col-8">
           <h1>getblockheader - Bitcoin RPC</h1>
           <pre>
-getblockheader "hash" ( verbose )
+getblockheader &#34;hash&#34; ( verbose )
 
-If verbose is false, returns a string that is serialized, hex-encoded data for blockheader 'hash'.
-If verbose is true, returns an Object with information about blockheader <hash>.
+If verbose is false, returns a string that is serialized, hex-encoded data for blockheader &#39;hash&#39;.
+If verbose is true, returns an Object with information about blockheader &lt;hash&gt;.
 
 Arguments:
-1. "hash"          (string, required) The block hash
+1. &#34;hash&#34;          (string, required) The block hash
 2. verbose           (boolean, optional, default=true) true for a json object, false for the hex encoded data
 
 Result (for verbose = true):
 {
-  "hash" : "hash",     (string) the block hash (same as provided)
-  "confirmations" : n,   (numeric) The number of confirmations, or -1 if the block is not on the main chain
-  "height" : n,          (numeric) The block height or index
-  "version" : n,         (numeric) The block version
-  "versionHex" : "00000000", (string) The block version formatted in hexadecimal
-  "merkleroot" : "xxxx", (string) The merkle root
-  "time" : ttt,          (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)
-  "mediantime" : ttt,    (numeric) The median block time in seconds since epoch (Jan 1 1970 GMT)
-  "nonce" : n,           (numeric) The nonce
-  "bits" : "1d00ffff", (string) The bits
-  "difficulty" : x.xxx,  (numeric) The difficulty
-  "chainwork" : "0000...1f3"     (string) Expected number of hashes required to produce the current chain (in hex)
-  "previousblockhash" : "hash",  (string) The hash of the previous block
-  "nextblockhash" : "hash",      (string) The hash of the next block
+  &#34;hash&#34; : &#34;hash&#34;,     (string) the block hash (same as provided)
+  &#34;confirmations&#34; : n,   (numeric) The number of confirmations, or -1 if the block is not on the main chain
+  &#34;height&#34; : n,          (numeric) The block height or index
+  &#34;version&#34; : n,         (numeric) The block version
+  &#34;versionHex&#34; : &#34;00000000&#34;, (string) The block version formatted in hexadecimal
+  &#34;merkleroot&#34; : &#34;xxxx&#34;, (string) The merkle root
+  &#34;time&#34; : ttt,          (numeric) The block time in seconds since epoch (Jan 1 1970 GMT)
+  &#34;mediantime&#34; : ttt,    (numeric) The median block time in seconds since epoch (Jan 1 1970 GMT)
+  &#34;nonce&#34; : n,           (numeric) The nonce
+  &#34;bits&#34; : &#34;1d00ffff&#34;, (string) The bits
+  &#34;difficulty&#34; : x.xxx,  (numeric) The difficulty
+  &#34;chainwork&#34; : &#34;0000...1f3&#34;     (string) Expected number of hashes required to produce the current chain (in hex)
+  &#34;previousblockhash&#34; : &#34;hash&#34;,  (string) The hash of the previous block
+  &#34;nextblockhash&#34; : &#34;hash&#34;,      (string) The hash of the next block
 }
 
 Result (for verbose=false):
-"data"             (string) A string that is serialized, hex-encoded data for block 'hash'.
+&#34;data&#34;             (string) A string that is serialized, hex-encoded data for block &#39;hash&#39;.
 
 Examples:
-> bitcoin-cli getblockheader "00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getblockheader", "params": ["00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getblockheader &#34;00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getblockheader&#34;, &#34;params&#34;: [&#34;00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -35,7 +35,7 @@
         <div class="col-8">
           <h1>addnode - Bitcoin RPC</h1>
           <pre>
-addnode "node" "add|remove|onetry"
+addnode &#34;node&#34; &#34;add|remove|onetry&#34;
 
 Attempts to add or remove a node from the addnode list.
 Or try a connection to a node once.
@@ -43,12 +43,12 @@ Nodes added using addnode (or -connect) are protected from DoS disconnection and
 full nodes/support SegWit as other outbound peers are (though such peers will not be synced from).
 
 Arguments:
-1. "node"     (string, required) The node (see getpeerinfo for nodes)
-2. "command"  (string, required) 'add' to add a node to the list, 'remove' to remove a node from the list, 'onetry' to try a connection to the node once
+1. &#34;node&#34;     (string, required) The node (see getpeerinfo for nodes)
+2. &#34;command&#34;  (string, required) &#39;add&#39; to add a node to the list, &#39;remove&#39; to remove a node from the list, &#39;onetry&#39; to try a connection to the node once
 
 Examples:
-> bitcoin-cli addnode "192.168.0.6:8333" "onetry"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "addnode", "params": ["192.168.0.6:8333", "onetry"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli addnode &#34;192.168.0.6:8333&#34; &#34;onetry&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;addnode&#34;, &#34;params&#34;: [&#34;192.168.0.6:8333&#34;, &#34;onetry&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

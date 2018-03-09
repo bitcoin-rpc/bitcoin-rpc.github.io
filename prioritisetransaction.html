@@ -35,11 +35,11 @@
         <div class="col-8">
           <h1>prioritisetransaction - Bitcoin RPC</h1>
           <pre>
-prioritisetransaction <txid> <dummy value> <fee delta>
+prioritisetransaction &lt;txid&gt; &lt;dummy value&gt; &lt;fee delta&gt;
 Accepts the transaction into mined blocks at a higher (or lower) priority
 
 Arguments:
-1. "txid"       (string, required) The transaction id.
+1. &#34;txid&#34;       (string, required) The transaction id.
 2. dummy          (numeric, optional) API-Compatibility for previous API. Must be zero or null.
                   DEPRECATED. For forward compatibility use named arguments and omit this parameter.
 3. fee_delta      (numeric, required) The fee value (in satoshis) to add (or subtract, if negative).
@@ -50,8 +50,8 @@ Result:
 true              (boolean) Returns true
 
 Examples:
-> bitcoin-cli prioritisetransaction "txid" 0.0 10000
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "prioritisetransaction", "params": ["txid", 0.0, 10000] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli prioritisetransaction &#34;txid&#34; 0.0 10000
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;prioritisetransaction&#34;, &#34;params&#34;: [&#34;txid&#34;, 0.0, 10000] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

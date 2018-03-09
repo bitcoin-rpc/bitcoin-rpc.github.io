@@ -35,22 +35,22 @@
         <div class="col-8">
           <h1>getnewaddress - Bitcoin RPC</h1>
           <pre>
-getnewaddress ( "account" "address_type" )
+getnewaddress ( &#34;account&#34; &#34;address_type&#34; )
 
 Returns a new Bitcoin address for receiving payments.
-If 'account' is specified (DEPRECATED), it is added to the address book 
-so payments received with the address will be credited to 'account'.
+If &#39;account&#39; is specified (DEPRECATED), it is added to the address book 
+so payments received with the address will be credited to &#39;account&#39;.
 
 Arguments:
-1. "account"        (string, optional) DEPRECATED. The account name for the address to be linked to. If not provided, the default account "" is used. It can also be set to the empty string "" to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.
-2. "address_type"   (string, optional) The address type to use. Options are "legacy", "p2sh-segwit", and "bech32". Default is set by -addresstype.
+1. &#34;account&#34;        (string, optional) DEPRECATED. The account name for the address to be linked to. If not provided, the default account &#34;&#34; is used. It can also be set to the empty string &#34;&#34; to represent the default account. The account does not need to exist, it will be created if there is no account by the given name.
+2. &#34;address_type&#34;   (string, optional) The address type to use. Options are &#34;legacy&#34;, &#34;p2sh-segwit&#34;, and &#34;bech32&#34;. Default is set by -addresstype.
 
 Result:
-"address"    (string) The new bitcoin address
+&#34;address&#34;    (string) The new bitcoin address
 
 Examples:
-> bitcoin-cli getnewaddress 
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getnewaddress", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getnewaddress 
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getnewaddress&#34;, &#34;params&#34;: [] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

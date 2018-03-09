@@ -35,47 +35,47 @@
         <div class="col-8">
           <h1>decoderawtransaction - Bitcoin RPC</h1>
           <pre>
-decoderawtransaction "hexstring" ( iswitness )
+decoderawtransaction &#34;hexstring&#34; ( iswitness )
 
 Return a JSON object representing the serialized, hex-encoded transaction.
 
 Arguments:
-1. "hexstring"      (string, required) The transaction hex string
+1. &#34;hexstring&#34;      (string, required) The transaction hex string
 2. iswitness          (boolean, optional) Whether the transaction hex is a serialized witness transaction
                          If iswitness is not present, heuristic tests will be used in decoding
 
 Result:
 {
-  "txid" : "id",        (string) The transaction id
-  "hash" : "id",        (string) The transaction hash (differs from txid for witness transactions)
-  "size" : n,             (numeric) The transaction size
-  "vsize" : n,            (numeric) The virtual transaction size (differs from size for witness transactions)
-  "version" : n,          (numeric) The version
-  "locktime" : ttt,       (numeric) The lock time
-  "vin" : [               (array of json objects)
+  &#34;txid&#34; : &#34;id&#34;,        (string) The transaction id
+  &#34;hash&#34; : &#34;id&#34;,        (string) The transaction hash (differs from txid for witness transactions)
+  &#34;size&#34; : n,             (numeric) The transaction size
+  &#34;vsize&#34; : n,            (numeric) The virtual transaction size (differs from size for witness transactions)
+  &#34;version&#34; : n,          (numeric) The version
+  &#34;locktime&#34; : ttt,       (numeric) The lock time
+  &#34;vin&#34; : [               (array of json objects)
      {
-       "txid": "id",    (string) The transaction id
-       "vout": n,         (numeric) The output number
-       "scriptSig": {     (json object) The script
-         "asm": "asm",  (string) asm
-         "hex": "hex"   (string) hex
+       &#34;txid&#34;: &#34;id&#34;,    (string) The transaction id
+       &#34;vout&#34;: n,         (numeric) The output number
+       &#34;scriptSig&#34;: {     (json object) The script
+         &#34;asm&#34;: &#34;asm&#34;,  (string) asm
+         &#34;hex&#34;: &#34;hex&#34;   (string) hex
        },
-       "txinwitness": ["hex", ...] (array of string) hex-encoded witness data (if any)
-       "sequence": n     (numeric) The script sequence number
+       &#34;txinwitness&#34;: [&#34;hex&#34;, ...] (array of string) hex-encoded witness data (if any)
+       &#34;sequence&#34;: n     (numeric) The script sequence number
      }
      ,...
   ],
-  "vout" : [             (array of json objects)
+  &#34;vout&#34; : [             (array of json objects)
      {
-       "value" : x.xxx,            (numeric) The value in BTC
-       "n" : n,                    (numeric) index
-       "scriptPubKey" : {          (json object)
-         "asm" : "asm",          (string) the asm
-         "hex" : "hex",          (string) the hex
-         "reqSigs" : n,            (numeric) The required sigs
-         "type" : "pubkeyhash",  (string) The type, eg 'pubkeyhash'
-         "addresses" : [           (json array of string)
-           "12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc"   (string) bitcoin address
+       &#34;value&#34; : x.xxx,            (numeric) The value in BTC
+       &#34;n&#34; : n,                    (numeric) index
+       &#34;scriptPubKey&#34; : {          (json object)
+         &#34;asm&#34; : &#34;asm&#34;,          (string) the asm
+         &#34;hex&#34; : &#34;hex&#34;,          (string) the hex
+         &#34;reqSigs&#34; : n,            (numeric) The required sigs
+         &#34;type&#34; : &#34;pubkeyhash&#34;,  (string) The type, eg &#39;pubkeyhash&#39;
+         &#34;addresses&#34; : [           (json array of string)
+           &#34;12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc&#34;   (string) bitcoin address
            ,...
          ]
        }
@@ -85,8 +85,8 @@ Result:
 }
 
 Examples:
-> bitcoin-cli decoderawtransaction "hexstring"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "decoderawtransaction", "params": ["hexstring"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli decoderawtransaction &#34;hexstring&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;decoderawtransaction&#34;, &#34;params&#34;: [&#34;hexstring&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

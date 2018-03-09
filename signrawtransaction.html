@@ -35,7 +35,7 @@
         <div class="col-8">
           <h1>signrawtransaction - Bitcoin RPC</h1>
           <pre>
-signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )
+signrawtransaction &#34;hexstring&#34; ( [{&#34;txid&#34;:&#34;id&#34;,&#34;vout&#34;:n,&#34;scriptPubKey&#34;:&#34;hex&#34;,&#34;redeemScript&#34;:&#34;hex&#34;},...] [&#34;privatekey1&#34;,...] sighashtype )
 
 Sign inputs for raw transaction (serialized, hex-encoded).
 The second optional argument (may be null) is an array of previous transaction outputs that
@@ -45,50 +45,50 @@ keys that, if given, will be the only keys used to sign the transaction.
 
 
 Arguments:
-1. "hexstring"     (string, required) The transaction hex string
-2. "prevtxs"       (string, optional) An json array of previous dependent transaction outputs
-     [               (json array of json objects, or 'null' if none provided)
+1. &#34;hexstring&#34;     (string, required) The transaction hex string
+2. &#34;prevtxs&#34;       (string, optional) An json array of previous dependent transaction outputs
+     [               (json array of json objects, or &#39;null&#39; if none provided)
        {
-         "txid":"id",             (string, required) The transaction id
-         "vout":n,                  (numeric, required) The output number
-         "scriptPubKey": "hex",   (string, required) script key
-         "redeemScript": "hex",   (string, required for P2SH or P2WSH) redeem script
-         "amount": value            (numeric, required) The amount spent
+         &#34;txid&#34;:&#34;id&#34;,             (string, required) The transaction id
+         &#34;vout&#34;:n,                  (numeric, required) The output number
+         &#34;scriptPubKey&#34;: &#34;hex&#34;,   (string, required) script key
+         &#34;redeemScript&#34;: &#34;hex&#34;,   (string, required for P2SH or P2WSH) redeem script
+         &#34;amount&#34;: value            (numeric, required) The amount spent
        }
        ,...
     ]
-3. "privkeys"     (string, optional) A json array of base58-encoded private keys for signing
-    [                  (json array of strings, or 'null' if none provided)
-      "privatekey"   (string) private key in base58-encoding
+3. &#34;privkeys&#34;     (string, optional) A json array of base58-encoded private keys for signing
+    [                  (json array of strings, or &#39;null&#39; if none provided)
+      &#34;privatekey&#34;   (string) private key in base58-encoding
       ,...
     ]
-4. "sighashtype"     (string, optional, default=ALL) The signature hash type. Must be one of
-       "ALL"
-       "NONE"
-       "SINGLE"
-       "ALL|ANYONECANPAY"
-       "NONE|ANYONECANPAY"
-       "SINGLE|ANYONECANPAY"
+4. &#34;sighashtype&#34;     (string, optional, default=ALL) The signature hash type. Must be one of
+       &#34;ALL&#34;
+       &#34;NONE&#34;
+       &#34;SINGLE&#34;
+       &#34;ALL|ANYONECANPAY&#34;
+       &#34;NONE|ANYONECANPAY&#34;
+       &#34;SINGLE|ANYONECANPAY&#34;
 
 Result:
 {
-  "hex" : "value",           (string) The hex-encoded raw transaction with signature(s)
-  "complete" : true|false,   (boolean) If the transaction has a complete set of signatures
-  "errors" : [                 (json array of objects) Script verification errors (if there are any)
+  &#34;hex&#34; : &#34;value&#34;,           (string) The hex-encoded raw transaction with signature(s)
+  &#34;complete&#34; : true|false,   (boolean) If the transaction has a complete set of signatures
+  &#34;errors&#34; : [                 (json array of objects) Script verification errors (if there are any)
     {
-      "txid" : "hash",           (string) The hash of the referenced, previous transaction
-      "vout" : n,                (numeric) The index of the output to spent and used as input
-      "scriptSig" : "hex",       (string) The hex-encoded signature script
-      "sequence" : n,            (numeric) Script sequence number
-      "error" : "text"           (string) Verification or signing error related to the input
+      &#34;txid&#34; : &#34;hash&#34;,           (string) The hash of the referenced, previous transaction
+      &#34;vout&#34; : n,                (numeric) The index of the output to spent and used as input
+      &#34;scriptSig&#34; : &#34;hex&#34;,       (string) The hex-encoded signature script
+      &#34;sequence&#34; : n,            (numeric) Script sequence number
+      &#34;error&#34; : &#34;text&#34;           (string) Verification or signing error related to the input
     }
     ,...
   ]
 }
 
 Examples:
-> bitcoin-cli signrawtransaction "myhex"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "signrawtransaction", "params": ["myhex"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli signrawtransaction &#34;myhex&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;signrawtransaction&#34;, &#34;params&#34;: [&#34;myhex&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

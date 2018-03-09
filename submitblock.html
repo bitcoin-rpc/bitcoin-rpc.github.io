@@ -35,20 +35,20 @@
         <div class="col-8">
           <h1>submitblock - Bitcoin RPC</h1>
           <pre>
-submitblock "hexdata"  ( "dummy" )
+submitblock &#34;hexdata&#34;  ( &#34;dummy&#34; )
 
 Attempts to submit new block to network.
 See https://en.bitcoin.it/wiki/BIP_0022 for full specification.
 
 Arguments
-1. "hexdata"        (string, required) the hex-encoded block data to submit
-2. "dummy"          (optional) dummy value, for compatibility with BIP22. This value is ignored.
+1. &#34;hexdata&#34;        (string, required) the hex-encoded block data to submit
+2. &#34;dummy&#34;          (optional) dummy value, for compatibility with BIP22. This value is ignored.
 
 Result:
 
 Examples:
-> bitcoin-cli submitblock "mydata"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "submitblock", "params": ["mydata"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli submitblock &#34;mydata&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;submitblock&#34;, &#34;params&#34;: [&#34;mydata&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

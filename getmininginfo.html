@@ -40,20 +40,20 @@ getmininginfo
 Returns a json object containing mining-related information.
 Result:
 {
-  "blocks": nnn,             (numeric) The current block
-  "currentblockweight": nnn, (numeric) The last block weight
-  "currentblocktx": nnn,     (numeric) The last block transaction
-  "difficulty": xxx.xxxxx    (numeric) The current difficulty
-  "networkhashps": nnn,      (numeric) The network hashes per second
-  "pooledtx": n              (numeric) The size of the mempool
-  "chain": "xxxx",           (string) current network name as defined in BIP70 (main, test, regtest)
-  "warnings": "..."          (string) any network and blockchain warnings
-  "errors": "..."            (string) DEPRECATED. Same as warnings. Only shown when bitcoind is started with -deprecatedrpc=getmininginfo
+  &#34;blocks&#34;: nnn,             (numeric) The current block
+  &#34;currentblockweight&#34;: nnn, (numeric) The last block weight
+  &#34;currentblocktx&#34;: nnn,     (numeric) The last block transaction
+  &#34;difficulty&#34;: xxx.xxxxx    (numeric) The current difficulty
+  &#34;networkhashps&#34;: nnn,      (numeric) The network hashes per second
+  &#34;pooledtx&#34;: n              (numeric) The size of the mempool
+  &#34;chain&#34;: &#34;xxxx&#34;,           (string) current network name as defined in BIP70 (main, test, regtest)
+  &#34;warnings&#34;: &#34;...&#34;          (string) any network and blockchain warnings
+  &#34;errors&#34;: &#34;...&#34;            (string) DEPRECATED. Same as warnings. Only shown when bitcoind is started with -deprecatedrpc=getmininginfo
 }
 
 Examples:
-> bitcoin-cli getmininginfo 
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getmininginfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getmininginfo 
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getmininginfo&#34;, &#34;params&#34;: [] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

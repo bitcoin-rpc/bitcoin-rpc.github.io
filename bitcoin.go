@@ -1,6 +1,7 @@
 package main
 
 import (
+	"html"
 	"io/ioutil"
 	"os/exec"
 	"strings"
@@ -39,6 +40,7 @@ func main() {
 			} else {
 				name := strings.Split(line, " ")[0]
 				desc := run("help", name)
+				desc = html.EscapeString(desc)
 				comm := Command{
 					name:        name,
 					description: desc,

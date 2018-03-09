@@ -35,30 +35,30 @@
         <div class="col-8">
           <h1>signmessage - Bitcoin RPC</h1>
           <pre>
-signmessage "address" "message"
+signmessage &#34;address&#34; &#34;message&#34;
 
 Sign a message with the private key of an address
 
 Arguments:
-1. "address"         (string, required) The bitcoin address to use for the private key.
-2. "message"         (string, required) The message to create a signature of.
+1. &#34;address&#34;         (string, required) The bitcoin address to use for the private key.
+2. &#34;message&#34;         (string, required) The message to create a signature of.
 
 Result:
-"signature"          (string) The signature of the message encoded in base 64
+&#34;signature&#34;          (string) The signature of the message encoded in base 64
 
 Examples:
 
 Unlock the wallet for 30 seconds
-> bitcoin-cli walletpassphrase "mypassphrase" 30
+&gt; bitcoin-cli walletpassphrase &#34;mypassphrase&#34; 30
 
 Create the signature
-> bitcoin-cli signmessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "my message"
+&gt; bitcoin-cli signmessage &#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34; &#34;my message&#34;
 
 Verify the signature
-> bitcoin-cli verifymessage "1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX" "signature" "my message"
+&gt; bitcoin-cli verifymessage &#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34; &#34;signature&#34; &#34;my message&#34;
 
 As json rpc
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "signmessage", "params": ["1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX", "my message"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;signmessage&#34;, &#34;params&#34;: [&#34;1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX&#34;, &#34;my message&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

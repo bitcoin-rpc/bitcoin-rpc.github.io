@@ -41,19 +41,19 @@ List balances by receiving address.
 
 Arguments:
 1. minconf           (numeric, optional, default=1) The minimum number of confirmations before payments are included.
-2. include_empty     (bool, optional, default=false) Whether to include addresses that haven't received any payments.
-3. include_watchonly (bool, optional, default=false) Whether to include watch-only addresses (see 'importaddress').
+2. include_empty     (bool, optional, default=false) Whether to include addresses that haven&#39;t received any payments.
+3. include_watchonly (bool, optional, default=false) Whether to include watch-only addresses (see &#39;importaddress&#39;).
 
 Result:
 [
   {
-    "involvesWatchonly" : true,        (bool) Only returned if imported addresses were involved in transaction
-    "address" : "receivingaddress",  (string) The receiving address
-    "account" : "accountname",       (string) DEPRECATED. The account of the receiving address. The default account is "".
-    "amount" : x.xxx,                  (numeric) The total amount in BTC received by the address
-    "confirmations" : n,               (numeric) The number of confirmations of the most recent transaction included
-    "label" : "label",               (string) A comment for the address/transaction, if any
-    "txids": [
+    &#34;involvesWatchonly&#34; : true,        (bool) Only returned if imported addresses were involved in transaction
+    &#34;address&#34; : &#34;receivingaddress&#34;,  (string) The receiving address
+    &#34;account&#34; : &#34;accountname&#34;,       (string) DEPRECATED. The account of the receiving address. The default account is &#34;&#34;.
+    &#34;amount&#34; : x.xxx,                  (numeric) The total amount in BTC received by the address
+    &#34;confirmations&#34; : n,               (numeric) The number of confirmations of the most recent transaction included
+    &#34;label&#34; : &#34;label&#34;,               (string) A comment for the address/transaction, if any
+    &#34;txids&#34;: [
        n,                                (numeric) The ids of transactions received with the address 
        ...
     ]
@@ -62,9 +62,9 @@ Result:
 ]
 
 Examples:
-> bitcoin-cli listreceivedbyaddress 
-> bitcoin-cli listreceivedbyaddress 6 true
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listreceivedbyaddress", "params": [6, true, true] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli listreceivedbyaddress 
+&gt; bitcoin-cli listreceivedbyaddress 6 true
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;listreceivedbyaddress&#34;, &#34;params&#34;: [6, true, true] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

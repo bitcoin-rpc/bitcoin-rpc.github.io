@@ -35,7 +35,7 @@
         <div class="col-8">
           <h1>listunspent - Bitcoin RPC</h1>
           <pre>
-listunspent ( minconf maxconf  ["addresses",...] [include_unsafe] [query_options])
+listunspent ( minconf maxconf  [&#34;addresses&#34;,...] [include_unsafe] [query_options])
 
 Returns array of unspent transaction outputs
 with between minconf and maxconf (inclusive) confirmations.
@@ -44,35 +44,35 @@ Optionally filter to only include txouts paid to specified addresses.
 Arguments:
 1. minconf          (numeric, optional, default=1) The minimum confirmations to filter
 2. maxconf          (numeric, optional, default=9999999) The maximum confirmations to filter
-3. "addresses"      (string) A json array of bitcoin addresses to filter
+3. &#34;addresses&#34;      (string) A json array of bitcoin addresses to filter
     [
-      "address"     (string) bitcoin address
+      &#34;address&#34;     (string) bitcoin address
       ,...
     ]
 4. include_unsafe (bool, optional, default=true) Include outputs that are not safe to spend
-                  See description of "safe" attribute below.
+                  See description of &#34;safe&#34; attribute below.
 5. query_options    (json, optional) JSON with query options
     {
-      "minimumAmount"    (numeric or string, default=0) Minimum value of each UTXO in BTC
-      "maximumAmount"    (numeric or string, default=unlimited) Maximum value of each UTXO in BTC
-      "maximumCount"     (numeric or string, default=unlimited) Maximum number of UTXOs
-      "minimumSumAmount" (numeric or string, default=unlimited) Minimum sum value of all UTXOs in BTC
+      &#34;minimumAmount&#34;    (numeric or string, default=0) Minimum value of each UTXO in BTC
+      &#34;maximumAmount&#34;    (numeric or string, default=unlimited) Maximum value of each UTXO in BTC
+      &#34;maximumCount&#34;     (numeric or string, default=unlimited) Maximum number of UTXOs
+      &#34;minimumSumAmount&#34; (numeric or string, default=unlimited) Minimum sum value of all UTXOs in BTC
     }
 
 Result
 [                   (array of json object)
   {
-    "txid" : "txid",          (string) the transaction id 
-    "vout" : n,               (numeric) the vout value
-    "address" : "address",    (string) the bitcoin address
-    "account" : "account",    (string) DEPRECATED. The associated account, or "" for the default account
-    "scriptPubKey" : "key",   (string) the script key
-    "amount" : x.xxx,         (numeric) the transaction output amount in BTC
-    "confirmations" : n,      (numeric) The number of confirmations
-    "redeemScript" : n        (string) The redeemScript if scriptPubKey is P2SH
-    "spendable" : xxx,        (bool) Whether we have the private keys to spend this output
-    "solvable" : xxx,         (bool) Whether we know how to spend this output, ignoring the lack of keys
-    "safe" : xxx              (bool) Whether this output is considered safe to spend. Unconfirmed transactions
+    &#34;txid&#34; : &#34;txid&#34;,          (string) the transaction id 
+    &#34;vout&#34; : n,               (numeric) the vout value
+    &#34;address&#34; : &#34;address&#34;,    (string) the bitcoin address
+    &#34;account&#34; : &#34;account&#34;,    (string) DEPRECATED. The associated account, or &#34;&#34; for the default account
+    &#34;scriptPubKey&#34; : &#34;key&#34;,   (string) the script key
+    &#34;amount&#34; : x.xxx,         (numeric) the transaction output amount in BTC
+    &#34;confirmations&#34; : n,      (numeric) The number of confirmations
+    &#34;redeemScript&#34; : n        (string) The redeemScript if scriptPubKey is P2SH
+    &#34;spendable&#34; : xxx,        (bool) Whether we have the private keys to spend this output
+    &#34;solvable&#34; : xxx,         (bool) Whether we know how to spend this output, ignoring the lack of keys
+    &#34;safe&#34; : xxx              (bool) Whether this output is considered safe to spend. Unconfirmed transactions
                               from outside keys and unconfirmed replacement transactions are considered unsafe
                               and are not eligible for spending by fundrawtransaction and sendtoaddress.
   }
@@ -80,11 +80,11 @@ Result
 ]
 
 Examples
-> bitcoin-cli listunspent 
-> bitcoin-cli listunspent 6 9999999 "[\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\",\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\"]"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listunspent", "params": [6, 9999999 "[\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\",\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\"]"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
-> bitcoin-cli listunspent 6 9999999 '[]' true '{ "minimumAmount": 0.005 }'
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "listunspent", "params": [6, 9999999, [] , true, { "minimumAmount": 0.005 } ] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli listunspent 
+&gt; bitcoin-cli listunspent 6 9999999 &#34;[\&#34;1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\&#34;,\&#34;1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\&#34;]&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;listunspent&#34;, &#34;params&#34;: [6, 9999999 &#34;[\&#34;1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\&#34;,\&#34;1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\&#34;]&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
+&gt; bitcoin-cli listunspent 6 9999999 &#39;[]&#39; true &#39;{ &#34;minimumAmount&#34;: 0.005 }&#39;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;listunspent&#34;, &#34;params&#34;: [6, 9999999, [] , true, { &#34;minimumAmount&#34;: 0.005 } ] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

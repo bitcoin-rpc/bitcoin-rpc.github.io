@@ -35,7 +35,7 @@
         <div class="col-8">
           <h1>importmulti - Bitcoin RPC</h1>
           <pre>
-importmulti "requests" ( "options" )
+importmulti &#34;requests&#34; ( &#34;options&#34; )
 
 Import addresses/scripts (with private or public keys, redeem script (P2SH)), rescanning all addresses in one-shot-only (rescan can be disabled via options). Requires a new wallet backup.
 
@@ -43,36 +43,36 @@ Arguments:
 1. requests     (array, required) Data to be imported
   [     (array of json objects)
     {
-      "scriptPubKey": "<script>" | { "address":"<address>" }, (string / json, required) Type of scriptPubKey (string for script, json for address)
-      "timestamp": timestamp | "now"                        , (integer / string, required) Creation time of the key in seconds since epoch (Jan 1 1970 GMT),
-                                                              or the string "now" to substitute the current synced blockchain time. The timestamp of the oldest
+      &#34;scriptPubKey&#34;: &#34;&lt;script&gt;&#34; | { &#34;address&#34;:&#34;&lt;address&gt;&#34; }, (string / json, required) Type of scriptPubKey (string for script, json for address)
+      &#34;timestamp&#34;: timestamp | &#34;now&#34;                        , (integer / string, required) Creation time of the key in seconds since epoch (Jan 1 1970 GMT),
+                                                              or the string &#34;now&#34; to substitute the current synced blockchain time. The timestamp of the oldest
                                                               key will determine how far back blockchain rescans need to begin for missing wallet transactions.
-                                                              "now" can be specified to bypass scanning, for keys which are known to never have been used, and
+                                                              &#34;now&#34; can be specified to bypass scanning, for keys which are known to never have been used, and
                                                               0 can be specified to scan the entire blockchain. Blocks up to 2 hours before the earliest key
                                                               creation time of all keys being imported by the importmulti call will be scanned.
-      "redeemscript": "<script>"                            , (string, optional) Allowed only if the scriptPubKey is a P2SH address or a P2SH scriptPubKey
-      "pubkeys": ["<pubKey>", ... ]                         , (array, optional) Array of strings giving pubkeys that must occur in the output or redeemscript
-      "keys": ["<key>", ... ]                               , (array, optional) Array of strings giving private keys whose corresponding public keys must occur in the output or redeemscript
-      "internal": <true>                                    , (boolean, optional, default: false) Stating whether matching outputs should be treated as not incoming payments
-      "watchonly": <true>                                   , (boolean, optional, default: false) Stating whether matching outputs should be considered watched even when they're not spendable, only allowed if keys are empty
-      "label": <label>                                      , (string, optional, default: '') Label to assign to the address (aka account name, for now), only allowed with internal=false
+      &#34;redeemscript&#34;: &#34;&lt;script&gt;&#34;                            , (string, optional) Allowed only if the scriptPubKey is a P2SH address or a P2SH scriptPubKey
+      &#34;pubkeys&#34;: [&#34;&lt;pubKey&gt;&#34;, ... ]                         , (array, optional) Array of strings giving pubkeys that must occur in the output or redeemscript
+      &#34;keys&#34;: [&#34;&lt;key&gt;&#34;, ... ]                               , (array, optional) Array of strings giving private keys whose corresponding public keys must occur in the output or redeemscript
+      &#34;internal&#34;: &lt;true&gt;                                    , (boolean, optional, default: false) Stating whether matching outputs should be treated as not incoming payments
+      &#34;watchonly&#34;: &lt;true&gt;                                   , (boolean, optional, default: false) Stating whether matching outputs should be considered watched even when they&#39;re not spendable, only allowed if keys are empty
+      &#34;label&#34;: &lt;label&gt;                                      , (string, optional, default: &#39;&#39;) Label to assign to the address (aka account name, for now), only allowed with internal=false
     }
   ,...
   ]
 2. options                 (json, optional)
   {
-     "rescan": <false>,         (boolean, optional, default: true) Stating if should rescan the blockchain after all imports
+     &#34;rescan&#34;: &lt;false&gt;,         (boolean, optional, default: true) Stating if should rescan the blockchain after all imports
   }
 
 Note: This call can take minutes to complete if rescan is true, during that time, other rpc calls
 may report that the imported keys, addresses or scripts exists but related transactions are still missing.
 
 Examples:
-> bitcoin-cli importmulti '[{ "scriptPubKey": { "address": "<my address>" }, "timestamp":1455191478 }, { "scriptPubKey": { "address": "<my 2nd address>" }, "label": "example 2", "timestamp": 1455191480 }]'
-> bitcoin-cli importmulti '[{ "scriptPubKey": { "address": "<my address>" }, "timestamp":1455191478 }]' '{ "rescan": false}'
+&gt; bitcoin-cli importmulti &#39;[{ &#34;scriptPubKey&#34;: { &#34;address&#34;: &#34;&lt;my address&gt;&#34; }, &#34;timestamp&#34;:1455191478 }, { &#34;scriptPubKey&#34;: { &#34;address&#34;: &#34;&lt;my 2nd address&gt;&#34; }, &#34;label&#34;: &#34;example 2&#34;, &#34;timestamp&#34;: 1455191480 }]&#39;
+&gt; bitcoin-cli importmulti &#39;[{ &#34;scriptPubKey&#34;: { &#34;address&#34;: &#34;&lt;my address&gt;&#34; }, &#34;timestamp&#34;:1455191478 }]&#39; &#39;{ &#34;rescan&#34;: false}&#39;
 
 Response is an array with the same size as the input that has the execution result :
-  [{ "success": true } , { "success": false, "error": { "code": -1, "message": "Internal Server Error"} }, ... ]
+  [{ &#34;success&#34;: true } , { &#34;success&#34;: false, &#34;error&#34;: { &#34;code&#34;: -1, &#34;message&#34;: &#34;Internal Server Error&#34;} }, ... ]
 
           </pre>
           <hr>

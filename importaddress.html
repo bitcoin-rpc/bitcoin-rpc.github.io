@@ -35,13 +35,13 @@
         <div class="col-8">
           <h1>importaddress - Bitcoin RPC</h1>
           <pre>
-importaddress "address" ( "label" rescan p2sh )
+importaddress &#34;address&#34; ( &#34;label&#34; rescan p2sh )
 
 Adds a script (in hex) or address that can be watched as if it were in your wallet but cannot be used to spend. Requires a new wallet backup.
 
 Arguments:
-1. "script"           (string, required) The hex-encoded script (or address)
-2. "label"            (string, optional, default="") An optional label
+1. &#34;script&#34;           (string, required) The hex-encoded script (or address)
+2. &#34;label&#34;            (string, optional, default=&#34;&#34;) An optional label
 3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions
 4. p2sh                 (boolean, optional, default=false) Add the P2SH version of the script as well
 
@@ -55,13 +55,13 @@ as change, and not show up in many RPCs.
 Examples:
 
 Import a script with rescan
-> bitcoin-cli importaddress "myscript"
+&gt; bitcoin-cli importaddress &#34;myscript&#34;
 
 Import using a label without rescan
-> bitcoin-cli importaddress "myscript" "testing" false
+&gt; bitcoin-cli importaddress &#34;myscript&#34; &#34;testing&#34; false
 
 As a JSON-RPC call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importaddress", "params": ["myscript", "testing", false] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;importaddress&#34;, &#34;params&#34;: [&#34;myscript&#34;, &#34;testing&#34;, false] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -35,13 +35,13 @@
         <div class="col-8">
           <h1>importprivkey - Bitcoin RPC</h1>
           <pre>
-importprivkey "privkey" ( "label" ) ( rescan )
+importprivkey &#34;privkey&#34; ( &#34;label&#34; ) ( rescan )
 
 Adds a private key (as returned by dumpprivkey) to your wallet. Requires a new wallet backup.
 
 Arguments:
-1. "privkey"          (string, required) The private key (see dumpprivkey)
-2. "label"            (string, optional, default="") An optional label
+1. &#34;privkey&#34;          (string, required) The private key (see dumpprivkey)
+2. &#34;label&#34;            (string, optional, default=&#34;&#34;) An optional label
 3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions
 
 Note: This call can take minutes to complete if rescan is true, during that time, other rpc calls
@@ -50,19 +50,19 @@ may report that the imported key exists but related transactions are still missi
 Examples:
 
 Dump a private key
-> bitcoin-cli dumpprivkey "myaddress"
+&gt; bitcoin-cli dumpprivkey &#34;myaddress&#34;
 
 Import the private key with rescan
-> bitcoin-cli importprivkey "mykey"
+&gt; bitcoin-cli importprivkey &#34;mykey&#34;
 
 Import using a label and without rescan
-> bitcoin-cli importprivkey "mykey" "testing" false
+&gt; bitcoin-cli importprivkey &#34;mykey&#34; &#34;testing&#34; false
 
 Import using default blank label and without rescan
-> bitcoin-cli importprivkey "mykey" "" false
+&gt; bitcoin-cli importprivkey &#34;mykey&#34; &#34;&#34; false
 
 As a JSON-RPC call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "importprivkey", "params": ["mykey", "testing", false] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;importprivkey&#34;, &#34;params&#34;: [&#34;mykey&#34;, &#34;testing&#34;, false] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

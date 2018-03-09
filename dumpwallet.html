@@ -35,7 +35,7 @@
         <div class="col-8">
           <h1>dumpwallet - Bitcoin RPC</h1>
           <pre>
-dumpwallet "filename"
+dumpwallet &#34;filename&#34;
 
 Dumps all wallet keys in a human-readable format to a server-side file. This does not allow overwriting existing files.
 Imported scripts are included in the dumpfile, but corresponding BIP173 addresses, etc. may not be added automatically by importwallet.
@@ -43,16 +43,16 @@ Note that if your wallet contains keys which are not derived from your HD seed (
 only backing up the seed itself, and must be backed up too (e.g. ensure you back up the whole dumpfile).
 
 Arguments:
-1. "filename"    (string, required) The filename with path (either absolute or relative to bitcoind)
+1. &#34;filename&#34;    (string, required) The filename with path (either absolute or relative to bitcoind)
 
 Result:
 {                           (json object)
-  "filename" : {        (string) The filename with full absolute path
+  &#34;filename&#34; : {        (string) The filename with full absolute path
 }
 
 Examples:
-> bitcoin-cli dumpwallet "test"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "dumpwallet", "params": ["test"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli dumpwallet &#34;test&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;dumpwallet&#34;, &#34;params&#34;: [&#34;test&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

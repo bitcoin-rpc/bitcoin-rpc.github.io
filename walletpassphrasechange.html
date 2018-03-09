@@ -35,17 +35,17 @@
         <div class="col-8">
           <h1>walletpassphrasechange - Bitcoin RPC</h1>
           <pre>
-walletpassphrasechange "oldpassphrase" "newpassphrase"
+walletpassphrasechange &#34;oldpassphrase&#34; &#34;newpassphrase&#34;
 
-Changes the wallet passphrase from 'oldpassphrase' to 'newpassphrase'.
+Changes the wallet passphrase from &#39;oldpassphrase&#39; to &#39;newpassphrase&#39;.
 
 Arguments:
-1. "oldpassphrase"      (string) The current passphrase
-2. "newpassphrase"      (string) The new passphrase
+1. &#34;oldpassphrase&#34;      (string) The current passphrase
+2. &#34;newpassphrase&#34;      (string) The new passphrase
 
 Examples:
-> bitcoin-cli walletpassphrasechange "old one" "new one"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "walletpassphrasechange", "params": ["old one", "new one"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli walletpassphrasechange &#34;old one&#34; &#34;new one&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;walletpassphrasechange&#34;, &#34;params&#34;: [&#34;old one&#34;, &#34;new one&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

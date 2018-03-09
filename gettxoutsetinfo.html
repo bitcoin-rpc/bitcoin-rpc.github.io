@@ -42,19 +42,19 @@ Note this call may take some time.
 
 Result:
 {
-  "height":n,     (numeric) The current block height (index)
-  "bestblock": "hex",   (string) the best block hash hex
-  "transactions": n,      (numeric) The number of transactions
-  "txouts": n,            (numeric) The number of output transactions
-  "bogosize": n,          (numeric) A meaningless metric for UTXO set size
-  "hash_serialized_2": "hash", (string) The serialized hash
-  "disk_size": n,         (numeric) The estimated size of the chainstate on disk
-  "total_amount": x.xxx          (numeric) The total amount
+  &#34;height&#34;:n,     (numeric) The current block height (index)
+  &#34;bestblock&#34;: &#34;hex&#34;,   (string) the best block hash hex
+  &#34;transactions&#34;: n,      (numeric) The number of transactions
+  &#34;txouts&#34;: n,            (numeric) The number of output transactions
+  &#34;bogosize&#34;: n,          (numeric) A meaningless metric for UTXO set size
+  &#34;hash_serialized_2&#34;: &#34;hash&#34;, (string) The serialized hash
+  &#34;disk_size&#34;: n,         (numeric) The estimated size of the chainstate on disk
+  &#34;total_amount&#34;: x.xxx          (numeric) The total amount
 }
 
 Examples:
-> bitcoin-cli gettxoutsetinfo 
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "gettxoutsetinfo", "params": [] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli gettxoutsetinfo 
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;gettxoutsetinfo&#34;, &#34;params&#34;: [] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

@@ -35,18 +35,18 @@
         <div class="col-8">
           <h1>removeprunedfunds - Bitcoin RPC</h1>
           <pre>
-removeprunedfunds "txid"
+removeprunedfunds &#34;txid&#34;
 
 Deletes the specified transaction from the wallet. Meant for use with pruned wallets and as a companion to importprunedfunds. This will affect wallet balances.
 
 Arguments:
-1. "txid"           (string, required) The hex-encoded id of the transaction you are deleting
+1. &#34;txid&#34;           (string, required) The hex-encoded id of the transaction you are deleting
 
 Examples:
-> bitcoin-cli removeprunedfunds "a8d0c0184dde994a09ec054286f1ce581bebf46446a512166eae7628734ea0a5"
+&gt; bitcoin-cli removeprunedfunds &#34;a8d0c0184dde994a09ec054286f1ce581bebf46446a512166eae7628734ea0a5&#34;
 
 As a JSON-RPC call
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "removeprunedfunds", "params": ["a8d0c0184dde994a09ec054286f1ce581bebf46446a512166eae7628734ea0a5"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;removeprunedfunds&#34;, &#34;params&#34;: [&#34;a8d0c0184dde994a09ec054286f1ce581bebf46446a512166eae7628734ea0a5&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>

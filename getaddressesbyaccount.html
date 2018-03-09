@@ -35,22 +35,22 @@
         <div class="col-8">
           <h1>getaddressesbyaccount - Bitcoin RPC</h1>
           <pre>
-getaddressesbyaccount "account"
+getaddressesbyaccount &#34;account&#34;
 
 DEPRECATED. Returns the list of addresses for the given account.
 
 Arguments:
-1. "account"        (string, required) The account name.
+1. &#34;account&#34;        (string, required) The account name.
 
 Result:
 [                     (json array of string)
-  "address"         (string) a bitcoin address associated with the given account
+  &#34;address&#34;         (string) a bitcoin address associated with the given account
   ,...
 ]
 
 Examples:
-> bitcoin-cli getaddressesbyaccount "tabby"
-> curl --user myusername --data-binary '{"jsonrpc": "1.0", "id":"curltest", "method": "getaddressesbyaccount", "params": ["tabby"] }' -H 'content-type: text/plain;' http://127.0.0.1:8332/
+&gt; bitcoin-cli getaddressesbyaccount &#34;tabby&#34;
+&gt; curl --user myusername --data-binary &#39;{&#34;jsonrpc&#34;: &#34;1.0&#34;, &#34;id&#34;:&#34;curltest&#34;, &#34;method&#34;: &#34;getaddressesbyaccount&#34;, &#34;params&#34;: [&#34;tabby&#34;] }&#39; -H &#39;content-type: text/plain;&#39; http://127.0.0.1:8332/
 
           </pre>
           <hr>
