@@ -9,8 +9,8 @@ import (
 )
 
 type Command struct {
-	Name        string
-	Description string
+	Name      string
+	Groupname string
 }
 
 type Group struct {
@@ -45,10 +45,9 @@ func main() {
 				lastGroupName = line[3 : len(line)-3]
 			} else {
 				name := strings.Split(line, " ")[0]
-				desc := run("help", name)
 				comm := Command{
-					Name:        name,
-					Description: desc,
+					Name:      name,
+					Groupname: strings.ToLower(lastGroupName),
 				}
 				commands = append(commands, comm)
 			}
