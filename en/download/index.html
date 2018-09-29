@@ -1,0 +1,2940 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<!-- source: '_posts/en/pages/2017-01-01-download.md' -->
+<!-- name: 'download' -->
+<!-- version: 2 -->
+<!-- translated:  -->
+<meta charset="utf-8">
+
+<title>Bitcoin Core :: Download - Bitcoin</title>
+<meta name="description" content="Download - Bitcoin">
+<meta name="keywords" content="">
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Download - Bitcoin">
+<meta name="twitter:description" content="Download - Bitcoin">
+<meta name="twitter:site" content="@bitcoincoreorg">
+<meta name="twitter:creator" content="@bitcoincoreorg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://bitcoincore.org/assets/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Download - Bitcoin">
+<meta property="og:description" content="Download - Bitcoin">
+<meta property="og:url" content="https://bitcoincore.org/en/download/">
+<meta property="og:site_name" content="Bitcoin Core">
+
+<meta property="og:image" content="https://bitcoincore.org/assets/images/default-thumb.png">
+
+
+
+
+
+
+<link rel="alternate" hreflang="ja" href="https://bitcoincore.org/ja/download/" /><link rel="alternate" hreflang="en" href="https://bitcoincore.org/en/download/" />
+<link rel="canonical" href="https://bitcoincore.org/en/download/">
+<link href="https://bitcoincore.org/en/feed.xml" type="application/atom+xml" rel="alternate" title="Bitcoin Core Blog XML Feed">
+<link href="https://bitcoincore.org/en/rss.xml" type="application/rss+xml" rel="alternate" title="Bitcoin Core Blog RSS Feed">
+<link href="https://bitcoincore.org/en/meetingrss.xml" type="application/rss+xml" rel="alternate" title="Bitcoin Core Meeting RSS Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<meta http-equiv="cleartype" content="on">
+
+<!-- Icons -->
+<link rel="shortcut icon" href="/assets/images/favicon.ico"><!-- 16x16 -->
+<link rel="shortcut icon" href="/assets/images/favicon.png"><!-- 32x32 -->
+<link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-precomposed.png"><!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72x72-precomposed.png"><!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114x114-precomposed.png"><!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144x144-precomposed.png"><!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+
+</head>
+
+<body class="page">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+        
+		<a href="/"><img src="/assets/images/bitcoin_core_logo_colored_reversed.png" alt="bitcoin core logo"></a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+                    
+                
+                    
+                      <li><a href="javascript:;">About</a>
+                          <ul>
+                          
+
+                              
+                              <li><a href="/en/about/">About Us</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/team/">Team</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/about/sponsorship/programme/">Sponsorship</a>
+                                  <ul>
+                                      
+                                      <li><a href="/en/about/sponsorship/programme/">programme</a></li>
+                                      
+                                      <li><a href="/en/about/sponsorship/faq/">FAQ</a></li>
+                                      
+                                  </ul>
+                              </li>
+                              
+
+                          
+                          
+                          </ul>
+                      </li>
+                    
+                
+                    
+                      <li><a href="/en/download">Download</a></li>
+                    
+                
+                    
+                      <li><a href="/en/blog/">blog</a></li>
+                    
+                
+                    
+                      <li><a href="/en/releases/">releases</a></li>
+                    
+                
+                    
+                      <li><a href="javascript:;">FAQs</a>
+                          <ul>
+                          
+
+                              
+                              <li><a href="/en/2015/12/23/capacity-increases-faq/">Capacity Increases</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/2016/01/26/segwit-benefits/">Segwit</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/segwit_wallet_dev/">Segwit dev guide</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/faq/optin_rbf/">Opt-in RBF</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/2016/06/07/compact-blocks-faq/">Compact Blocks</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/2016/06/08/version-bits-miners-faq/">Version Bits (BIP9)</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/2016/10/27/segwit-upgrade-guide/">Segwit upgrade guide</a></li>
+                              
+
+                          
+                          
+                          </ul>
+                      </li>
+                    
+                
+                    
+                      <li><a href="javascript:;">Development</a>
+                          <ul>
+                          
+
+                              
+                              <li><a href="/en/contribute/">contribute</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/faq/contributing-code/">contributing code</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/meetings/">meetings</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/bips/">Supported BIPs</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/lifecycle">Lifecycle</a></li>
+                              
+
+                          
+                          
+                            <li>
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                                  <a href="/en/doc/">RPC Docs</a>
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                                
+                              
+                              
+                              <ul>
+                                
+                                  
+                                    
+                                      
+                                        <li><a href="/en/doc/0.16.0/">0.16.0</a></li>
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                  
+                                
+                                  
+                                    
+                                      
+                                        <li><a href="/en/doc/0.16.1/">0.16.1</a></li>
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                  
+                                
+                                  
+                                    
+                                      
+                                        <li><a href="/en/doc/0.16.2/">0.16.2</a></li>
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                  
+                                
+                                  
+                                    
+                                      
+                                        <li><a href="/en/doc/0.16.3/">0.16.3</a></li>
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                  
+                                
+                                  
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                      
+                                    
+                                  
+                                
+                                  
+                                
+                              </ul>
+                            </li>
+                          
+                          </ul>
+                      </li>
+                    
+                
+                    
+                      <li><a href="javascript:;">Contact</a>
+                          <ul>
+                          
+
+                              
+                              <li><a href="/en/contact/">Contact Us</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/list/announcements/join/">Announcements</a></li>
+                              
+
+                          
+
+                              
+                              <li><a href="/en/twitter-impersonation">Twitter impersonation</a></li>
+                              
+
+                          
+                          
+                          </ul>
+                      </li>
+                    
+                
+                
+                
+
+                <li id="langselect" class="lang">
+                    <select onchange="window.location=this.value;">
+                        <option value="">English</option>
+                        
+                        
+                        
+                        <option value="/ja/download/">日本語</option>
+                        
+                        
+                    </select>
+                </li>
+                <!--<li class="lang">-->
+                    <!--<li><a>English</a>-->
+                    <!--      -->
+                    <!---->
+                    <!---->
+                    <!--<a href="/en/download/" class="en">English</a>-->
+                    <!--<a href="/en/download/" class="en">English</a>-->
+                    <!---->
+                    <!--<a href="/ja/download/" class="ja"></a>-->
+                    <!--<a href="/ja/download/" class="ja">日本語</a>-->
+                    <!--<a href="/ja/download/" class="ja">日本語</a>-->
+                    <!---->
+                <!--</li>-->
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+
+<div itemscope itemtype="http://schema.org/Person">
+
+
+
+
+
+
+
+
+  <h3 itemprop="name"></h3>
+  <p></p>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
+
+  </div>
+  <article class="page">
+    <h1>Download - Bitcoin</h1>
+    <div class="article-wrap">
+      <!-- { % include istranslated.html % } -->
+      
+<link rel="alternate" type="application/rss+xml" href="/en/releasesrss.xml" title="Bitcoin Core releases" />
+
+<div class="download">
+  <h2>Latest version: 0.16.3 <a type="application/rss+xml" href="/en/releasesrss.xml"><img src="/assets/images/icons/icon_rss.svg" alt="rss" class="rssicon" /></a></h2>
+  <div class="mainbutton"><a id="downloadbutton" href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win32-setup.exe"><img src="/assets/images/os/but_windows.svg" alt="icon" /><span>Download Bitcoin Core</span></a></div>
+  <div class="downloadbox">
+    <p>Or choose your operating system</p>
+    <div>
+      <div>
+        <img src="/assets/images/os/med_win.png" alt="windows" />
+        <span>
+          <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win64-setup.exe" id="downloadwinexe">Windows</a>
+          <span><a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win64-setup.exe" class="dl" id="win64exe">64 bit</a> -
+            <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win32-setup.exe" class="dl" id="win32exe">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/assets/images/os/med_win.png" alt="windows" />
+        <span>
+          <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win64.zip" id="downloadwinzip">Windows (zip)</a>
+          <span><a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win64.zip" class="dl" id="win64zip">64 bit</a> -
+            <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-win32.zip" class="dl" id="win32zip">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/assets/images/os/med_osx.png" alt="osx" />
+        <span>
+          <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-osx.dmg">Mac OS X</a>
+          <span><a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-osx.dmg" class="dl" id="macdmg">dmg</a> -
+            <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-osx64.tar.gz" class="dl" id="mactar">tar.gz</a></span>
+        </span>
+      </div>
+    </div>
+    <div>
+      <div>
+        <img src="/assets/images/os/med_linux.png" alt="linux" />
+        <span>
+          <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-x86_64-linux-gnu.tar.gz" id="downloadlin">Linux (tgz)</a>
+          <span><a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-x86_64-linux-gnu.tar.gz" class="dl" id="lin64">64 bit</a> -
+            <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-i686-pc-linux-gnu.tar.gz" class="dl" id="lin32">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/assets/images/os/arm.png" alt="ARM Linux" />
+        <span>
+          <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-arm-linux-gnueabihf.tar.gz" class="dl">ARM Linux</a>
+          	<span><a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-aarch64-linux-gnu.tar.gz" class="dl" id="lin64arm">64 bit</a> -
+            	<a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3-arm-linux-gnueabihf.tar.gz" class="dl" id="lin32arm">32 bit</a></span>
+        </span>
+      </div>
+      <div>
+        <img src="/assets/images/os/med_ubuntu.svg" alt="ubuntu" />
+        <span>
+          <a href="https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin">Ubuntu (PPA)</a>
+        </span>
+      </div>
+    </div>
+    <p class="downloadmore">
+      <a href="/bin/bitcoin-core-0.16.3/SHA256SUMS.asc" class="dl">Verify release signatures</a><br />
+      <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3.torrent" class="dl">Download torrent</a>
+         <a href="magnet:?xt=urn:btih:a6015029671a445a7a07026b3e4a0fe54c2b2df3&amp;dn=bitcoin-core-0.16.3&amp;tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&amp;tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&amp;t r=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&amp;tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&amp;tr=udp%3A%2F%2Fzer0day.ch%3A1337&amp;tr=udp%3A%2F%2Fexplodie.org%3A6969" class="magnetlink" data-proofer-ignore=""></a><br />
+      <a href="/bin/bitcoin-core-0.16.3/bitcoin-0.16.3.tar.gz" class="dl">Source code</a><br />
+      <a href="/en/releases">Show version history</a>
+    </p>
+    <p class="downloadkeys">
+      <span>Bitcoin Core Release Signing Keys</span>
+      <a href="/keys/laanwj-releases.asc">v0.11.0+</a> <code title="PGP key fingerprint">01EA5486DE18A882D4C2684590C8019E36C2E964</code>
+    </p>
+  </div>
+
+</div>
+
+<h2 style="text-align: center">Check your bandwidth and space</h2>
+<p>Bitcoin Core requires a one-time download of about 210GB of data plus a further 5-10GB per month.  By default, you will need to store all of that data, but if you <a href="https://bitcoin.org/en/full-node#reduce-storage">enable pruning</a>, you can store as little as 6GB total without sacrificing any security.
+ For more information about setting up Bitcoin Core, please read the <a href="https://bitcoin.org/en/full-node">full node guide</a>.</p>
+
+<h2 style="text-align: center">Verify your download</h2>
+<p>Download verification is optional but highly recommended.  Click one of the lines below to view verification instructions for that platform.</p>
+<details>
+  
+    <summary><strong>Windows verification instructions</strong></summary>
+    <ol>
+      <li><p>Click the link in the list above to download the release for your platform and wait for the file to finish downloading.</p></li>
+
+      <li><p>Download the list of cryptographic checksums: <a href="/bin/bitcoin-core-0.16.3/SHA256SUMS.asc">SHA256SUMS.asc</a></p></li>
+
+      <li><p>Open a terminal (command line prompt) and Change Directory (cd) to the folder you use for downloads.  For example:</p>
+
+        <pre class="highlight"><code>cd %UserProfile%\Downloads
+</code></pre>
+
+        </li>
+
+      
+      <li><p>Run the following command to generate a checksum of the release file you downloaded.  Replace 'bitcoin-0.16.3-win64-setup.exe' with the name of the file you actually downloaded.</p>
+
+        <pre class="highlight"><code>certUtil -hashfile bitcoin-0.16.3-win64-setup.exe SHA256</code></pre></li>
+
+      <li><p>Ensure that the checksum produced by the command above matches one of the checksums listed in the checksums file you downloaded earlier.  We recommend that you check every character of the two checksums to ensure they match.  You can see the checksums you downloaded by running the following command:
+</p>
+
+        <pre class="highlight"><code>type SHA256SUMS.asc</code></pre></li>
+
+      <li><p>If you haven't previously installed GNU Privacy Guard (GPG) on your system, <a href="https://gpg4win.org/download.html">install it now</a>
+      or see other installation
+      <a href="https://www.gnupg.org/download/index.en.html#binary">options.</a></p></li>
+
+      <li><p>Obtain a copy of the release signing key by running the following command:</p>
+
+        <pre class="highlight"><code>C:\Program Files\Gnu\GnuPg\gpg.exe --recv-keys 01EA5486DE18A882D4C2684590C8019E36C2E964</code></pre>
+
+        <p>The output of the command above should say that one key was imported, updated, has new signatures, or remained unchanged.</p></li>
+
+      <li>Verify that the checksums file is PGP signed by the release signing key:
+
+        <pre class="highlight"><code>C:\Program Files\Gnu\GnuPg\gpg.exe --verify SHA256SUMS.asc</code></pre></li>
+
+      <li><p>Check the output from the above command for the following text:</p>
+        <ol><li><p>A line that starts with: <code>gpg: Good signature</code></p></li>
+          <li><p>A complete line saying: <code>Primary key fingerprint: 01EA&nbsp;5486&nbsp;DE18&nbsp;A882&nbsp;D4C2&nbsp;&nbsp;6845&nbsp;90C8&nbsp;019E&nbsp;36C2&nbsp;E964</code></p></li>
+        </ol>
+
+        <p>The output from the verify command may contain a warning that the "key is not certified with a trusted signature." This means that to fully verify your download, you need to ask people you trust to confirm that the key fingerprint printed above belongs to the Bitcoin Core Project's release signing key.
+</p></li>
+
+    </ol>
+  </details>
+<details>
+    
+    <summary><strong>MacOS verification instructions</strong></summary>
+    <ol>
+      <li><p>Click the link in the list above to download the release for your platform and wait for the file to finish downloading.</p></li>
+
+      <li><p>Download the list of cryptographic checksums: <a href="/bin/bitcoin-core-0.16.3/SHA256SUMS.asc">SHA256SUMS.asc</a></p></li>
+
+      <li><p>Open a terminal (command line prompt) and Change Directory (cd) to the folder you use for downloads.  For example:</p>
+
+        <pre class="highlight"><code>cd Downloads/</code></pre>
+
+        </li>
+
+      <li><p>Verify that the checksum of the release file is listed in the checksums file using the following command:</p>
+
+        <pre class="highlight"><code>shasum -a 256 --check SHA256SUMS.asc</code></pre>
+
+        <p>In the output produced by the above command, you can safely ignore any warnings and failures, but you must ensure the output lists "OK" after the name of the release file you downloaded.  For example: <code>bitcoin-0.16.3-osx.dmg: OK</code></p></li>
+
+      <li><p>If you haven't previously installed GNU Privacy Guard (GPG) on your system, <a href="https://gpgtools.org/">install it now</a>
+      or see other installation
+      <a href="https://www.gnupg.org/download/index.en.html#binary">options.</a></p></li>
+
+      <li><p>Obtain a copy of the release signing key by running the following command:</p>
+
+        <pre class="highlight"><code>gpg --recv-keys 01EA5486DE18A882D4C2684590C8019E36C2E964</code></pre>
+
+        <p>The output of the command above should say that one key was imported, updated, has new signatures, or remained unchanged.</p></li>
+
+      <li>Verify that the checksums file is PGP signed by the release signing key:
+
+        <pre class="highlight"><code>gpg --verify SHA256SUMS.asc</code></pre></li>
+
+      <li><p>Check the output from the above command for the following text:</p>
+        <ol><li><p>A line that starts with: <code>gpg: Good signature</code></p></li>
+          <li><p>A complete line saying: <code>Primary key fingerprint: 01EA&nbsp;5486&nbsp;DE18&nbsp;A882&nbsp;D4C2&nbsp;&nbsp;6845&nbsp;90C8&nbsp;019E&nbsp;36C2&nbsp;E964</code></p></li>
+        </ol>
+
+        <p>The output from the verify command may contain a warning that the "key is not certified with a trusted signature." This means that to fully verify your download, you need to ask people you trust to confirm that the key fingerprint printed above belongs to the Bitcoin Core Project's release signing key.
+</p></li>
+    </ol>
+  </details>
+
+<details>
+    <summary><strong>Linux verification instructions (not for Ubuntu PPA)</strong></summary>
+    <ol>
+      <li><p>Click the link in the list above to download the release for your platform and wait for the file to finish downloading.</p></li>
+
+      <li><p>Download the list of cryptographic checksums: <a href="/bin/bitcoin-core-0.16.3/SHA256SUMS.asc">SHA256SUMS.asc</a></p></li>
+
+      <li><p>Open a terminal (command line prompt) and Change Directory (cd) to the folder you use for downloads.  For example:</p>
+
+        <pre class="highlight"><code>cd Downloads/</code></pre>
+
+        </li>
+
+      <li><p>Verify that the checksum of the release file is listed in the checksums file using the following command:</p>
+
+        <pre class="highlight"><code>sha256sum --ignore-missing --check SHA256SUMS.asc</code></pre>
+
+        <p>In the output produced by the above command, you can safely ignore any warnings and failures, but you must ensure the output lists "OK" after the name of the release file you downloaded.  For example: <code>bitcoin-0.16.3-x86_64-linux-gnu.tar.gz: OK</code></p></li>
+
+      <li><p>Obtain a copy of the release signing key by running the following command:</p>
+
+        <pre class="highlight"><code>gpg --recv-keys 01EA5486DE18A882D4C2684590C8019E36C2E964</code></pre>
+
+        <p>The output of the command above should say that one key was imported, updated, has new signatures, or remained unchanged.</p></li>
+
+      <li>Verify that the checksums file is PGP signed by the release signing key:
+
+        <pre class="highlight"><code>gpg --verify SHA256SUMS.asc</code></pre></li>
+
+      <li><p>Check the output from the above command for the following text:</p>
+        <ol><li><p>A line that starts with: <code>gpg: Good signature</code></p></li>
+          <li><p>A complete line saying: <code>Primary key fingerprint: 01EA&nbsp;5486&nbsp;DE18&nbsp;A882&nbsp;D4C2&nbsp;&nbsp;6845&nbsp;90C8&nbsp;019E&nbsp;36C2&nbsp;E964</code></p></li>
+        </ol>
+
+        <p>The output from the verify command may contain a warning that the "key is not certified with a trusted signature." This means that to fully verify your download, you need to ask people you trust to confirm that the key fingerprint printed above belongs to the Bitcoin Core Project's release signing key.
+</p></li>
+
+    </ol>
+  </details>
+
+<details>
+    <summary><strong>Ubuntu PPA verification instructions</strong></summary>
+
+    <p>Ubuntu PPAs are not built using the same reproducible method used for the other Bitcoin Core packages listed on this page, so the Bitcoin Core project does not have the information necessary to help you verify the Bitcoin Core Ubuntu PPA packages.  This situation is also described by the PPA itself:
+</p>
+
+    <blockquote>"Note that you should prefer to use the official binaries, where possible, to limit trust in Launchpad/the PPA owner."
+</blockquote>
+  </details>
+
+<h2 style="text-align: center">Additional verification with reproducible builds</h2>
+
+<p>Experienced users who don't mind performing additional steps can take advantage of Bitcoin Core's reproducible builds and the signed checksums generated by contributors who perform those builds.
+</p>
+
+<ul>
+    <li><p><em>Reproducible builds</em> allow anyone with a copy of Bitcoin Core's MIT-licensed source code to build identical binaries to those distributed on this website (meaning the binaries will have the same cryptographic checksums as those provided by this website).
+</p></li>
+
+    <li><p><em>Verified reproduction</em> is the result of multiple Bitcoin Core contributors each independently reproducing identical binaries as described above.  These contributors cryptographically sign and publish the checksums of the binaries they generate.
+</p></li>
+  </ul>
+
+<p>Verifying that several contributors you trust all signed the same checksums distributed in the release checksums file will provide you with additional assurances over the preceding basic verification instructions.  Alternatively, reproducing a binary for yourself will provide you with the highest level of assurance currently available. For more information, visit the project's repository of
+ <a href="https://github.com/bitcoin-core/gitian.sigs">trusted build process signatures</a>.</p>
+
+<hr />
+
+<p>Bitcoin Core is a community-driven <a href="https://www.fsf.org/about/what-is-free-software">free software</a> project, released under the open source <a href="http://opensource.org/licenses/mit-license.php">MIT license</a>.</p>
+
+<script type="text/javascript">
+var os = 'windows32';
+if (navigator.userAgent.indexOf('Mac') != -1) var os = 'mac'
+else if (navigator.userAgent.indexOf('Linux') != -1) {
+	var os='linux32';
+	if (navigator.userAgent.indexOf('x86_64') != -1) var os = 'linux64';
+	if (navigator.userAgent.indexOf('Ubuntu') != -1) var os = 'ubuntu';
+}
+else if (navigator.userAgent.indexOf('WOW64') != -1 || navigator.userAgent.indexOf('Win64') != -1) var os='windows64';
+var but = document.getElementById('downloadbutton');
+var linkwinexe = document.getElementById('downloadwinexe');
+var linkwinzip = document.getElementById('downloadwinzip');
+var linklin = document.getElementById('downloadlin');
+var hrefwin64exe = document.getElementById('win64exe').href;
+var hrefwin32exe = document.getElementById('win32exe').href;
+var hrefwin64zip = document.getElementById('win64zip').href;
+var hrefwin32zip = document.getElementById('win32zip').href;
+var hrefmacdmg = document.getElementById('macdmg').href;
+var hrefmactar = document.getElementById('mactar').href;
+var hreflin64 = document.getElementById('lin64').href;
+var hreflin32 = document.getElementById('lin32').href;
+switch (os) {
+case 'windows64':
+	but.getElementsByTagName('IMG')[0].src = '/assets/images/os/but_windows.svg';
+	but.href = hrefwin64exe;
+	linkwinexe.href = hrefwin64exe;
+	linkwinzip.href = hrefwin64zip;
+break;
+case 'windows32':
+	but.getElementsByTagName('IMG')[0].src = '/assets/images/os/but_windows.svg';
+	but.href = hrefwin32exe;
+	linkwinexe.href = hrefwin32exe;
+	linkwinzip.href = hrefwin32zip;
+break;
+case 'linux64':
+	but.getElementsByTagName('IMG')[0].src = '/assets/images/os/but_linux.png';
+	but.href = hreflin64;
+	linklin.href = hreflin64;
+break;
+case 'linux32':
+	but.getElementsByTagName('IMG')[0].src = '/assets/images/os/but_linux.png';
+	but.href = hreflin32;
+	linklin.href = hreflin32;
+break;
+case 'ubuntu':
+	but.getElementsByTagName('IMG')[0].src = '/assets/images/os/but_ubuntu.svg';
+	but.href = 'https://launchpad.net/~bitcoin/+archive/ubuntu/bitcoin';
+break;
+case 'mac':
+	but.getElementsByTagName('IMG')[0].src = '/assets/images/os/but_mac.svg';
+	but.href = hrefmacdmg;
+break;
+}
+
+</script>
+
+
+      
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    <div>
+    <span>
+        <a href="https://twitter.com/bitcoincoreorg" target="_blank" class=""><i class="fa fa-fw fa-twitter"></i>Twitter</a><br />
+        <a href="/en/legal/">Legal</a> | <a href="/en/legal/privacy">Privacy Policy</a> | <a href="/en/rss/">RSS <img src="/assets/images/rss-24x24.png" alt="rss feeds" width="14" height="14"></a>
+    </span>
+</div>
+<div>
+    <img src="/assets/images/bitcoin_core_logo.png" alt="bitcoin core logo" width="160"><br />
+    <span class="copyright">&copy; 2018 Bitcoin Core</span>
+</div>
+
+<link rel="stylesheet" href="/assets/css/fonts.css">
+
+  </footer>
+
+</div><!-- /.footer-wrap -->
+
+<script src="/assets/js/scripts.js"></script>
+
+
+
+
+</body>
+</html>

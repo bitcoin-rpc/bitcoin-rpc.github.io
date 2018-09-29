@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Bitcoin Core</title>
+        <description></description>
+        <link>https://bitcoincore.org</link>
+        <atom:link href="https://bitcoincore.org/ja/rss.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>Bitcoin Core 0.16.2 リリース</title>
+            <description>&lt;p&gt;Bitcoin Coreバージョン0.16.2が&lt;a href=&quot;/ja/download&quot;&gt;ダウンロード&lt;/a&gt;できるようになりました。
+すべてのユーザーに、いくつかのバグを修正し以下のような新しいマイナー機能をバックポートで提供する
+&lt;a href=&quot;/en/lifecycle/#maintenance-releases&quot;&gt;メンテナンスリリース&lt;/a&gt;にアップグレードすることをお勧めします。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/en/doc/0.16.2/rpc/blockchain/verifytxoutproof/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;verifytxoutproof&lt;/code&gt;&lt;/a&gt; RPCが、6月上旬に公開された
+SPVプルーフに対する特定の&lt;a href=&quot;https://bitslog.wordpress.com/2018/06/09/leaf-node-weakness-in-bitcoin-merkle-tree-design/&quot;&gt;高価な攻撃&lt;/a&gt;に対して、脆弱ではなくなりました。
+ほぼ同等の有効性を発揮するより安価な攻撃がよく知られていることから、この攻撃の発生は考えにくいものでした。
+同様に、&lt;a href=&quot;/en/doc/0.16.2/rpc/blockchain/getblock/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;getblock&lt;/code&gt;&lt;/a&gt; RPCは、要求されたブロックがプルーニングされていても
+この攻撃を無効にするために使用できる追加の情報を返すようになりました。
+これは実際のSPVクライアントへの攻撃を緩和するものではありません。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;/en/doc/0.16.2/rpc/wallet/abandontransaction/&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;abandontransaction&lt;/code&gt;&lt;/a&gt; RPCは、子トランザクションだけでなく、
+全ての孫トランザクションまで破棄するよう修正されました。今までと同様、ウォレットが古い
+未承認トランザクションを再ブロードキャストする必要がなくなった際に、このRPCを呼ぶことができます。
+このRPCがマイナーや他のノードにトランザクションを忘れさせることはできません。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;変更の完全なリストについては、&lt;a href=&quot;/ja/releases/0.16.2/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。
+ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRCチャットルーム&lt;/a&gt;でお気軽にお問い合わせください。&lt;/p&gt;
+
+</description>
+            <pubDate>Sun, 29 Jul 2018 00:00:00 +0700</pubDate>
+            <link>https://bitcoincore.org/ja/2018/07/29/release-0.16.2/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2018/07/29/release-0.16.2/</guid>
+        </item>
+        
+        <item>
+            <title>Bitcoin Core 0.16.1 リリース</title>
+            <description>&lt;p&gt;Bitcoin Core バージョン0.16.1を&lt;a href=&quot;/ja/download&quot;&gt;ダウンロード&lt;/a&gt;できるようになりました。
+すべてのユーザーが、いくつかのバグを修正し以下の新しいマイナー機能のバックポートを提供する
+この&lt;a href=&quot;/en/lifecycle/#maintenance-releases&quot;&gt;メンテナンスリリース&lt;/a&gt;にアップグレードすることをお勧めします。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;DoS攻撃の攻撃ベクトルを軽減します。この攻撃は特定のサービスを犠牲にし、
+おそらく（ネットワークに接続して数時間以上経過しているノードよりも）初めて起動したノードに対して最も効果的だったでしょう。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;マイナーが非常に迅速に連続して2つのブロックを生成した場合に、報酬を失う可能性があるバグを修正しました。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;レガシーな（非segwitの）署名スクリプトで、ほとんど見られない&lt;code class=&quot;highlighter-rouge&quot;&gt;OP_CODESEPARATOR&lt;/code&gt;
+opcodeが使われている場合、そのトランザクションのリレーを停止します。このopcodeが現れると
+ノードがレガシーな署名スクリプトを検証するためにどれだけの計算作業が必要か推定することが困難になります。
+このため、&lt;code class=&quot;highlighter-rouge&quot;&gt;OP_CODESEPARATOR&lt;/code&gt;は攻撃者に検証に長時間かかるブロックを作成させないようにするソリューションの展開をブロックします。
+このリレーポリシーの変更は問題自体を解決するものではありませんが、ユーザーがこれらの採用に同意すると
+将来的に提案されたこれらのソリューションを安全かつ簡単に展開できます。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;変更点の完全なリストは&lt;a href=&quot;/ja/releases/0.16.1/&quot;&gt;リリースノート&lt;/a&gt;を参照してください。
+ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRCチャットルーム&lt;/a&gt;でお気軽にお問い合わせください。&lt;/p&gt;
+
+</description>
+            <pubDate>Fri, 15 Jun 2018 00:00:00 +0700</pubDate>
+            <link>https://bitcoincore.org/ja/2018/06/15/release-0.16.1/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2018/06/15/release-0.16.1/</guid>
+        </item>
+        
+        <item>
+            <title>Bitcoin Core 0.15.1 リリース</title>
+            <description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    
+    &lt;h3 class=&quot;toc-header&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Overview&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div class=&quot;toc-drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#notable-changes&quot; id=&quot;markdown-toc-notable-changes&quot;&gt;主な変更点&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#network-fork-safety-enhancements&quot; id=&quot;markdown-toc-network-fork-safety-enhancements&quot;&gt;ネットワークフォークの安全性強化&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#rpc-changes&quot; id=&quot;markdown-toc-rpc-changes&quot;&gt;RPCの変更&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#miner-block-size-limiting-deprecated&quot; id=&quot;markdown-toc-miner-block-size-limiting-deprecated&quot;&gt;マイナーのブロックサイズ制限の廃止&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#gui-settings-backed-up-on-reset&quot; id=&quot;markdown-toc-gui-settings-backed-up-on-reset&quot;&gt;リセット時のGUIの設定のバックアップ&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#duplicate-wallets-disallowed&quot; id=&quot;markdown-toc-duplicate-wallets-disallowed&quot;&gt;重複ウォレットの禁止&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#debug-minimumchainwork-argument-added&quot; id=&quot;markdown-toc-debug-minimumchainwork-argument-added&quot;&gt;-minimumchainwork デバッグ引数の追加&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;最後に&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hashes-for-verification&quot; id=&quot;markdown-toc-hashes-for-verification&quot;&gt;検証用のハッシュ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.1のリリースをお知らせします。&lt;/p&gt;
+
+&lt;p&gt;このリリースでは、将来のネットワークフォークの可能性に対する予防策としてP2Pネットワークの安全性に重点を置くとともに、0.15.xシリーズにバグフィックスや最適化及び改善を行っています。&lt;/p&gt;
+
+&lt;h2 id=&quot;notable-changes&quot;&gt;主な変更点&lt;/h2&gt;
+
+&lt;h3 id=&quot;network-fork-safety-enhancements&quot;&gt;ネットワークフォークの安全性強化&lt;/h3&gt;
+
+&lt;p&gt;ブロックチェーンのフォークや異なる動作をするピアに対する安全対策として、Bitcoin Coreのピア接続と無効ブロックを処理する方法がいくつか変更されています。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;minimum-chain-workより作業量の少ない不要なブロックは、tipより多くの作業があっても処理されなくなりました（tipが低作業量である場合のIBDの潜在的な問題）。
+これによりピアがノードのリソースを無駄にするのを防ぎます。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;IBD中にminimum-chain-workより少ない作業量を提供するピアはすぐに切断されます。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;アウトバウンドピアに対しては、そのピアのベストブロックが少なくとも私達のピアのtipど同じくらいの作業をしているかどうかチェックします。
+同様の作業量がなく20分のタイムアウト後も充分な作業をしているブロックが見当たらない場合、1つのgetheadersメッセージを送信し、さらに2分待ちます。
+2分後にまたそのベストブロックの作業が不十分な場合、そのピアとの接続を切断します。このアルゴリズムの結果、過剰なネットワークトポロジーの変更が発生しないよう、
+このロジックによって切断されない4つのアウトバウンドピアを確保し、偽のチェーン上にはない合理的なノードの数を確保します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;（BIP 152ではブロックの完全な検証が終わる前にCompact Blockを中継することが明示的に許可されているため、Compact Block以外のアナウンスにおいて）
+アウトバウンドピアが既に無効であることが分かっているブロックヘッダを提供した場合、接続が切断されます。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;チェーンのtipが30分以上前進していない場合、tipが古いとみなし、追加のアウトバウンドピアに接続しようとします。
+定期的なチェックにより、この追加のピア接続がされている場合、直近で新しいブロックのアナウンスが少ないピアとの接続を切断します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;全ての既知の無効なブロック（チェーンに繋ごうとしたが無効であると判明したブロック）のセットは追跡され、
+新しいヘッダが無効なチェーン上に構築されているかどうかチェックするのに使われます。これにより無効なブロックの子孫が全て同様にマークされます。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rpc-changes&quot;&gt;RPCの変更&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;getmininginfo&lt;/code&gt;の&lt;code class=&quot;highlighter-rouge&quot;&gt;currentblocksize&lt;/code&gt;の値は削除されました。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;dumpwallet&lt;/code&gt;でファイルの上書きが許可されなくなりました。これは危険なユーザーの間違いを防ぐ安全策です。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;backupwallet&lt;/code&gt;はウォレットを破壊することがないよう、元の同じファイルにバックアップしようとすると失敗するようになりました。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;listsinceblock&lt;/code&gt;は未知の&lt;code class=&quot;highlighter-rouge&quot;&gt;blockhash&lt;/code&gt;引数が渡された際に、ジェネシスブロックから全てのウォレットのトランザクションのリストを返すのではなく
+エラーを投げるようになりました。空の文字列が指定された場合もこの振る舞いは変わりません。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;miner-block-size-limiting-deprecated&quot;&gt;マイナーのブロックサイズ制限の廃止&lt;/h3&gt;
+
+&lt;p&gt;0.13.0以降、getblocktemplateが返すブロックのサイズを制限するのにblockmaxweightの使用が推奨されるようになりましたが、
+ブロックサイズを直接制限したいと思っていた人にとってはblockmaxsizeがオプションとして利用できました。
+このオプションを使うといくつかのUIの問題と最適でない手数料の選択、わずかながらパフォーマンスの悪化が発生するため廃止されました。
+さらにblockmaxsizeオプションは、ブロックサイズを直接制限するのではなく、暗黙的なblockmaxweightの計算にのみ使用されるようになりました。
+weightではなくサイズでブロックを制限したいマイナーは、ブロックテンプレートから直接トランザクションを削除して手動で制限する必要があります。&lt;/p&gt;
+
+&lt;h3 id=&quot;gui-settings-backed-up-on-reset&quot;&gt;リセット時のGUIの設定のバックアップ&lt;/h3&gt;
+
+&lt;p&gt;GUIの設定は&lt;code class=&quot;highlighter-rouge&quot;&gt;-resetguisettings&lt;/code&gt;引数が使われた際、設定が消去される前にdataディレクトリ内の&lt;code class=&quot;highlighter-rouge&quot;&gt;guisettings.ini.bak&lt;/code&gt;に書き込まれるようになりました。
+これはGUIの設定による問題の遡及的なトラブルシュートに使用できます。&lt;/p&gt;
+
+&lt;h3 id=&quot;duplicate-wallets-disallowed&quot;&gt;重複ウォレットの禁止&lt;/h3&gt;
+
+&lt;p&gt;以前は、ウォレットファイルを手動でコピーすることで同じウォレットを2回開くことができましたが、両方同時に開くと問題が発生しました。
+このため同じウォレットのコピーを開くことはできなくなりました。&lt;/p&gt;
+
+&lt;h3 id=&quot;debug-minimumchainwork-argument-added&quot;&gt;-minimumchainwork デバッグ引数の追加&lt;/h3&gt;
+
+&lt;p&gt;隠れデバッグ引数&lt;code class=&quot;highlighter-rouge&quot;&gt;-minimumchainwork&lt;/code&gt;が追加され、チェーンの検証時にカスタマイズしたminimum workの値を使用できるようになりました。&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;詳細については&lt;a href=&quot;/ja/releases/0.15.1/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。ダウンロードは&lt;a href=&quot;/ja/download&quot;&gt;ダウンロードページ&lt;/a&gt;からできます。&lt;/p&gt;
+
+&lt;p&gt;ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC&lt;/a&gt;もしくは&lt;a href=&quot;https://slack.bitcoincore.org/&quot;&gt;Slack&lt;/a&gt;のチャットルームまでご連絡ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;hashes-for-verification&quot;&gt;検証用のハッシュ&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;d64d2e27cad78bbd2a0268bdaa9efa3f1eca670a4fab462b5e851699c780e3a0  bitcoin-0.15.1-aarch64-linux-gnu.tar.gz
+ceba092c9a390082ff184c8d82a24bc34d7f9b421dc5c1e6847fcf769541f305  bitcoin-0.15.1-arm-linux-gnueabihf.tar.gz
+231e4c9f5cf4ba977dbaf118bf38b0fde4d50ab7b9efd65bee6647fb14035a2c  bitcoin-0.15.1-i686-pc-linux-gnu.tar.gz
+b6771c5d67fb6b9c4882cc351e579470a008211d76407155e544b28b00fcd711  bitcoin-0.15.1-osx64.tar.gz
+0ce5ca1ba424603526d8a40d9321f1f735797a7205a7fbbe39561c078f2a0858  bitcoin-0.15.1-osx.dmg
+34de2dbe058c1f8b6464494468ebe2ff0422614203d292da1c6458d6f87342b4  bitcoin-0.15.1.tar.gz
+cc7a31d8fece1462955bddef87945420721e42cfe6af589a36547b0940851765  bitcoin-0.15.1-win32-setup.exe
+4d2ad1371df1904367955d3f250212d0edd9f338c26d5cd60d7d8ce3f1733f5a  bitcoin-0.15.1-win32.zip
+905a5999fb52b083d7e3bedb2dc6704ca641823f81865db58a55a6a20b454d8c  bitcoin-0.15.1-win64-setup.exe
+b858521496c0d7699a6916c20767cdb123eb39be70ffc544d6876b08af3b696a  bitcoin-0.15.1-win64.zip
+387c2e12c67250892b0814f26a5a38f837ca8ab68c86af517f975a2a2710225b  bitcoin-0.15.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+            <pubDate>Sat, 11 Nov 2017 00:00:00 +0700</pubDate>
+            <link>https://bitcoincore.org/ja/2017/11/11/release-0.15.1/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2017/11/11/release-0.15.1/</guid>
+        </item>
+        
+        <item>
+            <title>Bitcoin Core 0.15.0.1 リリース</title>
+            <description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    
+    &lt;h3 class=&quot;toc-header&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Overview&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div class=&quot;toc-drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#hashes-for-verification&quot; id=&quot;markdown-toc-hashes-for-verification&quot;&gt;検証用のハッシュ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.0.1 がリリースされ、0.15.0にアップグレード後、GUIがクラッシュする可能性がある
+0.15.0のマイナーなバグの修正が行われました。&lt;/p&gt;
+
+&lt;p&gt;0.15.0にアップグレード後、GUIにもはや存在しないカスタム手数料の設定があると起動時にクラッシュするクライアントがありました。
+これはこの問題の発生を回避するための最小のパッチです。&lt;/p&gt;
+
+&lt;p&gt;詳細については&lt;a href=&quot;/ja/releases/0.15.0.1/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。
+ダウンロードは&lt;a href=&quot;/ja/download&quot;&gt;ダウンロードページ&lt;/a&gt;もしくは&lt;a href=&quot;https://bitcoincore.org/bin/bitcoin-core-0.15.0.1/&quot;&gt;ファイルディレクトリ&lt;/a&gt;から行えます。&lt;/p&gt;
+
+&lt;p&gt;ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC&lt;/a&gt;もしくは&lt;a href=&quot;https://slack.bitcoincore.org/&quot;&gt;Slack&lt;/a&gt;のチャットルームまでご連絡ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;hashes-for-verification&quot;&gt;検証用のハッシュ&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;b1ac0cd472f98040fbce9cea79348da2c6140a452427f9fe56d060413ec67f2d  bitcoin-0.15.0.1-aarch64-linux-gnu.tar.gz
+7fb2290464ff056213593878cac1d111422204e81b1ccb93f95b145c309895c5  bitcoin-0.15.0.1-arm-linux-gnueabihf.tar.gz
+061bdd552fdc048a98e04ab436165b121346ecd989e1bc91db0246888fcadf7d  bitcoin-0.15.0.1-i686-pc-linux-gnu.tar.gz
+23a36e28295ef05faf67d41be0610d5f5f1059d904aa74efca7a6700a82d6dc2  bitcoin-0.15.0.1-osx64.tar.gz
+9f90a5b5623287b762e3280fd86fc7adc7180a071513d5d663133f030452b1dd  bitcoin-0.15.0.1-osx.dmg
+b57e9e756018e4082f5557a4216195b0cd197c5a62473b6fe0509a0aa71e519b  bitcoin-0.15.0.1.tar.gz
+f3e7ef9ac9d510a185efb0f0253dc1f49d627768999a66f13e86de4c38854680  bitcoin-0.15.0.1-win32-setup.exe
+49578a464d043f278805b145cd8f59b115e6f41cd56de0a90049da1781df9d59  bitcoin-0.15.0.1-win32.zip
+f0aebade2b43e253ad66fd920e00524048f5a9b9933936e735844d316433791a  bitcoin-0.15.0.1-win64-setup.exe
+25efad99a4128d9f197d7eb1c175e7597478ae39e3d05805f14e9c01392b41ae  bitcoin-0.15.0.1-win64.zip
+ae3efa47bf87a694a5368cd6fea96c9942fe9be7856720b5027c8902e46a88d1  bitcoin-0.15.0.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+            <pubDate>Mon, 02 Oct 2017 00:00:00 +0700</pubDate>
+            <link>https://bitcoincore.org/ja/2017/10/02/release-0.15.0.1/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2017/10/02/release-0.15.0.1/</guid>
+        </item>
+        
+        <item>
+            <title>Bitcoin Core 0.15.0 リリース</title>
+            <description>&lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
+  &lt;header&gt;
+    
+    &lt;h3 class=&quot;toc-header&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Overview&lt;/h3&gt;
+  &lt;/header&gt;
+&lt;div class=&quot;toc-drawer&quot;&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#upgrade-notice&quot; id=&quot;markdown-toc-upgrade-notice&quot;&gt;アップグレードの注意事項&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#better-fee-estimates&quot; id=&quot;markdown-toc-better-fee-estimates&quot;&gt;手数料計算の改善&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#graphical-fee-bumping&quot; id=&quot;markdown-toc-graphical-fee-bumping&quot;&gt;GUIでのfee bumping&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#multiwallet&quot; id=&quot;markdown-toc-multiwallet&quot;&gt;マルチウォレット&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#performance-improvements&quot; id=&quot;markdown-toc-performance-improvements&quot;&gt;パフォーマンス改善&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#p2shsegwit&quot; id=&quot;markdown-toc-p2shsegwit&quot;&gt;将来にむけて： P2SHでラップしたsegwitアドレス&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;最後に&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#hashes-for-verification&quot; id=&quot;markdown-toc-hashes-for-verification&quot;&gt;検証用のハッシュ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;!-- /#table-of-contents --&gt;
+
+&lt;p&gt;私達はBitcoin Core 0.15.0をリリースしました。このリリースには、&lt;a href=&quot;#better-fee-estimates&quot;&gt;手数料計算の改善&lt;/a&gt;や、よりアクセスしやすくなった&lt;a href=&quot;#graphical-fee-bumping&quot;&gt;fee bumping&lt;/a&gt;、&lt;a href=&quot;#multiwallet&quot;&gt;マルチウォレット&lt;/a&gt;のサポートといつくかの重要な&lt;a href=&quot;#performance-improvements&quot;&gt;パフォーマンス改善&lt;/a&gt;が行われています。また多くのバグフィックスや最適化、その他の改善も含まれています。&lt;/p&gt;
+
+&lt;h2 id=&quot;upgrade-notice&quot;&gt;アップグレードの注意事項&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.0ではパフォーマンス最適化の一環で、使用可能なBitcoinを追跡するデータベースの形式をアップデートしており、初めてBitcoin Core 0.15.0（もしくはそれ以降のバージョン）を起動すると、自動的にこのアップデートが開始されます。このアップデートはコンピューターの性能に応じて約5分から30分ほどかかります。&lt;/p&gt;
+
+&lt;p&gt;GUIを使用しているユーザーは、Bitcoin Coreのスプラッシュ画面でアップデートの進捗状況を確認できます。bitcoind を使用しているユーザーは&lt;a href=&quot;https://en.bitcoin.it/wiki/Data_directory&quot;&gt;data ディレクトリ&lt;/a&gt;内の&lt;code class=&quot;highlighter-rouge&quot;&gt;debug.log&lt;/code&gt;ファイルで進捗状況を確認することができます。&lt;/p&gt;
+
+&lt;p&gt;もし旧バージョンにダウングレードする場合は、リリースノートの&lt;a href=&quot;/ja/releases/0.15.0/&quot;&gt;instructions&lt;/a&gt;を参照してください。&lt;/p&gt;
+
+&lt;h2 id=&quot;better-fee-estimates&quot;&gt;手数料計算の改善&lt;/h2&gt;
+
+&lt;p&gt;トランザクションが承認されるまで数時間待つことができるユーザーは、需要が高い期間に迅速な承認が必要なユーザーと比べて、トランザクション手数料の80%以上を節約できるというエビデンスがあります。&lt;/p&gt;
+
+&lt;p&gt;これらは単に時間に余裕があるユーザーがお金を節約できるだけでなく、Bitcoinのマイナーがブロックに入れるためのたくさんの有料トランザクションを持つことを保証することにもなります。将来Bitcoinが2100万ビットコインの発行上限に近づくと、手数料がマイナーの所得の大半を占めるようになるため、マイナーが継続してブロックチェーンを拡張していくためには、こういった確実な有料トランザクションの確保が必要になるでしょう。&lt;/p&gt;
+
+&lt;p&gt;時間に余裕のあるユーザーにはトランザクション手数料について最大限の恩恵があるように、急いているユーザーにはできるだけ早くトランザクションが承認されるように、Bitcoin Core 0.15.0では手数料の算出アルゴリズムとユーザーインターフェースを大幅に改善しました。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;手数料算出時の指定可能な最大ターゲットが40倍に：&lt;/strong&gt; 手数料の算出機能では今まで指定できる最大ターゲットは25ブロックまででしたが、これが最大1,008ブロック（約一週間）まで指定可能になり、その範囲で合理的な手数料の算出ができるようになりました。これによりユーザーは緊急性の低い送金の際に可能な限り手数料を節約できるようになります。&lt;/p&gt;
+
+    &lt;p&gt;GUIでこの増加された範囲を表すため、これまでの手数料のスライダーは以下の手数料のドロップダウンに置き換わります。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/images/releases/fee-selector.png&quot; alt=&quot;New fee drop-down box&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;手数料の調整がより早く:&lt;/strong&gt; 手数料の算出は、ブロックスペースの増減などのネットワークの状況に応じてより迅速に調整されるようになります。このアルゴリズムは、既存のトランザクションデータから複数の予測値を作成し、そのうち最適なものを自動的に選択します。使用されるアルゴリズムの詳細は、開発者Alex Morcosの&lt;a href=&quot;https://gist.github.com/morcos/d3637f015bc4e607e1fd10d8351e9f41&quot;&gt;description&lt;/a&gt;を参照してください。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;RBFユーザー向けのより安い手数料の算出&lt;/strong&gt; これまではブロードキャスト後に未承認トランザクションの手数料を変更することが難しかったため、Bitcoin Coreは通常より高めの手数料を提示していました。この記事の後半で説明しますが、Bitcoin Coreは送信済みの未承認トランザクションの手数料を引き上げるツールを提供します。この機能により必要に応じていつでも手数料を引き上げることができるため、このツールを利用するユーザーには低めに手数料を算出します。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;プログラマーとコマンドラインユーザーは、現在のRPCコールを介して自動的に改善された手数料の算出機能にアクセスし、新しい&lt;code class=&quot;highlighter-rouge&quot;&gt;estimatesmartfee&lt;/code&gt;RPCを使って上記の高度な機能にアクセスすることができます。これまでの&lt;code class=&quot;highlighter-rouge&quot;&gt;estimatefee&lt;/code&gt;RPCは引き続き動作しますが、非推奨になり将来のリリースで削除されます。詳細については、&lt;code class=&quot;highlighter-rouge&quot;&gt;bitcoin-cli help estimatesmartfee&lt;/code&gt;を実行するか&lt;a href=&quot;/ja/releases/0.15.0/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;graphical-fee-bumping&quot;&gt;GUIでのfee bumping&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin Core 0.14.0では未承認のトランザクションの手数料を増やすエキスパートオプションが導入されました。このプロセスは&lt;em&gt;fee bumping&lt;/em&gt;と呼ばれています。&lt;/p&gt;
+
+&lt;p&gt;これにより、手数料を節約したいユーザーは最初に小額の手数料を設定し、その手数料でトランザクションが承認されるかしばらく待ってから、ブロックに入れられないようであれば手数料を引き上げることができます。&lt;/p&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.0では、エキスパートユーザーでなくてもこの機能を利用することができるようになります。GUIを使ってトランザクションを送信する際の手数料オプションで、”Request Replace-By-Fee”を選択できるようになりました。このオプションを使うと未承認のトランザクションをより高い手数料を設定したトランザクションに置き換えられるようになります。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/releases/rbf-checkbox.png&quot; alt=&quot;Screenshot of replace-by-fee checkbox&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;ユーザーがこの機能を有効にした場合、その後Transactionsタブで対象のトランザクションを選択し右クリックし、”Increase transaction fee”を選択します。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/releases/fee-bump-menu.png&quot; alt=&quot;Screenshot of &amp;quot;increase transaction fee&amp;quot; option on menu&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;元のトランザクションと手数料を置き換えたトランザクションが両方共Transactionsタブに表示され、どちらのトランザクションが承認されたか確認できます（必ずしも手数料が高いトランザクションが承認される保証はありませんが、承認されるのは必ずどちらか一方のトランザクションです）。いずれかのトランザクションが承認されると、その他のトランザクションは失敗として表示されます。&lt;/p&gt;
+
+&lt;p&gt;作成したトランザクションが承認されるまで何度でもfee bumpingが可能です。手数料を更新したトランザクションをいくつ作成しても承認されるのは１つのみです。&lt;/p&gt;
+
+&lt;p&gt;Replace-By-Fee (RBF)でトランザクションを作成するのをデフォルトにしたいユーザーは、Bitcoin Coreの起動時に &lt;code class=&quot;highlighter-rouge&quot;&gt;-walletrbf&lt;/code&gt;を付与して起動するか、&lt;a href=&quot;https://bitcoin.stackexchange.com/a/11210&quot;&gt;設定ファイル&lt;/a&gt;に&lt;code class=&quot;highlighter-rouge&quot;&gt;walletrbf=1&lt;/code&gt;を追加してください。また、未承認のトランザクションを確定した決済として受け入れるサービスの中には、トランザクションが承認されるまでReplace-By-Feeを受け入れないサービスもあるので注意してください。opt-in replace by feeの詳細については&lt;a href=&quot;/en/faq/optin_rbf/&quot;&gt;RBF FAQ&lt;/a&gt;を参照ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;multiwallet&quot;&gt;マルチウォレット&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.0では、１つのBitcoin Coreで簡単に複数のウォレットを管理できるようになりました。この機能はまだ新しく、今のところエキスパートユーザーのみがアクセスできますが、今後GUIで利用できるようにしたいと考えています。&lt;/p&gt;
+
+&lt;p&gt;新しいマルチウォレットモードを使用すると以下のようなことが可能になります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;会計処理を簡単にし、偶発的な資金の誤用を防ぐため、ビジネス用・プライベート用にそれぞれウォレットを分けて使用することができるようになります。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;プライバシーを守るためにに、あなたのアイデンティティに関連するビットコインとあなたへの追跡ができないビットコインを分離して管理できるようになります。各ウォレットでは完全に異なる秘密鍵を使用し別のウォレットのビットコインが混ざるようなことがないため、２つのウォレットをつなげたテイント解析を防止します。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;現在廃止予定のBitcoin Coreのアカウント機能で今までできていたこととほぼ同じ方法でBitcoinバックエンドの構成を管理します。簡単な例として、あまりビットコインに馴染みのない友人や家族の小額の残高を処理する場合、各人のビットコインをあなたのビットコインと一緒に管理するのではなく、それぞれ別々のウォレットで管理できるようになりました。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このマルチウォレットの機能は現在、プログラマーやコマンドラインユーザーのRPCインターフェースを介してのみ利用可能で、これらのAPIは将来のバージョンで変更される可能性があります。もしマルチウォレットモードを改善しGUIで利用できるようにしたい場合は、この記事の最後に書いてある開発へコントリビュートする方法を参照してください。マルチウォレットモードのより詳細な情報は&lt;a href=&quot;/ja/releases/0.15.0/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;performance-improvements&quot;&gt;パフォーマンス改善&lt;/h2&gt;
+
+&lt;p&gt;ブロックチェーンのサイズや複雑さが増すなか、できるだけ多くのユーザーがフルノードを利用できるように、Bitcoin Core 0.15.0ではいくつかの重要なパフォーマンス改善が行われています。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;30％〜40％高速になるブロックの検証と10%〜20%のメモリ使用量の削減&lt;/strong&gt; Initial Block Download (IBD)のテストでは、ディスクへの書き込みが大幅に減少しました。これは使用可能なビットコインのデータおよび、それらのコインを使用する際に必要な所有者の情報をトラッキングするchainstateデータベースのフォーマットを単純化した結果です。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;検証済みのトランザクションで構成されたブロックの検証スピードが40%から50%高速に&lt;/strong&gt; 受信したブロックに以前検証済みmempoolのトランザクションが含まれていた場合、より少ないステップで検証をできるようにした結果です。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;プラットフォームによるパフォーマンスの向上&lt;/strong&gt; chainstateデータベースで使用される一貫性チェックのオペレーションに最近のコンピュータープロセッサでサポートされているハードウェアアクセラレーションを使用した結果、それらのプロセッサを使用する環境でパフォーマンスが向上しました。主に2008年以降に製造されたIntelもしくはAMDのプロセッサが対象になります。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これらの改善の詳細については&lt;a href=&quot;/ja/releases/0.15.0/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。&lt;/p&gt;
+
+&lt;h2 id=&quot;p2shsegwit&quot;&gt;将来にむけて： P2SHでラップしたsegwitアドレス&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.0をリリースするための最終準備が行われているなか、segregated witnessがBitcoinネットワークでアクティベートされ使用できるようになりました。&lt;/p&gt;
+
+&lt;p&gt;Bitcoin Coreは0.13.0からsegwitアドレスの作成をサポートしていましたが、このサポートはエキスパートユーザーのみが使用できるように設計されていました。私達はGUIやRPCの通常のユーザーインターフェースにsegwitのサポートを追加するのを、segwitが採用されるかどうか確認できるまで待っていました。&lt;/p&gt;
+
+&lt;p&gt;segwitのロックインとアクティベーションがこのタイミングとなったため、私達は上記全機能を含む0.15.0のリリースを遅らせるか、segwitをデフォルト設定にしたユーザーインターフェースが無いまま0.15.0をリリースするか選択する必要がありました。&lt;/p&gt;
+
+&lt;p&gt;私達は後者を選択することを決めましたが、次のメジャーアップデートまで６ヶ月待つ必要はありません。次のリリースではsegwit互換のアドレスがデフォルトで生成されるようになります。これは実際にコードが書かれ徹底的にテストされた後すぐにリリースされます。&lt;/p&gt;
+
+&lt;p&gt;技術的な詳細について興味がある方は、ネットワーク上のほぼ全てのウォレットと互換のあるP2SHでラップされたsegwitアドレスを使用してください。他のウォレットで生成されたBech32のsegwitネイティブアドレスへの送信はサポートするかもしれませんが、GUIではおそらく後のリリースまでBech32アドレス自体の生成をサポートしません。&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin Core 0.15.0の詳細な変更内容については、&lt;a href=&quot;/ja/releases/0.15.0/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。Bitcoin Core 0.15.0は&lt;a href=&quot;/ja/download&quot;&gt;ダウンロードページ&lt;/a&gt;もしくは&lt;a href=&quot;/bin/bitcoin-core-0.15.0/&quot;&gt;ファイルディレクトリ&lt;/a&gt;からダウンロードできます。&lt;/p&gt;
+
+&lt;p&gt;Bitcoin Coreへのコントリビュートに興味がある方は、&lt;a href=&quot;/en/contribute&quot;&gt;コントリビュートページ&lt;/a&gt;や&lt;a href=&quot;/en/faq/contributing-code/&quot;&gt;Bitcoin Coreにコードをコントリビュートする方法&lt;/a&gt;のドキュメントをご覧ください。どこから始めたらいいか分からない場合や他の質問がある場合は、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC&lt;/a&gt;や&lt;a href=&quot;https://slack.bitcoincore.org/&quot;&gt;Slack&lt;/a&gt;でお尋ねください。&lt;/p&gt;
+
+&lt;h2 id=&quot;hashes-for-verification&quot;&gt;検証用のハッシュ&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ec5e93ebc747d3d50b6c3bc33ac840348820b0e681de734999ebc4e671803a8e  bitcoin-0.15.0-aarch64-linux-gnu.tar.gz
+ec6b9e0ea467f82f2f9938f8577fb41cb7c2998b027709f78b8aff02afc983a9  bitcoin-0.15.0-arm-linux-gnueabihf.tar.gz
+75de087adf888f15faa4d8a65ea18dee75150ee761b0d6bcaefc7770230e1e66  bitcoin-0.15.0-i686-pc-linux-gnu.tar.gz
+dd444b4e55ef8ef070c9f93f56a1ad028ea4d99205f6c3d4d631550f48937c05  bitcoin-0.15.0-osx64.tar.gz
+973967c7722c9431b7bdb592981831e320fc6f67c4d10d3c3f27c0a251cab6d6  bitcoin-0.15.0-osx.dmg
+54b6f54982da97f294d21ad69c6b8624f2cf40d157be0683123b2ba6db2bf2a1  bitcoin-0.15.0.tar.gz
+c35f048c9e62335bba031db91bb36b7c11d9292c89c21af219f63eac1d090c34  bitcoin-0.15.0-win32-setup.exe
+b7bb50796b79b18c97c15b90368962a275057d234ac674407e47148e73968497  bitcoin-0.15.0-win32.zip
+94d0626426810db85b342dbf801681752e474ff0aff726783cb5297b70999a45  bitcoin-0.15.0-win64-setup.exe
+d1686db57c59136c758db1536eaf1bb0b9a08c6a0fd21f54d39ee6a7b6bd39d8  bitcoin-0.15.0-win64.zip
+ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+            <pubDate>Thu, 14 Sep 2017 00:00:00 +0700</pubDate>
+            <link>https://bitcoincore.org/ja/2017/09/01/release-0.15.0/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2017/09/01/release-0.15.0/</guid>
+        </item>
+        
+        <item>
+            <title>Segwit2xとbtc1の誤った情報に関する訂正</title>
+            <description>&lt;p&gt;Bitcoinネットワークのコンセンサスルールと互換性のない変更を提案している”Segwit2x”が最近よく話題にあがっています。Segwit2xの実装であるbtc1プロジェクトが成功し、まるで既存のソフトウェアに必要なアップデートであるかのように誤解させる事態になっています。Segwit2xは既存のネットワークルールから逸脱しており、そのユーザーはブロックとトランザクションの有効性について残りのネットワークのユーザーと結果が異なることをすぐに気付くことになります。&lt;/p&gt;
+
+&lt;p&gt;以下の点に注意してください&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Segregated Witness（Segwit、数日以内にソフトフォークがアクティベートされます）は、Segwit2xのハードフォークとは関係ありません。Segregated Witnessは、これまでの全てのBitcoinソフトウェアと後方互換性があります。大多数のBitcoinユーザーは何もする必要はありません。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://bitcoincore.org&quot;&gt;bitcoincore.org&lt;/a&gt; は公式ウェブサイトで、&lt;a href=&quot;https://twitter.com/bitcoincoreorg&quot;&gt;@bitcoincoreorg&lt;/a&gt; はBitcoin Coreの公式Twitterアカウントです。これ以外のプロジェクトを称する他のウェブサイトやTwitterアカウントは偽物です。Bitcoin CoreはGithubのプロジェクトを介して、どなたからのコントリビュートやレビューも歓迎するオープンソースプロジェクトです。Bitcoin Coreのバイナリは&lt;a href=&quot;https://bitcoincore.org/bin/&quot;&gt;bitcoincore.org&lt;/a&gt; と &lt;a href=&quot;https://bitcoin.org/bin/&quot;&gt;bitcoin.org&lt;/a&gt; から入手でき、常にリリースマネージャーの署名鍵でデジタル署名されています。Bitcoin Coreの最新バージョンは0.14.2です。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;btc1がBitcoin Coreに接続されることはありません。Bitcoin Coreのコントリビューターはbtc1をサポートしておらず、プロジェクトにも関わっていません。また提案されているハードフォークの設計にも関与していません。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;私たちは、Segwit2xにより提案された変更がBitcoinのシステムに及ぼす影響と、そのコミュニティサポートのレベルについて注意深く考慮することなく、Bitcoinのコンセンサスルールを”アップグレード”することを主張するBitcoinフルノードをダウンロードしないことを強く推奨します。これには新しいBitcoin Coreのリリースで提案されたコンセンサスの変更を含みます。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;より幅広いBitcoinコミュニティがサポートしているものを判断することは難しいことですが、大規模で多様なBitcoinコミュニティが独立した検証なくあるフォークもしくは別のフォークへの移行を示唆する主張には注意してください。文書への署名は、ユーザーやクライアントへの合意が無いまま、彼らを代理するという企業によって使用されており、それにはよく不正確で誤解を招く言葉が使われています。これまで、Bitcoin XTやBitcoin Classic、Bitcoin Unlimitedなどの文書も、コミュニティの検討事項にかかわらずソフトウェアを実行するコミットメントであると吹聴しながら、アイディアの一般的な支持を示すために配布されましたが、数ヶ月後には立ち消えになるだけです。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bitcoin CoreのコントリビューターやBitcoinコミュニティのメンバーによるSegwit2xの懸念は、Segwit2xの提案者によって適切に対処されていません。Segwit2xの提案の詳細は、BitcoinのSegregated Witnessのアクティベーションの前、また最近のBCH通貨の作成の前に作成されました。将来を計画する際に、このような出来事の結果を無視するのは無責任です。一例として、私たちは１つのアドレスが２つのチェーンにわたって有効な場合に生じる混乱を目の当たりにしてきましたが、Segwit2xは同じミスを繰り返すつもりです。BCHの強力なリプレイ保護の実装では、BCHとBitcoinの両方のユーザーに対してSegwit2xが提供する予定のない重要な保護が提供されています。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bitcoinのコンセンサスルールについては、わずかな変更であってもコミュニティ全体から広く合意する必要があります。Segwit2xはそのプロセスと実装の両方において多くの人から反対されてきました。Bitcoin CoreはSegwitのソフトフォークを引き続きサポートし、今後数年間でBitcoinの規模をさらに高めていくことを楽しみにしています。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+            <pubDate>Fri, 18 Aug 2017 00:00:00 +0700</pubDate>
+            <link>https://bitcoincore.org/ja/2017/08/18/btc1-misleading-statements/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2017/08/18/btc1-misleading-statements/</guid>
+        </item>
+        
+    </channel>
+</rss>

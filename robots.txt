@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /list/announcements/unsub/
+Disallow: /list/announcements/confirmed/
+Disallow: /list/announcements/check/
