@@ -3,7 +3,7 @@
     <title type="text">Bitcoin Core</title>
     <link rel="self" type="application/atom+xml" href="https://bitcoincore.org/en/feed.xml" />
     <link rel="alternate" type="text/html" href="https://bitcoincore.org" />
-    <updated>2018-09-30T00:51:41+07:00</updated>
+    <updated>2018-10-05T16:32:33+09:00</updated>
     <id></id>
     <author>
         <name>Bitcoin Core</name>
@@ -14,11 +14,39 @@
     
     
     <entry>
+        <title type="html"><![CDATA[Bitcoin Core 0.17.0 Released]]></title>
+        <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2018/10/02/release-0.17.0/" />
+        <id>en-blog-release-0.17.0</id>
+        <published>2018-10-02T00:00:00+09:00</published>
+        <updated>2018-10-02T00:00:00+09:00</updated>
+        <author>
+            <name>Bitcoin Core</name>
+            <uri>https://bitcoincore.org/en/2018/10/02/release-0.17.0/</uri>
+            
+        </author>
+        <content type="html">
+            &lt;p&gt;Bitcoin Core version 0.17.0 is now available for &lt;a href=&quot;/en/download&quot;&gt;download&lt;/a&gt; containing many new features as well as bug fixes and other
+improvements.  For a complete list of changes, please see the &lt;a href=&quot;/en/releases/0.17.0/&quot;&gt;release
+notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This release is not vulnerable to the &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17144&quot;&gt;CVE-2018-17144&lt;/a&gt; duplicate
+inputs bug.&lt;/p&gt;
+
+&lt;p&gt;If have any questions, please stop by our &lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC chatroom&lt;/a&gt; and we’ll
+do our best to help you.&lt;/p&gt;
+
+
+            &lt;p&gt;&lt;a href=&quot;https://bitcoincore.org/en/2018/10/02/release-0.17.0/&quot;&gt;Bitcoin Core 0.17.0 Released&lt;/a&gt; was originally published by Bitcoin Core at &lt;a href=&quot;https://bitcoincore.org&quot;&gt;Bitcoin Core&lt;/a&gt; on October 02, 2018.&lt;/p&gt;
+        </content>
+    </entry>
+    
+    
+    <entry>
         <title type="html"><![CDATA[CVE-2018-17144 Full Disclosure]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2018/09/20/notice/" />
         <id>en-cve-2018-17144-full-disclosure</id>
-        <published>2018-09-20T00:00:00+07:00</published>
-        <updated>2018-09-20T00:00:00+07:00</updated>
+        <published>2018-09-20T00:00:00+09:00</published>
+        <updated>2018-09-20T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2018/09/20/notice/</uri>
@@ -82,7 +110,7 @@
 &lt;p&gt;September 20, 2018:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;19:50 A developer by the title earlz independently discovered and reported the vulnerability to the Bitcoin Core security contact email.&lt;/li&gt;
+  &lt;li&gt;19:50 David Jaenson independently discovered the vulnerability, and it was reported to the Bitcoin Core security contact email.&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -95,8 +123,8 @@
         <title type="html"><![CDATA[Bitcoin Core 0.16.3 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2018/09/18/release-0.16.3/" />
         <id>en-blog-release-0.16.3</id>
-        <published>2018-09-18T00:00:00+07:00</published>
-        <updated>2018-09-18T00:00:00+07:00</updated>
+        <published>2018-09-18T00:00:00+09:00</published>
+        <updated>2018-09-18T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2018/09/18/release-0.16.3/</uri>
@@ -130,8 +158,8 @@ our best to help you.&lt;/p&gt;
         <title type="html"><![CDATA[Bitcoin Core 0.16.2 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2018/07/29/release-0.16.2/" />
         <id>en-blog-release-0.16.2</id>
-        <published>2018-07-29T00:00:00+07:00</published>
-        <updated>2018-07-29T00:00:00+07:00</updated>
+        <published>2018-07-29T00:00:00+09:00</published>
+        <updated>2018-07-29T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2018/07/29/release-0.16.2/</uri>
@@ -175,8 +203,8 @@ our best to help you.&lt;/p&gt;
         <title type="html"><![CDATA[Bitcoin Core 0.16.1 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2018/06/15/release-0.16.1/" />
         <id>en-blog-release-0.16.1</id>
-        <published>2018-06-15T00:00:00+07:00</published>
-        <updated>2018-06-15T00:00:00+07:00</updated>
+        <published>2018-06-15T00:00:00+09:00</published>
+        <updated>2018-06-15T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2018/06/15/release-0.16.1/</uri>
@@ -226,8 +254,8 @@ our best to help you.&lt;/p&gt;
         <title type="html"><![CDATA[Bitcoin Core 0.16.0 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2018/02/26/release-0.16.0/" />
         <id>en-blog-release-0.16.0</id>
-        <published>2018-02-26T00:00:00+07:00</published>
-        <updated>2018-02-26T00:00:00+07:00</updated>
+        <published>2018-02-26T00:00:00+09:00</published>
+        <updated>2018-02-26T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2018/02/26/release-0.16.0/</uri>
@@ -454,8 +482,8 @@ e6322c69bcc974a29e6a715e0ecb8799d2d21691d683eeb8fef65fc5f6a66477  bitcoin-0.16.0
         <title type="html"><![CDATA[Bitcoin Core 0.15.1 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/11/11/release-0.15.1/" />
         <id>en-blog-release-0.15.1</id>
-        <published>2017-11-11T00:00:00+07:00</published>
-        <updated>2017-11-11T00:00:00+07:00</updated>
+        <published>2017-11-11T00:00:00+09:00</published>
+        <updated>2017-11-11T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/11/11/release-0.15.1/</uri>
@@ -608,8 +636,8 @@ b858521496c0d7699a6916c20767cdb123eb39be70ffc544d6876b08af3b696a  bitcoin-0.15.1
         <title type="html"><![CDATA[Bitcoin Core 0.15.0.1 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/10/02/release-0.15.0.1/" />
         <id>en-blog-release-0.15.0.1</id>
-        <published>2017-10-02T00:00:00+07:00</published>
-        <updated>2017-10-02T00:00:00+07:00</updated>
+        <published>2017-10-02T00:00:00+09:00</published>
+        <updated>2017-10-02T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/10/02/release-0.15.0.1/</uri>
@@ -667,8 +695,8 @@ ae3efa47bf87a694a5368cd6fea96c9942fe9be7856720b5027c8902e46a88d1  bitcoin-0.15.0
         <title type="html"><![CDATA[Bitcoin Core 0.15.0 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/09/01/release-0.15.0/" />
         <id>en-blog-release-0.15.0</id>
-        <published>2017-09-14T00:00:00+07:00</published>
-        <updated>2017-09-14T00:00:00+07:00</updated>
+        <published>2017-09-14T00:00:00+09:00</published>
+        <updated>2017-09-14T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/09/01/release-0.15.0/</uri>
@@ -832,8 +860,8 @@ ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0
         <title type="html"><![CDATA[Correcting misinformation on Segwit2x and btc1]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/08/18/btc1-misleading-statements/" />
         <id>en-btc1-misleading-statements</id>
-        <published>2017-08-18T00:00:00+07:00</published>
-        <updated>2017-08-18T00:00:00+07:00</updated>
+        <published>2017-08-18T00:00:00+09:00</published>
+        <updated>2017-08-18T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/08/18/btc1-misleading-statements/</uri>
@@ -877,8 +905,8 @@ ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0
         <title type="html"><![CDATA[Bitcoin Core 0.14.2 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/06/17/release-0.14.2/" />
         <id>en-blog-release-0.14.2</id>
-        <published>2017-06-17T00:00:00+07:00</published>
-        <updated>2017-06-17T00:00:00+07:00</updated>
+        <published>2017-06-17T00:00:00+09:00</published>
+        <updated>2017-06-17T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/06/17/release-0.14.2/</uri>
@@ -942,8 +970,8 @@ b3b0cc67a9a602fee4a270efc154f4422e1e49e2aefd9b0d44b0c601a326b05a  bitcoin-0.14.2
         <title type="html"><![CDATA[Bitcoin Core 0.14.1 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/04/22/release-0.14.1/" />
         <id>en-blog-release-0.14.1</id>
-        <published>2017-04-22T00:00:00+07:00</published>
-        <updated>2017-04-22T00:00:00+07:00</updated>
+        <published>2017-04-22T00:00:00+09:00</published>
+        <updated>2017-04-22T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/04/22/release-0.14.1/</uri>
@@ -1034,8 +1062,8 @@ f21203e07f054dce3177539be89a066d4faee1e2fa432157c1444e4e6dd4f9a3  bitcoin-0.14.1
         <title type="html"><![CDATA[Technology roadmap - Prioritized block download with using full block SPV mode]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/03/31/prioritized-block-download-using-hybrid-spv/" />
         <id>en-hybrid-spv</id>
-        <published>2017-03-31T00:00:00+07:00</published>
-        <updated>2017-03-31T00:00:00+07:00</updated>
+        <published>2017-03-31T00:00:00+09:00</published>
+        <updated>2017-03-31T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/03/31/prioritized-block-download-using-hybrid-spv/</uri>
@@ -1066,8 +1094,8 @@ f21203e07f054dce3177539be89a066d4faee1e2fa432157c1444e4e6dd4f9a3  bitcoin-0.14.1
         <title type="html"><![CDATA[Technology roadmap - Schnorr signatures and signature aggregation]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/" />
         <id>en-schnorr-sigagg</id>
-        <published>2017-03-23T00:00:00+07:00</published>
-        <updated>2017-03-23T00:00:00+07:00</updated>
+        <published>2017-03-23T00:00:00+09:00</published>
+        <updated>2017-03-23T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/</uri>
@@ -1162,8 +1190,8 @@ OP_CHECKMULTISIG are modified so that they can stack public keys, delinearize th
         <title type="html"><![CDATA[On-chain scaling - a review of historical performance optimization made to Bitcoin’s reference software. Part 1]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/03/13/performance-optimizations-1/" />
         <id>en-performance-optimizations-1</id>
-        <published>2017-03-13T00:00:00+07:00</published>
-        <updated>2017-03-13T00:00:00+07:00</updated>
+        <published>2017-03-13T00:00:00+09:00</published>
+        <updated>2017-03-13T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/03/13/performance-optimizations-1/</uri>
@@ -1299,8 +1327,8 @@ With that in mind, the block validation mechanism was re-engineered in order to 
         <title type="html"><![CDATA[Bitcoin Core 0.14.0 Released with Performance Improvements]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/03/08/release-0.14.0/" />
         <id>en-blog-release-0.14.0</id>
-        <published>2017-03-08T00:00:00+07:00</published>
-        <updated>2017-03-08T00:00:00+07:00</updated>
+        <published>2017-03-08T00:00:00+09:00</published>
+        <updated>2017-03-08T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/03/08/release-0.14.0/</uri>
@@ -1535,8 +1563,8 @@ f260d52cf2fe91c4be99ed6fcf8aa0de669ff326c5da920b7ed3a3e2ec981e0a  bitcoin-0.14.0
         <title type="html"><![CDATA[Bitcoin Core 0.13.2 Released]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2017/01/03/release-0.13.2/" />
         <id>en-blog-release-0.13.2</id>
-        <published>2017-01-03T00:00:00+07:00</published>
-        <updated>2017-01-03T00:00:00+07:00</updated>
+        <published>2017-01-03T00:00:00+09:00</published>
+        <updated>2017-01-03T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2017/01/03/release-0.13.2/</uri>
@@ -1583,8 +1611,8 @@ e07ce2a8cc0913fb253a42073fd3b94921da7f916366dd0534f3b24cad7a733e  bitcoin-0.13.2
         <title type="html"><![CDATA[Segregated Witness Costs and Risks]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2016/10/28/segwit-costs/" />
         <id>en-segwit-costs</id>
-        <published>2016-10-28T00:00:00+07:00</published>
-        <updated>2016-10-28T00:00:00+07:00</updated>
+        <published>2016-10-28T00:00:00+09:00</published>
+        <updated>2016-10-28T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2016/10/28/segwit-costs/</uri>
@@ -2047,8 +2075,8 @@ seconds per block on a Raspberry Pi v1, or under 1/10th of a second on more capa
         <title type="html"><![CDATA[Bitcoin Core 0.13.1 Released with Segregated Witness]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2016/10/27/release-0.13.1/" />
         <id>en-blog-release-0.13.1</id>
-        <published>2016-10-27T00:00:00+07:00</published>
-        <updated>2016-10-27T00:00:00+07:00</updated>
+        <published>2016-10-27T00:00:00+09:00</published>
+        <updated>2016-10-27T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2016/10/27/release-0.13.1/</uri>
@@ -2263,8 +2291,8 @@ c1726ccc50635795c942c7d7e51d979c4f83a3d17f8982e9d02a114a15fef419  bitcoin-0.13.1
         <title type="html"><![CDATA[Segregated Witness Upgrade Guide]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2016/10/27/segwit-upgrade-guide/" />
         <id>en-segwit-upgrade-guide</id>
-        <published>2016-10-26T00:00:00+07:00</published>
-        <updated>2016-10-26T00:00:00+07:00</updated>
+        <published>2016-10-26T00:00:00+09:00</published>
+        <updated>2016-10-26T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/en/2016/10/27/segwit-upgrade-guide/</uri>
@@ -2546,325 +2574,6 @@ support for soft forks.  Segwit uses bit 1 for versionbits.&lt;/p&gt;
 
 
             &lt;p&gt;&lt;a href=&quot;https://bitcoincore.org/en/2016/10/27/segwit-upgrade-guide/&quot;&gt;Segregated Witness Upgrade Guide&lt;/a&gt; was originally published by Bitcoin Core at &lt;a href=&quot;https://bitcoincore.org&quot;&gt;Bitcoin Core&lt;/a&gt; on October 26, 2016.&lt;/p&gt;
-        </content>
-    </entry>
-    
-    
-    <entry>
-        <title type="html"><![CDATA[Bitcoin Core 0.13.0 Released!]]></title>
-        <link rel="alternate" type="text/html" href="https://bitcoincore.org/en/2016/08/23/release-0.13.0/" />
-        <id>en-blog-release-0.13.0</id>
-        <published>2016-08-23T00:00:00+07:00</published>
-        <updated>2016-08-23T00:00:00+07:00</updated>
-        <author>
-            <name>Bitcoin Core</name>
-            <uri>https://bitcoincore.org/en/2016/08/23/release-0.13.0/</uri>
-            
-        </author>
-        <content type="html">
-            &lt;section id=&quot;table-of-contents&quot; class=&quot;toc&quot;&gt;
-  &lt;header&gt;
-    
-    &lt;h3 class=&quot;toc-header&quot;&gt;&lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt; Overview&lt;/h3&gt;
-  &lt;/header&gt;
-&lt;div class=&quot;toc-drawer&quot;&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#preparation-for-segregated-witness&quot; id=&quot;markdown-toc-preparation-for-segregated-witness&quot;&gt;Preparation for segregated witness&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#compact-block-relay&quot; id=&quot;markdown-toc-compact-block-relay&quot;&gt;Compact block relay&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#fee-filtering&quot; id=&quot;markdown-toc-fee-filtering&quot;&gt;Fee filtering&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#bip32-hd-wallet-support&quot; id=&quot;markdown-toc-bip32-hd-wallet-support&quot;&gt;BIP32 HD wallet support&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#more-intelligent-transaction-selection-for-mining&quot; id=&quot;markdown-toc-more-intelligent-transaction-selection-for-mining&quot;&gt;More intelligent transaction selection for mining&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#official-builds-for-linux-on-arm&quot; id=&quot;markdown-toc-official-builds-for-linux-on-arm&quot;&gt;Official builds for Linux on ARM&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#conclusion&quot; id=&quot;markdown-toc-conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#hashes-for-verification&quot; id=&quot;markdown-toc-hashes-for-verification&quot;&gt;Hashes for verification&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /#table-of-contents --&gt;
-
-&lt;p&gt;We’re pleased to &lt;a href=&quot;https://lists.linuxfoundation.org/pipermail/bitcoin-core-dev/2016-August/000018.html&quot;&gt;announce&lt;/a&gt; the official release of Bitcoin Core 0.13.0.  During the six-month development cycle leading to this release, &lt;a href=&quot;/en/releases/0.13.0/#credits&quot;&gt;dozens of contributors&lt;/a&gt; have made &lt;a href=&quot;/en/releases/0.13.0/#change-log&quot;&gt;hundreds of notable improvements&lt;/a&gt; to Bitcoin Core.  Among the many upgrades available in this release, the following may be especially interesting to miners, node operators, and wallet users:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Preparation for segregated witness&lt;/strong&gt; to increase capacity, eliminate unwanted transaction malleability, and enable new ways to upgrade Bitcoin’s Script language using soft forks.  The code in this release prepares for segwit only; it does not support segwit on mainnet, so users who want segwit support will need to upgrade to a future version.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Compact block relay&lt;/strong&gt; on the peer-to-peer network to eliminate a major source of redundant data transfer among nodes that relay transactions, as well as reduce the peak amount of bandwidth those nodes use when downloading newly-generated blocks.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Fee-based filtering&lt;/strong&gt; to eliminate another source of unnecessary data transfer on the peer-to-peer network by allowing nodes to skip relaying any unconfirmed low-fee transactions that they know their peers would ignore anyway.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;BIP32 HD wallet support&lt;/strong&gt; in Bitcoin Core’s built-in wallet to allow users to backup every private key they will ever generate with the wallet rather than the old default of just the next 100 private keys.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Child Pays For Parent (CPFP) transaction selection&lt;/strong&gt; to allow miners to mine more profitably (when possible) and give users the ability to incentivize mining of selected transactions in cases where the users can’t increase transaction fees directly.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Official Bitcoin Core binary executables for ARM chipsets used with Linux&lt;/strong&gt; to allow users of those platforms to take advantage of pre-built software secured by the Gitian deterministic building and multiple attestation process.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;For a more comprehensive list of the changes made in Bitcoin Core 0.13.0, please see the &lt;a href=&quot;/en/releases/0.13.0/&quot;&gt;release notes&lt;/a&gt;.  The improvements listed above are described in more detail below.&lt;/p&gt;
-
-&lt;h2 id=&quot;preparation-for-segregated-witness&quot;&gt;Preparation for segregated witness&lt;/h2&gt;
-
-&lt;p&gt;The most significant code change made in Bitcoin Core 0.13.0 is the inclusion of the segregated witness (segwit) code in preparation for an upcoming soft fork.  Please note that this release will not activate segwit, and if segwit is activated, this release will not act any differently, so those who want to use or enforce segwit will need to upgrade to a later release that does contain the activation mechanism.&lt;/p&gt;
-
-&lt;p&gt;By including the segwit code in Bitcoin Core 0.13.0, users gain several advantages:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Easier upgrade to segwit:&lt;/strong&gt; The code differences (“diff”) from this release to a subsequent release that includes segwit will be small.  This allows users who modify their version of Bitcoin Core to easily convert any modifications they make to Bitcoin Core 0.13.0 to the release that contains segwit (which is expected to be 0.13.1).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Easier segwit testing:&lt;/strong&gt; Although this release won’t run segwit code on mainnet, it does run the code on testnet and in regression testing mode (regtest), which makes it easy for developers, administrators, and testers to use segwit in a safe environment with a version of Bitcoin Core that will be very close to the first version that is ready for miners to activate segwit.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Full integration with other features:&lt;/strong&gt; all the other features included in this release – such as feefiltering, compact block relay, child-pays-for-parent mining, and official binaries for Linux on ARM – are integrated with the segwit code and will probably be in production for two or more months before segwit activates, providing extra time for potential problems to be discovered through community review and
-testing.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;More information:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/releases/0.13.0/#segregated-witness&quot;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://bitcoincore.org/en/2016/06/24/segwit-next-steps/&quot;&gt;Segregated Witness: the next steps&lt;/a&gt; BitcoinCore.org blog post&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki&quot;&gt;BIP141: Segregated witness (consensus layer)&lt;/a&gt;, technical information about segwit and where the activation parameters for segwit will be published.  See also BIPs &lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki&quot;&gt;143&lt;/a&gt;, &lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki&quot;&gt;144&lt;/a&gt;, and &lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0145.mediawiki&quot;&gt;145&lt;/a&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;compact-block-relay&quot;&gt;Compact block relay&lt;/h2&gt;
-
-&lt;p&gt;Prior to Bitcoin Core 0.13.0, a running full node would (by default) receive many transactions twice:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;Before the transaction was confirmed, as an individual transaction being relayed across the network.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;After the transaction was confirmed, as part of a group of transactions contained in a newly-mined block being relayed across the network.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;There’s no need for the node to receive the transaction a second time if it still has the first copy. Compact block relay (BIP152) can eliminate this redundancy by allowing a node to receive from its peers an ordered list of what transactions are included in a new block. With this knowledge, the node can use the transactions it has already received to partly or fully reconstruct the transactions part of the block for itself.  If the node doesn’t receive all the transactions it needs to fully reconstruct the block, it requests the missing transactions from its peers, and then uses them to complete the block.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/bitcoin/bips/master/bip-0152/protocol-flow.png&quot; alt=&quot;Compact Blocks diagram&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Compact blocks provides three very important benefits to the network:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;By reducing the amount of bandwidth used by transaction relay nodes, compact blocks help offset the expected increase in bandwidth that will occur when the segwit capacity increases are enabled by miners.  This offset should allow nodes to continue operating on the network after segwit even if they’re presently near their current bandwidth caps.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;By eliminating the bandwidth spike that occurs when nodes receive a new block, compact blocks may make it easier to keep a node operating on connections with limited peak bandwidth.  For example, several users have reported that receiving a new block slows down other important activity on their network, such as video conferencing, so some of those users shut down Bitcoin Core before starting those activities.  Compact blocks may eliminate those bandwidth spikes and make running Bitcoin Core less inconvenient for those users.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Faster propagation of blocks across the network, by dramatically reducing the amount of data that needs to be transported when a new block is found.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;More information:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/releases/0.13.0/#compact-block-support-bip-152&quot;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/2016/06/07/compact-blocks-faq/&quot;&gt;Compact Block Relay FAQ&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki&quot;&gt;BIP152&lt;/a&gt;, which describes the compact blocks protocol&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://bitcoinfibre.org/&quot;&gt;Bitcoin FIBRE&lt;/a&gt;, an open source protocol and implementation that builds upon compact blocks to minimize latency for new block announcements between peers on managed networks.  FIBRE was designed and implemented alongside compact block relay version 1 and it is being used to test improvements for a subsequent version of compact block relay.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;fee-filtering&quot;&gt;Fee filtering&lt;/h2&gt;
-
-&lt;p&gt;For several years now, Bitcoin Core nodes have used a minimum relay fee rate to help determine what unconfirmed transactions they’ll process, relay, and store in their individual memory pools.  Each node gets to decide its own minimum relay fee rate, and if they receive a transaction whose fee rate is below that limit, they don’t add it to their memory pools or relay it to their other peers (although another mechanism called &lt;a href=&quot;https://en.bitcoin.it/wiki/Transaction_fees#Priority_transactions&quot;&gt;transaction priority&lt;/a&gt; historically allowed some transactions that pay a low fee to be accepted into mempools and relayed).&lt;/p&gt;
-
-&lt;p&gt;Prior to Bitcoin Core 0.13.0, nodes didn’t tell each other what minimum fee rate they were using, which could lead to wasted bandwidth.  For example, Alice sends Bob a transaction without realizing that the transaction’s fee rate is below Bob’s minimum.  Because of the way Bitcoin transactions are relayed, Bob has no way of knowing that the transaction is below his limit until he has already downloaded the whole transaction, at which point he stops processing the transaction because its fee rate is too low, so both his bandwidth and Alice’s bandwidth end up being wasted.&lt;/p&gt;
-
-&lt;p&gt;Bitcoin Core 0.13.0 supports a new message that has been added to the peer-to-peer (P2P) protocol, the &lt;code class=&quot;highlighter-rouge&quot;&gt;feefilter&lt;/code&gt; message, which has been designed to help eliminate this wasted bandwidth. This P2P message allows Bob to tell Alice what he is currently using as his minimum relay fee rate so that Alice will not bother trying to relay to him any transactions that pay a fee below his rate.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More information&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/releases/0.13.0/#low-level-rpc-changes&quot;&gt;Release notes for feefilter&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki&quot;&gt;BIP133: &lt;code class=&quot;highlighter-rouge&quot;&gt;feefilter&lt;/code&gt;
-message&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;bip32-hd-wallet-support&quot;&gt;BIP32 HD wallet support&lt;/h2&gt;
-
-&lt;p&gt;When Bitcoin Core starts for the first time, it will now generate a BIP32 Hierarchical Deterministic (HD) wallet where every private key in the wallet is derived from a single piece of information using a repeatable (deterministic) process. This means backing up that single piece of information will back up every private key your wallet will ever generate, ensuring that you can recover any bitcoins controlled by those private keys in the future.&lt;/p&gt;
-
-&lt;p&gt;Backups are hard to get right, so please note the following information:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you upgrade from any version of Bitcoin Core before 0.13.0, you will continue using the old style of wallet where each private key is generated individually, with (by default) up to 100 of them pre-generated in advance to make backups easier—meaning you need to create additional backups every 100 transactions, since each default-style transaction uses one private key.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you create a new wallet with 0.13.0 (or above) and you change from the default unencrypted wallet to an encrypted wallet, a new HD wallet will be generated for you.  You will still have access to any bitcoins sent to the unencrypted wallet, but you will need to backup the wallet again.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you aren’t sure whether you’re using an HD wallet, you can check using the &lt;code class=&quot;highlighter-rouge&quot;&gt;getwalletinfo&lt;/code&gt; RPC:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you use the Bitcoin Core graphical user interface, you can click the &lt;em&gt;Help&lt;/em&gt; menu, choose the &lt;em&gt;Debug&lt;/em&gt; option, click the &lt;em&gt;Console&lt;/em&gt; tab, and then type in &lt;code class=&quot;highlighter-rouge&quot;&gt;getwalletinfo&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;If you use the &lt;code class=&quot;highlighter-rouge&quot;&gt;bitcoin-cli&lt;/code&gt; command to access the RPC interface, you can type &lt;code class=&quot;highlighter-rouge&quot;&gt;bitcoin-cli getwalletinfo&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In either case, if you see a line labeled “masterkeyid”, then you’re using an HD wallet; if you don’t see it, then you’re using a wallet with individually generated keys.&lt;/p&gt;
-
-&lt;p&gt;Backing up an HD wallet ensures that you will be able to re-generate any private keys produced by that wallet in the future, but that is the only information you can recover from the backup in the future.  Any additional information you enter into your wallet after you make the backup, such as descriptions of transactions you sent or received, will be lost if you have to restore from the HD wallet backup, so we recommend that you continue to make regular backups of your wallet in order to preserve that information.&lt;/p&gt;
-
-&lt;p&gt;Importantly, if you manually import any private keys to your wallet, they cannot be recovered using any backups made prior to the import, so you will need to make a new wallet backup and use that.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More information&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/releases/0.13.0/#hierarchical-deterministic-key-generation&quot;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://en.bitcoin.it/wiki/Deterministic_wallet&quot;&gt;Deterministic
-wallets&lt;/a&gt; (Bitcoin
-Wiki)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki&quot;&gt;BIP32: Hierarchical Deterministic Wallets&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;more-intelligent-transaction-selection-for-mining&quot;&gt;More intelligent transaction selection for mining&lt;/h2&gt;
-
-&lt;p&gt;Ancestor fee rate mining is the new default transaction selection method for mining in Bitcoin Core 0.13.0.  Miners can use it to select which transactions to put in their next block, providing two important benefits:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;For miners&lt;/strong&gt; often more revenue can be earned from transaction fees per block because ancestor fee rate mining is able to prioritize certain higher-fee transactions.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;For users&lt;/strong&gt; as a side benefit of miners choosing transactions more intelligently, it becomes possible for the recipient of an unconfirmed transaction to incentivize miners to mine that transaction.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Bitcoin has rule that says if Alice spends a bitcoin to Bob, the transaction where Alice originally receives the bitcoin must appear earlier in the blockchain than the transaction where she spends that bitcoin to Bob.  In other words, the parent transaction must appear earlier in the blockchain than its child transaction, forming an ancestor relationship.&lt;/p&gt;
-
-&lt;p&gt;Both the child and parent transactions can appear in the same block, but if they do, the parent must appear earlier in that block than the child.  This means that if an unconfirmed child transaction pays a high fee, miners should be incentivized by this existing Bitcoin rule to mine that transaction’s unconfirmed parent (even if it pays a low fee) in order to get the child’s high fee.&lt;/p&gt;
-
-&lt;p&gt;This incentivization scheme is often called Child Pays For Parent (CPFP).  In the simplest version, miners group a transaction and all of its ancestors together, calculating their total fee-per-byte in order to determine whether mining them together pays a high enough fee to outbid other individual transactions the miner wants to include in its next block.&lt;/p&gt;
-
-&lt;p&gt;A key advantage of ancestor fee rate mining is that the two transactions don’t need to be created by the same person.  For example, if Bob is waiting for confirmation of a transaction that Alice sent him, Bob can independently create a child transaction that incentivizes miners to confirm his transaction and Alice’s transaction together.&lt;/p&gt;
-
-&lt;p&gt;It is important to note that ancestor fee rate mining doesn’t guarantee that a low-fee transaction will be mined just because it has a high-fee child or other descendent.  In particular, almost all miners and nodes will ignore transactions that don’t pay a minimal amount of fee per kilobyte of data (the exact ratio varies by node), so if a parent transaction is ignored because the fee it pays is below this limit, then its children will not be mined no matter how high a fee they pay.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More information:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/releases/0.13.0/#mining-transaction-selection-child-pays-for-parent&quot;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Child Pays For Parent (CPFP) compared to opt-in Replace-by-Fee (RBF)
-in the &lt;a href=&quot;/en/faq/optin_rbf/#what-is-child-pays-for-parent-cpfp&quot;&gt;opt-in RBF
-FAQ&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/Bitcoin/comments/4oeqhk/bitcoin_core_child_pays_for_parent_merged/d4cg8ov?context=1&quot;&gt;Brief history of CPFP development in Bitcoin
-Core&lt;/a&gt;,
-a Reddit comment by Gregory Maxwell&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;official-builds-for-linux-on-arm&quot;&gt;Official builds for Linux on ARM&lt;/h2&gt;
-
-&lt;p&gt;The official Bitcoin Core binaries built and cryptographically signed by multiple contributors through the &lt;a href=&quot;https://bitcoinmagazine.com/articles/what-is-gitian-building-how-bitcoin-s-security-processes-became-a-model-for-the-open-source-community-1461862937&quot;&gt;Gitian process&lt;/a&gt; now includes two new platforms:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;bitcoin-${VERSION}-arm-linux-gnueabihf.tar.gz: Linux binaries for the most common 32-bit ARM architecture.&lt;/li&gt;
-  &lt;li&gt;bitcoin-${VERSION}-aarch64-linux-gnu.tar.gz: Linux binaries for the most common 64-bit ARM architecture.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you have the GNU C compiler installed, you can run the following command to figure out which platform you’re using:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gcc -print-multiarch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Or you if use a Debian-based system, you can try the following command:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dpkg-architecture -q DEB_HOST_GNU_SYSTEM
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;These binaries are designed for Linux using GNU libc6; they are not expected to run by default on Android or other operating systems.&lt;/p&gt;
-
-&lt;p&gt;The new builds are still experimental, so please &lt;a href=&quot;https://github.com/bitcoin/bitcoin/issues/new&quot;&gt;report any problems&lt;/a&gt; that you encounter.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;More information&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;/en/releases/0.13.0/#linux-arm-builds&quot;&gt;Release notes&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The Bitcoin Wiki has a list of &lt;a href=&quot;https://en.bitcoin.it/wiki/Bitcoin_Core_compatible_devices&quot;&gt;Bitcoin Core compatible devices&lt;/a&gt;.  Please add any unlisted devices that are also compatible.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;The Debian Wiki includes information about boards that are &lt;em&gt;probably&lt;/em&gt; compatible with these builds: &lt;a href=&quot;https://wiki.debian.org/ArmHardFloatPort#Hardware&quot;&gt;32-bit arm-linux-gnueabihf&lt;/a&gt; and &lt;a href=&quot;https://wiki.debian.org/Arm64Port#Hardware.2C_emulators_and_models&quot;&gt;64-bit aarch64-linux-gnu&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;For details on all the changes made in Bitcoin Core 0.13.0, please &lt;a href=&quot;/en/releases/0.13.0/&quot;&gt;read the release notes&lt;/a&gt;.  To download, please visit the &lt;a href=&quot;https://bitcoin.org/en/download&quot;&gt;download page&lt;/a&gt; or the &lt;a href=&quot;https://bitcoin.org/bin/bitcoin-core-0.13.0/&quot;&gt;files directory&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;With the release of Bitcoin Core 0.13.0, we begin the six-month release cycle for the next version of Bitcoin Core (expected to be 0.14.0).  With the participation of the community, we will also be choosing the BIP9 parameters for segregated witness and releasing a minor version (expected to be 0.13.1) with segwit fully enabled.&lt;/p&gt;
-
-&lt;p&gt;If you are interested in contributing to Bitcoin Core, please see our &lt;a href=&quot;/en/contribute&quot;&gt;contributing page&lt;/a&gt; and the document &lt;a href=&quot;/en/faq/contributing-code/&quot;&gt;How to contribute code to Bitcoin Core&lt;/a&gt;.  If you don’t know where to get started or have any other questions, please stop by either our &lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC&lt;/a&gt; or &lt;a href=&quot;https://slack.bitcoincore.org&quot;&gt;Slack&lt;/a&gt; chatrooms and we’ll do our best to help you.&lt;/p&gt;
-
-&lt;h2 id=&quot;hashes-for-verification&quot;&gt;Hashes for verification&lt;/h2&gt;
-
-&lt;p&gt;These are the SHA-256 hashes of the released files:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;f94123e37530f9de25988ff93e5568a93aa5146f689e63fb0ec1f962cf0bbfcd  bitcoin-0.13.0-aarch64-linux-gnu.tar.gz
-7c657ec6f6a5dbb93b9394da510d5dff8dd461df8b80a9410f994bc53c876303  bitcoin-0.13.0-arm-linux-gnueabihf.tar.gz
-d6da2801dd9d92183beea16d0f57edcea85fc749cdc2abec543096c8635ad244  bitcoin-0.13.0-i686-pc-linux-gnu.tar.gz
-2f67ac67b935368e06f2f3b83f0173be641eef799e45d0a267efc0b9802ca8d2  bitcoin-0.13.0-osx64.tar.gz
-e7fed095f1fb833d167697c19527d735e43ab2688564887b80b76c3c349f85b0  bitcoin-0.13.0-osx.dmg
-0c7d7049689bb17f4256f1e5ec20777f42acef61814d434b38e6c17091161cda  bitcoin-0.13.0.tar.gz
-213e6626ad1f7a0c7a0ae2216edd9c8f7b9617c84287c17c15290feca0b8f13b  bitcoin-0.13.0-win32-setup.exe
-5c5bd6d31e4f764e33f2f3034e97e34789c3066a62319ae8d6a6011251187f7c  bitcoin-0.13.0-win32.zip
-c94f351fd5266e07d2132d45dd831d87d0e7fdb673d5a0ba48638e2f9f8339fc  bitcoin-0.13.0-win64-setup.exe
-54606c9a4fd32b826ceab4da9335d7a34a380859fa9495bf35a9e9c0dd9b6298  bitcoin-0.13.0-win64.zip
-bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0-x86_64-linux-gnu.tar.gz
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-
-            &lt;p&gt;&lt;a href=&quot;https://bitcoincore.org/en/2016/08/23/release-0.13.0/&quot;&gt;Bitcoin Core 0.13.0 Released!&lt;/a&gt; was originally published by Bitcoin Core at &lt;a href=&quot;https://bitcoincore.org&quot;&gt;Bitcoin Core&lt;/a&gt; on August 23, 2016.&lt;/p&gt;
         </content>
     </entry>
     

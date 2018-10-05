@@ -8,6 +8,24 @@
         
         
         <item>
+            <title>Bitcoin Core 0.17.0 Released</title>
+            <description>&lt;p&gt;Bitcoin Core version 0.17.0 is now available for &lt;a href=&quot;/en/download&quot;&gt;download&lt;/a&gt; containing many new features as well as bug fixes and other
+improvements.  For a complete list of changes, please see the &lt;a href=&quot;/en/releases/0.17.0/&quot;&gt;release
+notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This release is not vulnerable to the &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17144&quot;&gt;CVE-2018-17144&lt;/a&gt; duplicate
+inputs bug.&lt;/p&gt;
+
+&lt;p&gt;If have any questions, please stop by our &lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC chatroom&lt;/a&gt; and we’ll
+do our best to help you.&lt;/p&gt;
+
+</description>
+            <pubDate>Tue, 02 Oct 2018 00:00:00 +0900</pubDate>
+            <link>https://bitcoincore.org/en/2018/10/02/release-0.17.0/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/en/2018/10/02/release-0.17.0/</guid>
+        </item>
+        
+        <item>
             <title>CVE-2018-17144 Full Disclosure</title>
             <description>&lt;h1 id=&quot;full-disclosure&quot;&gt;Full disclosure&lt;/h1&gt;
 &lt;p&gt;CVE-2018-17144, a fix for which was released on September 18th in Bitcoin Core versions 0.16.3 and 0.17.0rc4, includes both a Denial of Service component and a critical inflation vulnerability. It was originally reported to several developers working on Bitcoin Core, as well as projects supporting other cryptocurrencies, including ABC and Unlimited on September 17th as a Denial of Service bug only, however we quickly determined that the issue was also an inflation vulnerability with the same root cause and fix.&lt;/p&gt;
@@ -66,11 +84,11 @@
 &lt;p&gt;September 20, 2018:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;19:50 A developer by the title earlz independently discovered and reported the vulnerability to the Bitcoin Core security contact email.&lt;/li&gt;
+  &lt;li&gt;19:50 David Jaenson independently discovered the vulnerability, and it was reported to the Bitcoin Core security contact email.&lt;/li&gt;
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Thu, 20 Sep 2018 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 20 Sep 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2018/09/20/notice/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2018/09/20/notice/</guid>
         </item>
@@ -95,7 +113,7 @@ have any questions, please stop by our &lt;a href=&quot;https://en.bitcoin.it/wi
 our best to help you.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 18 Sep 2018 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 18 Sep 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2018/09/18/release-0.16.3/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2018/09/18/release-0.16.3/</guid>
         </item>
@@ -130,7 +148,7 @@ have any questions, please stop by our &lt;a href=&quot;https://en.bitcoin.it/wi
 our best to help you.&lt;/p&gt;
 
 </description>
-            <pubDate>Sun, 29 Jul 2018 00:00:00 +0700</pubDate>
+            <pubDate>Sun, 29 Jul 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2018/07/29/release-0.16.2/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2018/07/29/release-0.16.2/</guid>
         </item>
@@ -171,7 +189,7 @@ have any questions, please stop by our &lt;a href=&quot;https://en.bitcoin.it/wi
 our best to help you.&lt;/p&gt;
 
 </description>
-            <pubDate>Fri, 15 Jun 2018 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 15 Jun 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2018/06/15/release-0.16.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2018/06/15/release-0.16.1/</guid>
         </item>
@@ -389,7 +407,7 @@ df0036bae9f40536095908c9944ed66c0946f178ae8ef07639caf25a390b2ee7  bitcoin-0.16.0
 e6322c69bcc974a29e6a715e0ecb8799d2d21691d683eeb8fef65fc5f6a66477  bitcoin-0.16.0-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Mon, 26 Feb 2018 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 26 Feb 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2018/02/26/release-0.16.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2018/02/26/release-0.16.0/</guid>
         </item>
@@ -533,7 +551,7 @@ b858521496c0d7699a6916c20767cdb123eb39be70ffc544d6876b08af3b696a  bitcoin-0.15.1
 387c2e12c67250892b0814f26a5a38f837ca8ab68c86af517f975a2a2710225b  bitcoin-0.15.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Sat, 11 Nov 2017 00:00:00 +0700</pubDate>
+            <pubDate>Sat, 11 Nov 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/11/11/release-0.15.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/11/11/release-0.15.1/</guid>
         </item>
@@ -582,7 +600,7 @@ f0aebade2b43e253ad66fd920e00524048f5a9b9933936e735844d316433791a  bitcoin-0.15.0
 ae3efa47bf87a694a5368cd6fea96c9942fe9be7856720b5027c8902e46a88d1  bitcoin-0.15.0.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Mon, 02 Oct 2017 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 02 Oct 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/10/02/release-0.15.0.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/10/02/release-0.15.0.1/</guid>
         </item>
@@ -737,7 +755,7 @@ d1686db57c59136c758db1536eaf1bb0b9a08c6a0fd21f54d39ee6a7b6bd39d8  bitcoin-0.15.0
 ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Thu, 14 Sep 2017 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 14 Sep 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/09/01/release-0.15.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/09/01/release-0.15.0/</guid>
         </item>
@@ -772,7 +790,7 @@ ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-            <pubDate>Fri, 18 Aug 2017 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 18 Aug 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/08/18/btc1-misleading-statements/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/08/18/btc1-misleading-statements/</guid>
         </item>
@@ -827,7 +845,7 @@ b3b0cc67a9a602fee4a270efc154f4422e1e49e2aefd9b0d44b0c601a326b05a  bitcoin-0.14.2
 20acc6d5d5e0c4140387bc3445b8b3244d74c1c509bd98f62b4ee63bec31a92b  bitcoin-0.14.2-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Sat, 17 Jun 2017 00:00:00 +0700</pubDate>
+            <pubDate>Sat, 17 Jun 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/06/17/release-0.14.2/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/06/17/release-0.14.2/</guid>
         </item>
@@ -909,7 +927,7 @@ f21203e07f054dce3177539be89a066d4faee1e2fa432157c1444e4e6dd4f9a3  bitcoin-0.14.1
 0c6920a9f3181a95ca029fdac5342b5702569ee441ec2128d19051f281683058  bitcoin-0.14.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Sat, 22 Apr 2017 00:00:00 +0700</pubDate>
+            <pubDate>Sat, 22 Apr 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/04/22/release-0.14.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/04/22/release-0.14.1/</guid>
         </item>
@@ -931,7 +949,7 @@ f21203e07f054dce3177539be89a066d4faee1e2fa432157c1444e4e6dd4f9a3  bitcoin-0.14.1
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Fri, 31 Mar 2017 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 31 Mar 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/03/31/prioritized-block-download-using-hybrid-spv/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/03/31/prioritized-block-download-using-hybrid-spv/</guid>
         </item>
@@ -1017,7 +1035,7 @@ OP_CHECKMULTISIG are modified so that they can stack public keys, delinearize th
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Thu, 23 Mar 2017 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 23 Mar 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/03/23/schnorr-signature-aggregation/</guid>
         </item>
@@ -1144,7 +1162,7 @@ With that in mind, the block validation mechanism was re-engineered in order to 
 
 &lt;p&gt;In Part 2, we will discuss more recent improvements that build on the technologies presented above and further improve the robustness and scaling potential of the network.&lt;/p&gt;
 </description>
-            <pubDate>Mon, 13 Mar 2017 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 13 Mar 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/03/13/performance-optimizations-1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/03/13/performance-optimizations-1/</guid>
         </item>
@@ -1370,7 +1388,7 @@ f260d52cf2fe91c4be99ed6fcf8aa0de669ff326c5da920b7ed3a3e2ec981e0a  bitcoin-0.14.0
 &lt;/code&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Wed, 08 Mar 2017 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 08 Mar 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/03/08/release-0.14.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/03/08/release-0.14.0/</guid>
         </item>
@@ -1408,7 +1426,7 @@ e07ce2a8cc0913fb253a42073fd3b94921da7f916366dd0534f3b24cad7a733e  bitcoin-0.13.2
 &lt;p&gt;If you are interested in contributing to Bitcoin Core, please see our &lt;a href=&quot;/en/contribute&quot;&gt;contributing page&lt;/a&gt; and the document &lt;a href=&quot;/en/faq/contributing-code/&quot;&gt;How to contribute code to Bitcoin Core&lt;/a&gt;. If you don’t know where to get started or have any other questions, please stop by either our &lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRC&lt;/a&gt; or &lt;a href=&quot;https://slack.bitcoincore.org/&quot;&gt;Slack&lt;/a&gt; chatrooms and we’ll do our best to help you.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 03 Jan 2017 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 03 Jan 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2017/01/03/release-0.13.2/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2017/01/03/release-0.13.2/</guid>
         </item>
@@ -1862,7 +1880,7 @@ seconds per block on a Raspberry Pi v1, or under 1/10th of a second on more capa
 
 &lt;p&gt;Because increasing capacity is dangerous due to the quadratic scaling of sighash operations with the existing CHECKSIG and CHECKMULTISIG opcodes, some limit on these operations needs to be in place. Since segwit only allows increased signature operations via the updated opcodes, the old opcodes remain naturally limited. In contrast if a capacity increase were applied independently, additional limits would need to be implemented to ensure the increase was safe, likely adding complexity to mining and fee calculation.&lt;/p&gt;
 </description>
-            <pubDate>Fri, 28 Oct 2016 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 28 Oct 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/10/28/segwit-costs/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/10/28/segwit-costs/</guid>
         </item>
@@ -2068,7 +2086,7 @@ c1726ccc50635795c942c7d7e51d979c4f83a3d17f8982e9d02a114a15fef419  bitcoin-0.13.1
 &lt;/code&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 27 Oct 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 27 Oct 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/10/27/release-0.13.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/10/27/release-0.13.1/</guid>
         </item>
@@ -2349,7 +2367,7 @@ support for soft forks.  Segwit uses bit 1 for versionbits.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Questions?&lt;/strong&gt; Bitcoin development questions may be asked in the #bitcoin-dev IRC chatroom on irc.freenode.net.  Questions may also be asked on Bitcoin.StackExchange.com and the BitcoinTalk.org &lt;a href=&quot;https://bitcointalk.org/index.php?board=6.0&quot;&gt;technical discussion board.&lt;/a&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Wed, 26 Oct 2016 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 26 Oct 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/10/27/segwit-upgrade-guide/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/10/27/segwit-upgrade-guide/</guid>
         </item>
@@ -2658,7 +2676,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;/div&gt;
 
 </description>
-            <pubDate>Tue, 23 Aug 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 23 Aug 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/08/23/release-0.13.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/08/23/release-0.13.0/</guid>
         </item>
@@ -2847,7 +2865,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;p&gt;Enabling MAST can be done using the versioning of Bitcoin Script enabled by segwit.&lt;/p&gt;
 
 </description>
-            <pubDate>Fri, 24 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 24 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/06/24/segwit-next-steps/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/06/24/segwit-next-steps/</guid>
         </item>
@@ -2925,7 +2943,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;p&gt;Failing to follow the above instructions may result in generation of invalid blocks, causing a chain fork and monetary loss of the concerned miners and general Bitcoin users.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 21 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 21 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/06/21/csv-softfork-instructions/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/06/21/csv-softfork-instructions/</guid>
         </item>
@@ -3118,7 +3136,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Wed, 08 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 08 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/06/08/version-bits-miners-faq/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/06/08/version-bits-miners-faq/</guid>
         </item>
@@ -3303,7 +3321,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Tue, 07 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 07 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/06/07/compact-blocks-faq/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/06/07/compact-blocks-faq/</guid>
         </item>
@@ -3327,7 +3345,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;p&gt;The Bitcoin Core Development Team&lt;/p&gt;
 
 </description>
-            <pubDate>Fri, 15 Apr 2016 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 15 Apr 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/blog/2016/04/15/release-0.12.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/blog/2016/04/15/release-0.12.1/</guid>
         </item>
@@ -3356,7 +3374,7 @@ and keep an eye on the overall quality of testing.&lt;/p&gt;
 &lt;p&gt;Wladimir van der Laan&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 14 Apr 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 14 Apr 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/blog/2016/04/14/maintainer/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/blog/2016/04/14/maintainer/</guid>
         </item>
@@ -3381,7 +3399,7 @@ and keep an eye on the overall quality of testing.&lt;/p&gt;
 
 &lt;p&gt;Additionally please see the &lt;a href=&quot;/en/about/sponsorship/faq/&quot;&gt;FAQ&lt;/a&gt; for more details.&lt;/p&gt;
 </description>
-            <pubDate>Mon, 04 Apr 2016 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 04 Apr 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/04/04/announcing_sponsorship_programme/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/04/04/announcing_sponsorship_programme/</guid>
         </item>
@@ -3430,7 +3448,7 @@ the following keys:&lt;/p&gt;
 &lt;p&gt;You can import a key by running the following command with that individual’s fingerprint: &lt;code class=&quot;highlighter-rouge&quot;&gt;gpg --recv-keys &quot;&amp;lt;fingerprint&amp;gt;&quot;&lt;/code&gt;  Ensure that you put quotes around fingerprints containing spaces.&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 15 Mar 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 15 Mar 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/03/15/announcement-list/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/03/15/announcement-list/</guid>
         </item>
@@ -3549,7 +3567,7 @@ In Paypub, instead of using a zero-knowledge proof the buyer is shown a random s
 
 &lt;p&gt;&lt;em&gt;Gregory Maxwell&lt;/em&gt;&lt;/p&gt;
 </description>
-            <pubDate>Fri, 26 Feb 2016 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 26 Feb 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/02/26/zero-knowledge-contingent-payments-announcement/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/02/26/zero-knowledge-contingent-payments-announcement/</guid>
         </item>
@@ -3665,7 +3683,7 @@ Follow Bitcoin Core updates at &lt;a href=&quot;https://twitter.com/bitcoincoreo
 
 &lt;p&gt;&lt;em&gt;This blog post was written by Ryan Shea based on the official &lt;a href=&quot;https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md&quot;&gt;release notes&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 </description>
-            <pubDate>Tue, 23 Feb 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 23 Feb 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/02/23/release-0.12.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/02/23/release-0.12.0/</guid>
         </item>
@@ -3680,7 +3698,7 @@ Follow Bitcoin Core updates at &lt;a href=&quot;https://twitter.com/bitcoincoreo
 
 &lt;p&gt;The Bitcoin community can become extremely excited and heated when discussing Bitcoin, but we must all work to maintain a civil tone. Community members should not engage in brigading, denial-of-service attacks, or otherwise disrupt healthy discussion and we should all do our best to assume good faith in absence of reason to believe otherwise.&lt;/p&gt;
 </description>
-            <pubDate>Thu, 28 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 28 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/01/28/clarification/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/01/28/clarification/</guid>
         </item>
@@ -3949,7 +3967,7 @@ New nodes, which understand the full block with witness data, are therefore free
 &lt;/blockquote&gt;
 
 </description>
-            <pubDate>Tue, 26 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 26 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/01/26/segwit-benefits/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/01/26/segwit-benefits/</guid>
         </item>
@@ -4020,7 +4038,7 @@ New nodes, which understand the full block with witness data, are therefore free
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Thu, 21 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 21 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/01/21/launch_segwit_testnet/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/01/21/launch_segwit_testnet/</guid>
         </item>
@@ -4041,7 +4059,7 @@ Additionally, two soft forks upgrades were deployed and successfully activated. 
 &lt;p&gt;We would also like to take this opportunity to thank everyone who has been involved so far in contributing to Bitcoin Core and helping make Bitcoin better for everyone.&lt;/p&gt;
 
 </description>
-            <pubDate>Wed, 13 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 13 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/01/13/development-visualisation-2015/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/01/13/development-visualisation-2015/</guid>
         </item>
@@ -4069,7 +4087,7 @@ Additionally, two soft forks upgrades were deployed and successfully activated. 
 &lt;p&gt;A soft fork is a change to consensus rules, in which blocks that would have been valid under the old rules may become invalid under the new rules, but all blocks that would have been invalid under the old rules remain invalid under the new rules.&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 07 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 07 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2016/01/07/statement/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2016/01/07/statement/</guid>
         </item>
@@ -4378,7 +4396,7 @@ It is further likely that future scaling improvements, such as Lightning, may sl
 &lt;a href=&quot;https://webchat.freenode.net/?channels=bitcoin-dev&amp;amp;uio=d4&quot;&gt;#bitcoin-dev&lt;/a&gt; IRC channel.&lt;/p&gt;
 
 </description>
-            <pubDate>Wed, 23 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 23 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2015/12/23/capacity-increases-faq/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2015/12/23/capacity-increases-faq/</guid>
         </item>
@@ -4454,7 +4472,7 @@ It is further likely that future scaling improvements, such as Lightning, may sl
 &lt;p&gt;Signatures may be added to bitcoincore.org pull request &lt;a href=&quot;https://github.com/bitcoin-core/website/issues/53&quot;&gt;#53&lt;/a&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Mon, 21 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 21 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2015/12/21/capacity-increase/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2015/12/21/capacity-increase/</guid>
         </item>
@@ -4465,7 +4483,7 @@ It is further likely that future scaling improvements, such as Lightning, may sl
 
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NOYNZB5BCHM&quot; frameborder=&quot;0&quot;&gt; &lt;/iframe&gt;
 </description>
-            <pubDate>Mon, 14 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 14 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2015/12/14/segregated-witness/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2015/12/14/segregated-witness/</guid>
         </item>
@@ -4555,7 +4573,7 @@ Further work will prepare Bitcoin for further increases, which will become possi
 
 &lt;p&gt;&lt;em&gt;Originally posted to the bitcoin-dev mailing list at &lt;a href=&quot;https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html&quot;&gt;https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-December/011865.html&lt;/a&gt;, by Gregory Maxwell on 2015-12-07&lt;/em&gt;&lt;/p&gt;
 </description>
-            <pubDate>Mon, 07 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 07 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2015/12/07/roadmap/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2015/12/07/roadmap/</guid>
         </item>
@@ -4661,7 +4679,7 @@ Further work will prepare Bitcoin for further increases, which will become possi
 &lt;p&gt;&lt;em&gt;This letter was originally published in Bitcoin Magazine on 1st September 2015 at &lt;a href=&quot;https://bitcoinmagazine.com/articles/open-letter-bitcoin-community-developers-1441146317&quot;&gt;https://bitcoinmagazine.com/articles/open-letter-bitcoin-community-developers-1441146317&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 01 Sep 2015 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 01 Sep 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/en/2015/09/01/open-letter/</link>
             <guid isPermaLink="true">https://bitcoincore.org/en/2015/09/01/open-letter/</guid>
         </item>

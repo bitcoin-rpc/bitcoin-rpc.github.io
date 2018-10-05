@@ -97,7 +97,7 @@
 &lt;p&gt;使用 bitcoind 提供的默認 Coinbase 交易 nLockTime 值的礦工無需採取任何行動。&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 21 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 21 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_TW/2016/06/21/csv-softfork-instructions/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_TW/2016/06/21/csv-softfork-instructions/</guid>
         </item>
@@ -122,7 +122,7 @@
 
 &lt;p&gt;在&lt;a href=&quot;/zh_TW/about/sponsorship/faq/&quot;&gt;常見問題集&lt;/a&gt;有更多計劃詳請。&lt;/p&gt;
 </description>
-            <pubDate>Mon, 04 Apr 2016 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 04 Apr 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_TW/2016/04/04/announcing_sponsorship_programme/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_TW/2016/04/04/announcing_sponsorship_programme/</guid>
         </item>
@@ -138,7 +138,7 @@
 &lt;p&gt;當比特幣社群在討論的時候，雖然可能會非常興奮和激烈，但我們必須保持文明的態度。社群不應該採取網絡打手，拒絕服務攻擊，以及其它會妨礙正當討論的手段。除非有其它理由，我們應該盡量假設參與討論的人都是懷著善意而來的。&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 28 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 28 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_TW/2016/01/28/clarification/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_TW/2016/01/28/clarification/</guid>
         </item>
@@ -166,7 +166,7 @@
 &lt;p&gt;軟分叉 是指在更改共識規則後，在舊規則下有效的區塊可能會在新規則下變得無效，但所有原來是無效的區塊仍然保持為無效。&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 07 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 07 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_TW/2016/01/07/bitcoin-core-聲明/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_TW/2016/01/07/bitcoin-core-聲明/</guid>
         </item>
@@ -462,7 +462,7 @@
 &lt;p&gt;如果你想得到更多有關如何貢獻的建議，請加入&lt;a href=&quot;https://webchat.freenode.net/?channels=bitcoin-dev&amp;amp;uio=d4&quot;&gt;#bitcoin-dev&lt;/a&gt; IRC 頻道討論。&lt;/p&gt;
 
 </description>
-            <pubDate>Wed, 23 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 23 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_TW/2015/12/21/系統擴展常見問題解答/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_TW/2015/12/21/系統擴展常見問題解答/</guid>
         </item>
@@ -539,7 +539,7 @@ Core計劃內為可擴展性工作多年，認為這是最可以延續我們一�
 &lt;p&gt;如果你想參與連署，請到&lt;a href=&quot;https://github.com/bitcoin-core/website/issues/53&quot;&gt;#53&lt;/a&gt;。&lt;/p&gt;
 
 </description>
-            <pubDate>Mon, 21 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 21 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_TW/2015/12/21/比特幣系統擴展/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_TW/2015/12/21/比特幣系統擴展/</guid>
         </item>

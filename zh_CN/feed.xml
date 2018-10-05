@@ -3,7 +3,7 @@
     <title type="text">Bitcoin Core</title>
     <link rel="self" type="application/atom+xml" href="https://bitcoincore.org/zh_CN/feed.xml" />
     <link rel="alternate" type="text/html" href="https://bitcoincore.org" />
-    <updated>2018-09-30T00:51:41+07:00</updated>
+    <updated>2018-10-05T16:32:33+09:00</updated>
     <id></id>
     <author>
         <name>Bitcoin Core</name>
@@ -17,8 +17,8 @@
         <title type="html"><![CDATA[比特币核心 0.13.1 版本已经发布!]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/10/27/release-0.13.1/" />
         <id>zh_cn-blog-release-0.13.1</id>
-        <published>2016-10-27T00:00:00+07:00</published>
-        <updated>2016-10-27T00:00:00+07:00</updated>
+        <published>2016-10-27T00:00:00+09:00</published>
+        <updated>2016-10-27T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/10/27/release-0.13.1/</uri>
@@ -266,8 +266,8 @@ c1726ccc50635795c942c7d7e51d979c4f83a3d17f8982e9d02a114a15fef419  bitcoin-0.13.1
         <title type="html"><![CDATA[比特币核心 0.13.0 版本已经发布!]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/08/23/release-0.13.0/" />
         <id>zh_cn-release-0-13-0</id>
-        <published>2016-08-23T00:00:00+07:00</published>
-        <updated>2016-08-23T00:00:00+07:00</updated>
+        <published>2016-08-23T00:00:00+09:00</published>
+        <updated>2016-08-23T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/08/23/release-0.13.0/</uri>
@@ -568,8 +568,8 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
         <title type="html"><![CDATA[CSV 软分叉 - 矿工升级重要指引]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/06/21/csv-softfork-instructions/" />
         <id>en-csv-softfork-instructions</id>
-        <published>2016-06-21T00:00:00+07:00</published>
-        <updated>2016-06-21T00:00:00+07:00</updated>
+        <published>2016-06-21T00:00:00+09:00</published>
+        <updated>2016-06-21T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/06/21/csv-softfork-instructions/</uri>
@@ -673,8 +673,8 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
         <title type="html"><![CDATA[针对矿工的版本位常见为题]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/06/08/version-bits-miners-faq/" />
         <id>zh_cn-2016-06-08-version-bits-miners</id>
-        <published>2016-06-08T00:00:00+07:00</published>
-        <updated>2016-06-08T00:00:00+07:00</updated>
+        <published>2016-06-08T00:00:00+09:00</published>
+        <updated>2016-06-08T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/06/08/version-bits-miners-faq/</uri>
@@ -858,8 +858,8 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
         <title type="html"><![CDATA[宣布 Bitcoin Core 赞助计划]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/04/04/announcing_sponsorship_programme/" />
         <id>zh_CN-2016-04-04-sponsorship-programme</id>
-        <published>2016-04-04T00:00:00+07:00</published>
-        <updated>2016-04-04T00:00:00+07:00</updated>
+        <published>2016-04-04T00:00:00+09:00</published>
+        <updated>2016-04-04T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/04/04/announcing_sponsorship_programme/</uri>
@@ -893,8 +893,8 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
         <title type="html"><![CDATA[Keep updated!]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/03/15/announcement-list/" />
         <id>zh_cn-announce-list</id>
-        <published>2016-03-15T00:00:00+07:00</published>
-        <updated>2016-03-15T00:00:00+07:00</updated>
+        <published>2016-03-15T00:00:00+09:00</published>
+        <updated>2016-03-15T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/03/15/announcement-list/</uri>
@@ -926,8 +926,8 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
         <title type="html"><![CDATA[The first successful Zero-Knowledge Contingent Payment]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/02/26/zero-knowledge-contingent-payments-announcement/" />
         <id>zh_cn-zkcp-announce</id>
-        <published>2016-02-26T00:00:00+07:00</published>
-        <updated>2016-02-26T00:00:00+07:00</updated>
+        <published>2016-02-26T00:00:00+09:00</published>
+        <updated>2016-02-26T00:00:00+09:00</updated>
         <author>
             <name>Gregory Maxwell</name>
             <uri>https://bitcoincore.org/zh_CN/2016/02/26/zero-knowledge-contingent-payments-announcement/</uri>
@@ -1055,8 +1055,8 @@ OP_CHECKSIG
         <title type="html"><![CDATA[Bitcoin Core 0.12.0发布！]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/02/23/release-0.12.0/" />
         <id>zh_cn-blog-release-0.12.0</id>
-        <published>2016-02-23T00:00:00+07:00</published>
-        <updated>2016-02-23T00:00:00+07:00</updated>
+        <published>2016-02-23T00:00:00+09:00</published>
+        <updated>2016-02-23T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/02/23/release-0.12.0/</uri>
@@ -1179,8 +1179,8 @@ OP_CHECKSIG
         <title type="html"><![CDATA[Clarifying Communications]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/01/28/clarification/" />
         <id>zh_CN-clarifying-communications</id>
-        <published>2016-01-28T00:00:00+07:00</published>
-        <updated>2016-01-28T00:00:00+07:00</updated>
+        <published>2016-01-28T00:00:00+09:00</published>
+        <updated>2016-01-28T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/01/28/clarification/</uri>
@@ -1204,8 +1204,8 @@ OP_CHECKSIG
         <title type="html"><![CDATA[隔离见证的好处]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/01/26/segwit-benefits/" />
         <id>en-segwit-benefits</id>
-        <published>2016-01-26T00:00:00+07:00</published>
-        <updated>2016-01-26T00:00:00+07:00</updated>
+        <published>2016-01-26T00:00:00+09:00</published>
+        <updated>2016-01-26T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/01/26/segwit-benefits/</uri>
@@ -1498,8 +1498,8 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
         <title type="html"><![CDATA[Bitcoin Core 声明 -- 2016-01-07]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2016/01/07/bitcoin-core-声明/" />
         <id>zh_cn-bitcoin-core-2016-01-07-statement</id>
-        <published>2016-01-07T00:00:00+07:00</published>
-        <updated>2016-01-07T00:00:00+07:00</updated>
+        <published>2016-01-07T00:00:00+09:00</published>
+        <updated>2016-01-07T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2016/01/07/bitcoin-core-声明/</uri>
@@ -1536,8 +1536,8 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
         <title type="html"><![CDATA[比特币系统扩展]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2015/12/21/比特币系统扩展/" />
         <id>zh_cn-capacity-increases-zh_ch</id>
-        <published>2015-12-21T00:00:00+07:00</published>
-        <updated>2015-12-21T00:00:00+07:00</updated>
+        <published>2015-12-21T00:00:00+09:00</published>
+        <updated>2015-12-21T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2015/12/21/比特币系统扩展/</uri>
@@ -1622,8 +1622,8 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
         <title type="html"><![CDATA[比特币系统扩展]]></title>
         <link rel="alternate" type="text/html" href="https://bitcoincore.org/zh_CN/2015/12/21/系统扩展常见问题解答/" />
         <id>zh_cn-bitcoin-core-capacity-increases-faq</id>
-        <published>2015-12-21T00:00:00+07:00</published>
-        <updated>2015-12-21T00:00:00+07:00</updated>
+        <published>2015-12-21T00:00:00+09:00</published>
+        <updated>2015-12-21T00:00:00+09:00</updated>
         <author>
             <name>Bitcoin Core</name>
             <uri>https://bitcoincore.org/zh_CN/2015/12/21/系统扩展常见问题解答/</uri>

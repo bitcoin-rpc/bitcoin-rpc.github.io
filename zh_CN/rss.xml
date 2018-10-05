@@ -241,7 +241,7 @@ c1726ccc50635795c942c7d7e51d979c4f83a3d17f8982e9d02a114a15fef419  bitcoin-0.13.1
 &lt;/code&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 27 Oct 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 27 Oct 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/10/27/release-0.13.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/10/27/release-0.13.1/</guid>
         </item>
@@ -533,7 +533,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;/div&gt;
 
 </description>
-            <pubDate>Tue, 23 Aug 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 23 Aug 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/08/23/release-0.13.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/08/23/release-0.13.0/</guid>
         </item>
@@ -628,7 +628,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;p&gt;使用 bitcoind 提供的默认 Coinbase 交易 nLockTime 值的矿工无需采取任何行动。&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 21 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 21 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/06/21/csv-softfork-instructions/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/06/21/csv-softfork-instructions/</guid>
         </item>
@@ -803,7 +803,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;/ul&gt;
 
 </description>
-            <pubDate>Wed, 08 Jun 2016 00:00:00 +0700</pubDate>
+            <pubDate>Wed, 08 Jun 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/06/08/version-bits-miners-faq/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/06/08/version-bits-miners-faq/</guid>
         </item>
@@ -828,7 +828,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 
 &lt;p&gt;在&lt;a href=&quot;/zh_CN/about/sponsorship/faq/&quot;&gt;常见问题集&lt;/a&gt;有更多计划详请。&lt;/p&gt;
 </description>
-            <pubDate>Mon, 04 Apr 2016 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 04 Apr 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/04/04/announcing_sponsorship_programme/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/04/04/announcing_sponsorship_programme/</guid>
         </item>
@@ -851,7 +851,7 @@ bcc1e42d61f88621301bbb00512376287f9df4568255f8b98bc10547dced96c8  bitcoin-0.13.0
 &lt;p&gt;&lt;em&gt;Emails will be GPG signed by &lt;a href=&quot;https://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0x71A3B16735405025D447E8F274810B012346C9A6&quot;&gt;Wladimir van der Laan&lt;/a&gt;, &lt;a href=&quot;https://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0x32EE5C4C3FA15CCADB46ABE529D4BCB6416F53EC&quot;&gt;Jonas Schnelli&lt;/a&gt; or &lt;a href=&quot;https://pgp.mit.edu/pks/lookup?op=get&amp;amp;search=0x133EAC179436F14A5CF1B794860FEB804E669320&quot;&gt;Pieter Wullie&lt;/a&gt; and DKIM signed from bitcoincore.org.&lt;/em&gt;&lt;/p&gt;
 
 </description>
-            <pubDate>Tue, 15 Mar 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 15 Mar 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/03/15/announcement-list/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/03/15/announcement-list/</guid>
         </item>
@@ -970,7 +970,7 @@ OP_CHECKSIG
 
 &lt;p&gt;&lt;em&gt;Gregory Maxwell&lt;/em&gt;&lt;/p&gt;
 </description>
-            <pubDate>Fri, 26 Feb 2016 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 26 Feb 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/02/26/zero-knowledge-contingent-payments-announcement/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/02/26/zero-knowledge-contingent-payments-announcement/</guid>
         </item>
@@ -1084,7 +1084,7 @@ OP_CHECKSIG
 
 &lt;p&gt;此日志是由Ryan Shea基于官方[release notes]写成(https://github.com/bitcoin/bitcoin/blob/v0.12.0/doc/release-notes.md)。&lt;/p&gt;
 </description>
-            <pubDate>Tue, 23 Feb 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 23 Feb 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/02/23/release-0.12.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/02/23/release-0.12.0/</guid>
         </item>
@@ -1099,7 +1099,7 @@ OP_CHECKSIG
 
 &lt;p&gt;当比特币社群在讨论的时候，虽然可能会非常兴奋和激烈，但我们必须保持文明的态度。社群不应该采取网络水军，拒绝服务攻击(DoS)，以及其它会妨碍正当讨论的手段。除非有其它理由，我们应该尽量假设参与讨论的人都是怀着善意而来的。义务翻译.&lt;/p&gt;
 </description>
-            <pubDate>Thu, 28 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 28 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/01/28/clarification/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/01/28/clarification/</guid>
         </item>
@@ -1383,7 +1383,7 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
   &lt;li&gt;&lt;a href=&quot;http://diyhpl.us/wiki/transcripts/scalingbitcoin/hong-kong/validation-cost-metric/&quot;&gt;“验证成本度量” 成绩&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-            <pubDate>Tue, 26 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Tue, 26 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/01/26/segwit-benefits/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/01/26/segwit-benefits/</guid>
         </item>
@@ -1411,7 +1411,7 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
 &lt;p&gt;软分叉 是指在更改共识规则後，在旧规则下有效的区块可能会在新规则下变得无效，但所有原来是无效的区块仍然保持为无效。&lt;/p&gt;
 
 </description>
-            <pubDate>Thu, 07 Jan 2016 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 07 Jan 2016 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2016/01/07/bitcoin-core-声明/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2016/01/07/bitcoin-core-声明/</guid>
         </item>
@@ -1487,7 +1487,7 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
 &lt;p&gt;如果你想参与连署，请到&lt;a href=&quot;https://github.com/bitcoin-core/website/issues/53&quot;&gt;#53&lt;/a&gt;)。&lt;/p&gt;
 
 </description>
-            <pubDate>Mon, 21 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 21 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2015/12/21/比特币系统扩展/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2015/12/21/比特币系统扩展/</guid>
         </item>
@@ -1783,7 +1783,7 @@ multisig 的一部分，只需支付他们所有的资金只有80位（280）的
 &lt;p&gt;如果你想得到更多有关如何贡献的建议，请加入&lt;a href=&quot;https://webchat.freenode.net/?channels=bitcoin-dev&amp;amp;uio=d4&quot;&gt;#bitcoin-dev&lt;/a&gt; IRC 频道讨论。&lt;/p&gt;
 
 </description>
-            <pubDate>Mon, 21 Dec 2015 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 21 Dec 2015 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/zh_CN/2015/12/21/系统扩展常见问题解答/</link>
             <guid isPermaLink="true">https://bitcoincore.org/zh_CN/2015/12/21/系统扩展常见问题解答/</guid>
         </item>

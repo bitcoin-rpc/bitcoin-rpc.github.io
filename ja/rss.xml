@@ -8,6 +8,27 @@
         
         
         <item>
+            <title>Bitcoin Core 0.16.3 リリース</title>
+            <description>&lt;p&gt;Bitcoin Core 0.14.0で導入され、その後0.16.2までの全てのバージョンで影響を受ける
+サービス拒否の脆弱性を修正したBitcoin Coreバージョン 0.16.3 が&lt;a href=&quot;/ja/download&quot;&gt;ダウンロード&lt;/a&gt;できるようになりました。
+影響を受けるバージョンを使用するすべてのユーザーに直ちに0.16.3へアップグレードすることを強く推奨します。&lt;/p&gt;
+
+&lt;p&gt;セキュリティ問題 &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-17144&quot;&gt;CVE-2018-17144&lt;/a&gt;: 古いバージョンのBitcoin Coreにおいて、
+同じインプットを２回使用しようとするトランザクションを含むブロックを処理しようとすると
+クラッシュすることが発見されました。そのようなブロックは無効であるため、ブロックを作成することで得られる
+少なくとも12.5 BTC（この執筆時点で約$80,000 USD）の収入を犠牲にしても構わないマイナーによってのみ作成されます。
+このリリースでは、クラッシュを起こさないよう修正され、そのような無効なブロックは速やかに拒否されるようになります。&lt;/p&gt;
+
+&lt;p&gt;変更の完全なリストについては、&lt;a href=&quot;/ja/releases/0.16.3/&quot;&gt;リリースノート&lt;/a&gt;を参照ください。
+ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRCチャットルーム&lt;/a&gt;でお気軽にお問い合わせください。&lt;/p&gt;
+
+</description>
+            <pubDate>Tue, 18 Sep 2018 00:00:00 +0900</pubDate>
+            <link>https://bitcoincore.org/ja/2018/09/18/release-0.16.3/</link>
+            <guid isPermaLink="true">https://bitcoincore.org/ja/2018/09/18/release-0.16.3/</guid>
+        </item>
+        
+        <item>
             <title>Bitcoin Core 0.16.2 リリース</title>
             <description>&lt;p&gt;Bitcoin Coreバージョン0.16.2が&lt;a href=&quot;/ja/download&quot;&gt;ダウンロード&lt;/a&gt;できるようになりました。
 すべてのユーザーに、いくつかのバグを修正し以下のような新しいマイナー機能をバックポートで提供する
@@ -34,7 +55,7 @@ SPVプルーフに対する特定の&lt;a href=&quot;https://bitslog.wordpress.c
 ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRCチャットルーム&lt;/a&gt;でお気軽にお問い合わせください。&lt;/p&gt;
 
 </description>
-            <pubDate>Sun, 29 Jul 2018 00:00:00 +0700</pubDate>
+            <pubDate>Sun, 29 Jul 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/ja/2018/07/29/release-0.16.2/</link>
             <guid isPermaLink="true">https://bitcoincore.org/ja/2018/07/29/release-0.16.2/</guid>
         </item>
@@ -67,7 +88,7 @@ opcodeが使われている場合、そのトランザクションのリレー�
 ご不明な点がありましたら、&lt;a href=&quot;https://en.bitcoin.it/wiki/IRC_channels&quot;&gt;IRCチャットルーム&lt;/a&gt;でお気軽にお問い合わせください。&lt;/p&gt;
 
 </description>
-            <pubDate>Fri, 15 Jun 2018 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 15 Jun 2018 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/ja/2018/06/15/release-0.16.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/ja/2018/06/15/release-0.16.1/</guid>
         </item>
@@ -197,7 +218,7 @@ b858521496c0d7699a6916c20767cdb123eb39be70ffc544d6876b08af3b696a  bitcoin-0.15.1
 387c2e12c67250892b0814f26a5a38f837ca8ab68c86af517f975a2a2710225b  bitcoin-0.15.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Sat, 11 Nov 2017 00:00:00 +0700</pubDate>
+            <pubDate>Sat, 11 Nov 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/ja/2017/11/11/release-0.15.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/ja/2017/11/11/release-0.15.1/</guid>
         </item>
@@ -244,7 +265,7 @@ f0aebade2b43e253ad66fd920e00524048f5a9b9933936e735844d316433791a  bitcoin-0.15.0
 ae3efa47bf87a694a5368cd6fea96c9942fe9be7856720b5027c8902e46a88d1  bitcoin-0.15.0.1-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Mon, 02 Oct 2017 00:00:00 +0700</pubDate>
+            <pubDate>Mon, 02 Oct 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/ja/2017/10/02/release-0.15.0.1/</link>
             <guid isPermaLink="true">https://bitcoincore.org/ja/2017/10/02/release-0.15.0.1/</guid>
         </item>
@@ -399,7 +420,7 @@ d1686db57c59136c758db1536eaf1bb0b9a08c6a0fd21f54d39ee6a7b6bd39d8  bitcoin-0.15.0
 ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0-x86_64-linux-gnu.tar.gz&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-            <pubDate>Thu, 14 Sep 2017 00:00:00 +0700</pubDate>
+            <pubDate>Thu, 14 Sep 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/ja/2017/09/01/release-0.15.0/</link>
             <guid isPermaLink="true">https://bitcoincore.org/ja/2017/09/01/release-0.15.0/</guid>
         </item>
@@ -434,7 +455,7 @@ ed57f268d8b5ea5acfcb0666e801cf557a444720d8aed5e812071ab2e2913342  bitcoin-0.15.0
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-            <pubDate>Fri, 18 Aug 2017 00:00:00 +0700</pubDate>
+            <pubDate>Fri, 18 Aug 2017 00:00:00 +0900</pubDate>
             <link>https://bitcoincore.org/ja/2017/08/18/btc1-misleading-statements/</link>
             <guid isPermaLink="true">https://bitcoincore.org/ja/2017/08/18/btc1-misleading-statements/</guid>
         </item>
